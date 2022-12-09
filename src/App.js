@@ -1,5 +1,6 @@
 import ResponsiveAppBar from './components/Appbar/Appbar';
 import BasicGrid from './components/Homehero/Home';
+import RowAndColumnSpacing from './components/About/About';
 import './App.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
     <ResponsiveAppBar/>
     <BasicGrid/>
+    <RowAndColumnSpacing/>
     </div>
   );
 }

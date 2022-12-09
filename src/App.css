@@ -15,3 +15,8 @@
   font-weight: 800;
   
 }
+img{
+  width: 150px;
+  border: 10px solid green;
+  padding: 5px;
+}
