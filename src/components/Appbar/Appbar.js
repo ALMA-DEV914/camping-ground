@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import image5 from "../../static/images/reserved-sign-table-top-holder-card-isolated-white-background-45742581.jpg"
 
 const pages = ['Products', 'Pricing', 'Blog', 'Campgrounds', ' About', 'Faqs'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -36,9 +37,9 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
+    <AppBar position='static'>
+        <Container maxWidth="xl">
+        <Toolbar disableGutters className='appbar'>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
@@ -49,7 +50,7 @@ function ResponsiveAppBar() {
               mr: 2,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
-              fontWeight: 700,
+              fontWeight: 800,
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
@@ -128,7 +129,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Remy Sharp" src={image5}/>
               </IconButton>
             </Tooltip>
             <Menu
@@ -155,7 +156,7 @@ function ResponsiveAppBar() {
             </Menu>
           </Box>
         </Toolbar>
-      </Container>
+        </Container>
     </AppBar>
   );
 }
