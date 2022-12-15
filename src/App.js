@@ -10,6 +10,7 @@ import about1 from "../src/assets/img/2.jpg";
 import about2 from "../src/assets/img/2.png";
 import about3 from "../src/assets/img/header-bg.jpg";
 
+
 function App() {
   const portfolioLinks = [
     {
@@ -138,8 +139,9 @@ function App() {
       <div className="container">
         <div className="row">
           <div className="col-lg-12 text-center">
-          <h2 className="search-heading text-uppercase">Find Your Fasvorite Park </h2>
+          <h2 className="search-heading text-uppercase">Find Your Favorite Park To Camp </h2>
           <p>Tell us when, where, and how long you want to camp for. We’ll notify you (via SMS) when a suitable spot opens up at that campground—so you can nab that sold-out campsite reservation!</p>
+          
             <div class="input-group">
               <select class="custom-select" id="inputGroupSelect04">
                 <option selected>Search...</option>
