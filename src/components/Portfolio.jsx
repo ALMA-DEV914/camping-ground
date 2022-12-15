@@ -7,7 +7,7 @@ export default ({ portfolioLinks }) => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
-              <h2 className="section-heading text-uppercase">Portfolio</h2>
+              <h2 className="section-heading text-uppercase"> The Most Scenic Places to Camp in the United States</h2>
               <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
           </div>

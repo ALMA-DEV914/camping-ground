@@ -2,50 +2,51 @@ import React from 'react';
 // import logo from './logo.svg';
 import Portfolio from './components/Portfolio'
 import './App.css';
-import team1 from "../src/assets/img/team/1.jpg";
-import team2 from "../src/assets/img/team/2.jpg";
-import team3 from "../src/assets/img/team/3.jpg";
-import about from "../src/assets/img/IMG-20210628-WA0004.jpg";
-import about1 from "../src/assets/img/IMG-20220608-WA0021.jpg";
-import about2 from "../src/assets/img/IMG-20220609-WA0010.jpg";
-import about3 from "../src/assets/img/IMG-20220609-WA0009.jpg";
-import img1 from "../src/assets/img/reserved-sign-table-top-holder-card-isolated-white-background-45742581.jpg";
-import img2 from "../src/assets/img/reserved-sign-beachs-background-32398361.jpg";
-import img3 from "../src/assets/img/alert.png";
-import img4 from "../src/assets/img/4.png"
-
-
-
+import team1 from "../src/assets/img/team/avatar-659651_1280.png";
+import team3 from "../src/assets/img/team/user-307993_1280.png";
+import team2 from "../src/assets/img/team/user-33638_1280.png";
+import about from "../src/assets/img/1.jpg";
+import about1 from "../src/assets/img/2.jpg";
+import about2 from "../src/assets/img/2.png";
+import about3 from "../src/assets/img/header-bg.jpg";
 
 function App() {
   const portfolioLinks = [
     {
-      title: 'Threads',
-      caption: 'Illustration'
+      title: 'Acadia National Park, Maine',
+      caption: 'Located on Mount Desert Island, Acadia National Park is the Pine Tree State’s natural jewel. The park has three campgrounds to set up your tent: Blackwoods (close to Bar Harbor), Seawall (less touristy), and Schoodic Woods (on the Schoodic Peninsula)'
     },
     {
-      title: 'Explore',
-      caption: 'Graphic Design'
+      title: 'White Mountain National Forest, New Hampshire and Maine',
+      caption: "If you're looking for a rugged hike, look no further than this northernmost part of the Appalachian Valley. The sights are particularly magical in the fall when leaf-peeping season is at its peak. Plus, the forest has several campgrounds with a combined hundreds of campsites."
     },
     {
-      title: 'Finish',
-      caption: 'Identity'
+      title: 'Minnewaska State Park Reserve, New York',
+      caption: "Only 94 miles outside of New York City, this state park reserve sits on Shawangunk Ridge, more than 2,000 feet above sea level, surrounded by rocky terrain. That's a lot of space to hike, bike, and especially enjoy the view."
     },
     {
-      title: 'Lines',
-      caption: 'Branding'
+      title: 'Shenandoah National Park, Virginia',
+      caption: "A short drive from Washington D.C., Shenandoah National Park has 500 miles of trails, including an eight-mile hike up Old Rag Mountain that's a must-do for avid hikers. This glorious park gives you plenty of lush views of forest and waterfalls. Its facilities are open in the spring, summer, and fall, and it has five campgrounds to choose from. The park has reopened, but campgrounds are currently operating at reduced capacity."
     },
     {
-      title: 'Southwest',
-      caption: 'Website Design'
+      title: 'Assateague Island National Seashore, Maryland',
+      caption: 'The Assateague Island campgrounds are only nine miles south of Ocean City, with 37 miles of beaches for camping, swimming, surfing, paddle-boarding, crabbing, biking, kayaking, and spotting wild horses. Assateague Island National Seashore reopened some campgrounds on June 15, but group campgrounds and some facilities are still closed.'
     },
     {
-      title: 'Window',
-      caption: 'Photography'
+      title: 'Dry Tortugas National Park, Florida',
+      caption: "You can have one of the world's largest barrier reefs right outside your tent in this beautiful park. Campers can rent some snorkel gear and spend their days on the beach or explore Fort Jefferson. This area is also great for bird-watching, so make sure you pack a pair of binoculars. "
     },
     {
-      title: 'Pizza',
-      caption: 'I love pizza!'
+      title: 'Glacier National Park, Montana',
+      caption: "There are 13 developed campgrounds and more than 1,000 sites so you can stay and bask in the beautiful views of glaciers. Hikers can also enjoy 700 miles of trails through forests, meadows, and mountains. Opening dates for Glacier National Park's campgrounds have not yet been determined."
+    }, 
+    {
+      title: "Sawtooth National Forest, Idaho",
+      caption: "The steep Smoky Mountains offer stunning views, practically like a Bob Ross painting. There are dozens of campgrounds at this national forest, but one of the best spots is Sawtooth National Recreation Area. "
+    },
+    {
+      title: "Grand Teton National Park, Wyoming",
+      caption: "Just north of Jackson Hole, you can peek at the Rocky Mountains and see plenty of wildlife and lakes. It's also located next to the National Elk Refuge, where you can spot hundreds of elk, depending on when you go. You can stay at one of the six campgrounds in Grand Teton National Park, but Signal Mountain in particular has the best reviews."
     }
   ]
 
@@ -150,7 +151,7 @@ function App() {
               </div>
               <div className="timeline-panel">
                 <div className="timeline-heading">
-                  <h4>2009-2011</h4>
+                  <h4>2001-2002</h4>
                   <h4 className="subheading">Our Humble Beginnings</h4>
                 </div>
                 <div className="timeline-body">
