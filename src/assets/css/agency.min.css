@@ -546,6 +546,7 @@ header.masthead .intro-text .intro-heading {
 .team-member {
   margin-bottom: 50px;
   text-align: center;
+  
 }
 .team-member img {
   width: 225px;
@@ -561,10 +562,11 @@ header.masthead .intro-text .intro-heading {
   margin-top: 0;
 }
 section#contact {
-  background-color: #042f1e;
-  background-image: url(../img/map-image.png);
+  background-color: #c3d5ce;
+  background-image: url(../img/4.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
+  background-position: center center;
 }
 section#contact .section-heading {
   color: rgb(6, 74, 12);
