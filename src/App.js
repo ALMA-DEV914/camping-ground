@@ -2,6 +2,20 @@ import React from 'react';
 // import logo from './logo.svg';
 import Portfolio from './components/Portfolio'
 import './App.css';
+import team1 from "../src/assets/img/team/1.jpg";
+import team2 from "../src/assets/img/team/2.jpg";
+import team3 from "../src/assets/img/team/3.jpg";
+import about from "../src/assets/img/IMG-20210628-WA0004.jpg";
+import about1 from "../src/assets/img/IMG-20220608-WA0021.jpg";
+import about2 from "../src/assets/img/IMG-20220609-WA0010.jpg";
+import about3 from "../src/assets/img/IMG-20220609-WA0009.jpg";
+import img1 from "../src/assets/img/reserved-sign-table-top-holder-card-isolated-white-background-45742581.jpg";
+import img2 from "../src/assets/img/reserved-sign-beachs-background-32398361.jpg";
+import img3 from "../src/assets/img/alert.png";
+import img4 from "../src/assets/img/4.png"
+
+
+
 
 function App() {
   const portfolioLinks = [
@@ -39,7 +53,7 @@ function App() {
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div className="container">
-      <a className="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <a className="navbar-brand js-scroll-trigger" href="#page-top">Camp Hunters</a>
       <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i className="fa fa-bars"></i>
@@ -70,8 +84,8 @@ function App() {
   <header className="masthead">
     <div className="container">
       <div className="intro-text">
-        <div className="intro-lead-in">Welcome To Our Studio!</div>
-        <div className="intro-heading text-uppercase">It's Nice To Meet You</div>
+        <div className="intro-lead-in"> WE PROVIDE CAMPSITE AVAILABILITY ALERTS</div>
+        <div className="intro-heading text-uppercase">Find reservations at sold-out campgrounds</div>
         <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
       </div>
     </div>
@@ -83,32 +97,32 @@ function App() {
       <div className="row">
         <div className="col-lg-12 text-center">
           <h2 className="section-heading text-uppercase">Services</h2>
-          <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 className="section-subheading text-muted">Tell us when, where, and how long you want to camp for. We’ll notify you (via SMS) when a suitable spot opens up at that campground—so you can nab that sold-out campsite reservation! Plans start at $10</h3>
         </div>
       </div>
       <div className="row text-center">
         <div className="col-md-4">
           <span className="fa-stack fa-4x">
             <i className="fa fa-circle fa-stack-2x text-primary"></i>
-            <i className="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            <i className="fa fa-barcode fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 className="service-heading">E-Commerce</h4>
+          <h4 className="service-heading">Create a scan</h4>
           <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
         </div>
         <div className="col-md-4">
           <span className="fa-stack fa-4x">
             <i className="fa fa-circle fa-stack-2x text-primary"></i>
-            <i className="fa fa-laptop fa-stack-1x fa-inverse"></i>
+            <i className="fa fa-bell fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 className="service-heading">Responsive Design</h4>
+          <h4 className="service-heading">Wait for an alert</h4>
           <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
         </div>
         <div className="col-md-4">
           <span className="fa-stack fa-4x">
             <i className="fa fa-circle fa-stack-2x text-primary"></i>
-            <i className="fa fa-lock fa-stack-1x fa-inverse"></i>
+            <i className="fa fa-unlock fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 className="service-heading">Web Security</h4>
+          <h4 className="service-heading">Reserve that spot!</h4>
           <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
         </div>
       </div>
@@ -132,7 +146,7 @@ function App() {
           <ul className="timeline">
             <li>
               <div className="timeline-image">
-                <img className="rounded-circle img-fluid" src="img/about/1.jpg" alt=""/>
+                <img className="rounded-circle img-fluid" src="" alt=""/>
               </div>
               <div className="timeline-panel">
                 <div className="timeline-heading">
@@ -146,7 +160,7 @@ function App() {
             </li>
             <li className="timeline-inverted">
               <div className="timeline-image">
-                <img className="rounded-circle img-fluid" src="img/about/2.jpg" alt=""/>
+                <img className="rounded-circle img-fluid" src="" alt=""/>
               </div>
               <div className="timeline-panel">
                 <div className="timeline-heading">
@@ -160,7 +174,7 @@ function App() {
             </li>
             <li>
               <div className="timeline-image">
-                <img className="rounded-circle img-fluid" src="img/about/3.jpg" alt=""/>
+                <img className="rounded-circle img-fluid" src="" alt=""/>
               </div>
               <div className="timeline-panel">
                 <div className="timeline-heading">
@@ -174,7 +188,7 @@ function App() {
             </li>
             <li className="timeline-inverted">
               <div className="timeline-image">
-                <img className="rounded-circle img-fluid" src="img/about/4.jpg" alt=""/>
+                <img className="rounded-circle img-fluid" src="" alt=""/>
               </div>
               <div className="timeline-panel">
                 <div className="timeline-heading">
@@ -211,7 +225,7 @@ function App() {
       <div className="row">
         <div className="col-sm-4">
           <div className="team-member">
-            <img className="mx-auto rounded-circle" src="img/team/1.jpg" alt=""/>
+            <img className="mx-auto rounded-circle" src={team1} alt=""/>
             <h4>Kay Garland</h4>
             <p className="text-muted">Lead Designer</p>
             <ul className="list-inline social-buttons">
@@ -227,7 +241,7 @@ function App() {
               </li>
               <li className="list-inline-item">
                 <a href="#something">
-                  <i className="fa fa-linkedin-in"></i>
+                  <i className="fa fa-linkedin"></i>
                 </a>
               </li>
             </ul>
@@ -235,7 +249,7 @@ function App() {
         </div>
         <div className="col-sm-4">
           <div className="team-member">
-            <img className="mx-auto rounded-circle" src="img/team/2.jpg" alt=""/>
+            <img className="mx-auto rounded-circle" src={team2} alt=""/>
             <h4>Larry Parker</h4>
             <p className="text-muted">Lead Marketer</p>
             <ul className="list-inline social-buttons">
@@ -251,7 +265,7 @@ function App() {
               </li>
               <li className="list-inline-item">
                 <a href="#something">
-                  <i className="fa fa-linkedin-in"></i>
+                  <i className="fa fa-linkedin"></i>
                 </a>
               </li>
             </ul>
@@ -259,7 +273,7 @@ function App() {
         </div>
         <div className="col-sm-4">
           <div className="team-member">
-            <img className="mx-auto rounded-circle" src="img/team/3.jpg" alt=""/>
+            <img className="mx-auto rounded-circle" src={team3} alt=""/>
             <h4>Diana Pertersen</h4>
             <p className="text-muted">Lead Developer</p>
             <ul className="list-inline social-buttons">
@@ -275,7 +289,7 @@ function App() {
               </li>
               <li className="list-inline-item">
                 <a href="#something">
-                  <i className="fa fa-linkedin-in"></i>
+                  <i className="fa fa-linkedin"></i>
                 </a>
               </li>
             </ul>
@@ -296,22 +310,22 @@ function App() {
       <div className="row">
         <div className="col-md-3 col-sm-6">
           <a href="#something">
-            <img className="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt=""/>
+            <img className="img-fluid d-block mx-auto" src={about} alt=""/>
           </a>
         </div>
         <div className="col-md-3 col-sm-6">
           <a href="#something">
-            <img className="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt=""/>
+            <img className="img-fluid d-block mx-auto" src={about1} alt=""/>
           </a>
         </div>
         <div className="col-md-3 col-sm-6">
           <a href="#something">
-            <img className="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt=""/>
+            <img className="img-fluid d-block mx-auto" src={about2} alt=""/>
           </a>
         </div>
         <div className="col-md-3 col-sm-6">
           <a href="#something">
-            <img className="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt=""/>
+            <img className="img-fluid d-block mx-auto" src={about3} alt=""/>
           </a>
         </div>
       </div>
@@ -368,7 +382,7 @@ function App() {
     <div className="container">
       <div className="row align-items-center">
         <div className="col-md-4">
-          <span className="copyright">Copyright &copy; Your Website 2019</span>
+          <span className="copyright">Copyright &copy; Your Website 2022</span>
         </div>
         <div className="col-md-4">
           <ul className="list-inline social-buttons">
@@ -384,7 +398,7 @@ function App() {
             </li>
             <li className="list-inline-item">
               <a href="#something">
-                <i className="fa fa-linkedin-in"></i>
+                <i className="fa fa-linkedin"></i>
               </a>
             </li>
           </ul>
