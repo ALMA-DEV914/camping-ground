@@ -5,7 +5,7 @@ function CampgroundList() {
   const [user, setUser] = useState([]);
 
    const fetchData = () => {
-      return axios.get("")
+      return axios.get("https://jsonplaceholder.typicode.com/users")
       .then ((response) => setUser(response.data))
    }
 
