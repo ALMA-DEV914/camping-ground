@@ -1,11 +1,18 @@
-import React from 'react'
+import * as React from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 
-function Banner() {
+
+export default function Banner() {
   return (
-    <div>
-      
-    </div>
-  )
+    <React.Fragment>
+      <CssBaseline />
+      <Container maxWidth="xlg" className='banner'>
+      <Box sx={{ height: '60vh'}} />
+     
+     
+      </Container>
+    </React.Fragment>
+  );
 }
-
-export default Banner

@@ -1,15 +1,13 @@
 import React from 'react';
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-  } from "react-router-dom";
+import Banner from './components/banner/Banner';
 import CampgroundList from './components/campground/CampgroundList';
 import Navbar from './components/navbar/Navbar';
+
 function App() {
   return (
     <>
    <Navbar />
+   <Banner />
    <CampgroundList/>
    </>
   );
