@@ -2,9 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.5;
 }
 .banner{
     background-image: url('./images/header.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+.parkInfo{
+    padding: 15px;
+}
+.altText{
+    font-size: 12px;
+}
+.parkImages{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.cards{
+    width: 25%;
+    margin: 0 5px;
 }
