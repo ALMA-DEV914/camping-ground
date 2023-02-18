@@ -1,16 +1,14 @@
-import React from 'react';
+import React from 'react'
+import ResponsiveAppBar from './components/navbar/Navbar';
 import Banner from './components/banner/Banner';
-import CampgroundList from './components/campground/CampgroundList';
-import Navbar from './components/navbar/Navbar';
 
 function App() {
   return (
-    <>
-   <Navbar />
-   <Banner />
-   <CampgroundList/>
-   </>
-  );
+    <div>
+      <ResponsiveAppBar/>
+      <Banner/>
+    </div>
+  )
 }
 
-export default App;
+export default App
