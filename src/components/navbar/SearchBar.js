@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, {useState} from "react";
 import { styled, alpha } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import InputBase from "@mui/material/InputBase";
@@ -47,6 +47,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function SearchAppBar() {
+    const [query, setQuery] = useState("")
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Search>
@@ -56,6 +57,9 @@ export default function SearchAppBar() {
         <StyledInputBase
           placeholder="Search…"
           inputProps={{ "aria-label": "search" }}
+          onChange={event => setQuery(event.target.value)}
+          value={query}
+         type="text"
         />
       </Search>
     </Box>

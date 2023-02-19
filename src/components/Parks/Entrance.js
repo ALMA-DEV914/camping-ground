@@ -1,8 +1,10 @@
 import React from "react";
+import Alert from "../alert/Alert";
 
 export default function Entrance({ data }) {
   return (
     <>
+    <Alert/>
       <div>
         {data &&
           data.data.map((data) => (

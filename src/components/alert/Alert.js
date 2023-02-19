@@ -8,7 +8,7 @@ export default function Alert() {
 
   useEffect(() => {
     fetch(
-      `https://developer.nps.gov/api/v1/alerts?parkCode=acad,dena&api_key=5cLj8vdJGzTYxCGdpR1WhAyQFw5OXf8EI8uimKwF`
+      `https://developer.nps.gov/api/v1/alerts?parkCode=yellow,&api_key=5cLj8vdJGzTYxCGdpR1WhAyQFw5OXf8EI8uimKwF`
     )
       .then((response) => {
         if (!response.ok) {
@@ -31,14 +31,14 @@ export default function Alert() {
   return (
     <Container className="alert">
       {data &&
-        data.data.map((data, i) => (
+        data.data.map((data) => (
           <Tooltip
             title={
-              data.title + "." + " " + data.description + " " + data.url + "Date" + " " + data.lastIndexedDate
+              data.title + "."  +  " " + data.description + " " + data.url + "Date" + " " + data.lastIndexedDate
             }
-            key={i}
+            key={data.category}
           >
-            <Button color="warning">{data.category}</Button>
+            <Button color="info" variant="standard" key={data.category}>{data.category} - {data.parkCode}</Button>
           </Tooltip>
         ))}
     </Container>

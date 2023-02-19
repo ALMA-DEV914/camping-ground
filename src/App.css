@@ -16,22 +16,28 @@
     font-size: 12px;
 }
 .parkImages{
-    display: flex;
+    display: flex-row;
     justify-content: space-between;
-    
+    overflow: auto;
+    column-count: 4;
+    height: 450px;
+    padding: 15px;
+    margin-bottom: 5%;
 }
  h1{
     text-align: center;
 }
 .cards{
-    width: 25%;
-    margin: 0 5px;
+    width: 100%;
+    margin: 5px 5px;
 }
 .activityList{
     column-count: 4;
     background-color: aliceblue;
     padding: 15px;
     margin: 3% auto;
+    height: 200px;
+    overflow: auto;
 }
 .entranceFees{
    column-count: 3;
@@ -44,7 +50,15 @@
 }
 .alert{
     display: flex;
+    background-color: rgb(208, 113, 113);
+    
 }
-.tooltipAlert{
-    background-color: blanchedalmond !important;
+.openHours{
+    column-count: 2;
+    background-color: rgb(215, 250, 235);
+    padding: 15px;
 }
+h5{
+    color: rgb(43, 186, 226);
+}
+
