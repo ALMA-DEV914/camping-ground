@@ -8,6 +8,8 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import ActivitiesList from "./Activities";
 import Entrance from "./Entrance";
+import Footer from "../footer/Footer";
+
 export default function ParksCard() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -40,6 +42,7 @@ export default function ParksCard() {
   }, []);
 
   return (
+    <>
     <Container>
       {loading && <div>A moment please...</div>}
       {error && (
@@ -56,8 +59,7 @@ export default function ParksCard() {
               </h1>
               <p>{data.description}</p>
               <p>
-                <b>Designation:</b> {data.designation}<br></br>
-                <span><b>Addresses:</b> {data.addresses.map((addresses, i) => <li key={addresses.id}>  {addresses.city} - {addresses.line1} - {addresses.line2} - {addresses.postalCode} - {addresses.type}</li>)} </span>
+                <b>Designation:</b> {data.designation}
               </p>
               <p>
                 <b>Direction:</b> {data.directionsInfo}
@@ -85,7 +87,11 @@ export default function ParksCard() {
                     <Typography gutterBottom variant="h5" component="div">
                       {images.title}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary" key={images.id}>
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      key={images.id}
+                    >
                       <span className="altText">{images.altText}</span>
                       <br></br>
                       {images.caption} - photo credit from {images.credit}
@@ -100,8 +106,11 @@ export default function ParksCard() {
             </div>
           </>
         ))}
-        <Entrance data={data}/>
-        <ActivitiesList data={data}/>
+      <Entrance data={data} />
+      <ActivitiesList data={data} />
+    
     </Container>
+      <Footer data={data}/>
+      </>
   );
 }

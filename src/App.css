@@ -37,3 +37,14 @@
    column-count: 3;
    margin: 5% auto;
 }
+.footer{
+    background-color: black;
+    color: gray;
+    padding: 15px;
+}
+.alert{
+    display: flex;
+}
+.tooltipAlert{
+    background-color: blanchedalmond !important;
+}
