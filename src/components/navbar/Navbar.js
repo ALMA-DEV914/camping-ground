@@ -12,7 +12,6 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import SearchAppBar from './SearchBar';
 
 const pages = ['Campgrounds', 'Pricing', 'Blog', 'Reviews', 'Faq'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -126,7 +125,7 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
-          <SearchAppBar/>
+         
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>

@@ -30,6 +30,7 @@
 .cards{
     width: 100%;
     margin: 5px 5px;
+    height: 400px;
 }
 .activityList{
     column-count: 4;
@@ -50,7 +51,8 @@
 }
 .alert{
     display: flex;
-    background-color: rgb(208, 113, 113);
+    background-color: rgb(150, 18, 18);
+    color: white !important;
     
 }
 .openHours{
