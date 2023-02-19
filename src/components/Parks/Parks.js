@@ -17,9 +17,11 @@ export default function ParksCard() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const apiKey = process.env.API_KEY
+
   useEffect(() => {
     fetch(
-      `https://developer.nps.gov/api/v1/parks?parkCode=yellow&api_key=5cLj8vdJGzTYxCGdpR1WhAyQFw5OXf8EI8uimKwF`
+      `https://developer.nps.gov/api/v1/campgrounds?parkCode=yellow&api_key=${apiKey}`
     )
       .then((response) => {
         if (!response.ok) {

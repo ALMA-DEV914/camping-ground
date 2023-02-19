@@ -6,9 +6,11 @@ import Button from "@mui/material/Button";
 export default function Alert() {
   const [data, setData] = useState(null);
 
+  const apiKey = process.env.API_KEY;
+
   useEffect(() => {
     fetch(
-      `https://developer.nps.gov/api/v1/alerts?parkCode=yellow,&api_key=5cLj8vdJGzTYxCGdpR1WhAyQFw5OXf8EI8uimKwF`
+      `https://developer.nps.gov/api/v1/alerts?parkCode=yellow,&api_key=${apiKey}`
     )
       .then((response) => {
         if (!response.ok) {
