@@ -72,6 +72,7 @@ export default function ParksCard() {
               width: { lg: "1150px", xs: "350px" },
               backgroundColor: "#fff",
               borderRadius: "40px",
+              margin: "-10% auto"
             }}
             value={query}
             onChange={(e) => setQuery(e.target.value)}

@@ -72,7 +72,7 @@ a{
     margin: 0 12px;
 }
 a:hover{
-    color: aquamarine;
+    color: rgb(64, 196, 91);
 }
 p a{
     color: blue;
