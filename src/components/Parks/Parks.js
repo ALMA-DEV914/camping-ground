@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { Box, TextField } from "@mui/material";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
-
+import Link from "@mui/material/Link";
 
 export default function ParksCard() {
   const [data, setData] = useState(null);
@@ -91,12 +91,9 @@ export default function ParksCard() {
                 <p>
                   {data.description} With the total campsites of{" "}
                   {data.numberOfSitesFirstComeFirstServe} that offer in first
-                  come first serve basis. 
-                  <br></br>
-                  Visit the site - <a href={data.url}>{data.url}</a>
+                  come first serve basis.
                 </p>
                 <p>{data.directionsOverview ? data.audioDescription : null}</p>
-
                 {data.addresses.map((addresses, i) => (
                   <div>
                     {addresses ? (
@@ -108,34 +105,10 @@ export default function ParksCard() {
                   </div>
                 ))}
                 <p>
-                  <a href={data.directionsUrl}>
-                    {data.directionsUrl ? (
-                      <p>Get direction here - {data.directionsUrl}</p>
-                    ) : null}
-                  </a>
-                </p>
-
-                <p>
                   <b>Weather: </b> {data.weatherOverview} - {data.latLong}
                 </p>
-                <p>
-                  {data.regulationsOverview}
-                  <a
-                    href={
-                      data.regulationsurl
-                        ? <p> Read about regulations here</p> -
-                          data.regulationsurl
-                        : null
-                    }
-                  >
-                    {data.regulationsurl}
-                  </a>
-                </p>
-
-                <p>
-                  {data.reservationInfo}{" "}
-                  <a href={data.reservationUrl}>{data.reservationUrl}</a>
-                </p>
+                <p>{data.regulationsOverview}</p>
+                <p>{data.reservationInfo}</p>
                 <p>Entrance Fees:</p>
                 {data.fees.map((fees, i) => (
                   <li key={i}>
@@ -143,14 +116,14 @@ export default function ParksCard() {
                   </li>
                 ))}
                 <br></br>
-              {data.operatingHours.map((operatingHours, i) => (
-                 <>
+                {data.operatingHours.map((operatingHours, i) => (
+                  <>
                     {operatingHours ? (
                       <>
                         <h6>Opreating hours</h6>
                         <p>
-                        It is open all day in standard hours or time. {" "}
-                          {operatingHours.name} - {operatingHours.description} {" "}
+                          It is open all day in standard hours or time.{" "}
+                          {operatingHours.name} - {operatingHours.description}{" "}
                           {operatingHours.exceptions.map((exceptions, i) => (
                             <span key={i}>
                               {exceptions.name} - start on{" "}
@@ -161,11 +134,42 @@ export default function ParksCard() {
                         </p>
                       </>
                     ) : null}
-                 </>
+                  </>
                 ))}
-              <p>Accessibility - {data.accessibility.adaInfo} { " "} {data.accessibility.fireStovePolicy} {" "} {data.accessibility.rvAllowed ? data.accessibility.rvAllowed : null} {" "} {data.accessibility.rvInfo ? data.accessibility.rvInfo : null} {" "} {"Wheelchair access is - "} {data.accessibility.wheelchairAccess ? data.accessibility.wheelchairAccess : null} {" "} {data.accessibility.accessRoads ? data.accessibility.accessRoads : null} {" "} <b>Classifications:</b> {data.accessibility.classifications}
-</p>
-              
+                <p>
+                  Accessibility - {data.accessibility.adaInfo}{" "}
+                  {data.accessibility.fireStovePolicy}{" "}
+                  {data.accessibility.rvAllowed
+                    ? data.accessibility.rvAllowed
+                    : null}{" "}
+                  {data.accessibility.rvInfo ? data.accessibility.rvInfo : null}{" "}
+                  {"Wheelchair access is - "}{" "}
+                  {data.accessibility.wheelchairAccess
+                    ? data.accessibility.wheelchairAccess
+                    : null}{" "}
+                  {data.accessibility.accessRoads
+                    ? data.accessibility.accessRoads
+                    : null}{" "}
+                  <b>Classifications:</b> {data.accessibility.classifications}
+                </p>
+                <div className="links">
+                  <Link href={data.url} underline="hover" className='button'>{data.url ? <p>Visit the site here </p> : null}</Link>
+                  <Link href={data.directionsUrl} underline="hover" className='button'>
+                    {data.directionsUrl ? (
+                      <p>Get direction here</p>
+                    ) : null}
+                  </Link>
+                  <Link href={data.reservationUrl} underline="hover" className='button'>
+                    {data.reservationUrl ? (
+                      <p>Reserved your spot</p>
+                    ) : null}
+                  </Link>
+                  <Link href={data.regulationsUrl} underline="hover" className='button'>
+                    {data.regulationsUrl
+                      ? <p> Read the regulations</p>
+                      :  null}
+                  </Link>
+                </div>
               </div>
 
               <div className="parkImages">
