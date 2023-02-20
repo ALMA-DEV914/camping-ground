@@ -1,21 +1,17 @@
 import React from "react";
-import ResponsiveAppBar from "./components/navbar/Navbar";
-import Banner from "./components/banner/Banner";
-import Parks from "./components/Parks/Parks";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CampingGround from "./pages/campground/CampingGround";
-import Alert from "./components/alert/Alert";
+import Home from "./pages/home/Home";
+import Reviews from "./pages/reviews/Reviews";
 
 function App() {
   return (
     <div>
-      <Alert/>
-      <ResponsiveAppBar />
-      <Banner />
        <Router>
         <Routes>
-          <Route exact path="/" element={<Parks />} />
+          <Route exact path="/" element={<Home/>} />
           <Route exact path="/campgrounds" element={<CampingGround />} />
+          <Route exact path="/reviews" element={<Reviews/>} />
          </Routes>
       </Router>
     </div>

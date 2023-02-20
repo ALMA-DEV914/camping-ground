@@ -5,7 +5,17 @@
     line-height: 1.5;
 }
 .banner{
-    background-image: url('./images/header.png');
+    background-image: url('https://wallpaperaccess.com/full/393735.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bannerCamp{
+    background-image: url('./images/camping.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bannerReview{
+    background-image: url('./images/reviews.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -51,7 +61,7 @@
 }
 .alert{
     display: flex;
-    background-color: rgb(150, 18, 18);
+    background-color: rgb(134, 67, 67);
     color: white !important;
     
 }
@@ -62,5 +72,13 @@
 }
 h5{
     color: rgb(43, 186, 226);
+}
+a{
+   color: aliceblue;
+    text-decoration: none;
+    margin: 0 12px;
+}
+p a{
+    color: blue;
 }
 
