@@ -7,6 +7,7 @@ import Container from "@mui/material/Container";
 import { Box, TextField } from "@mui/material";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 
+
 export default function ParksCard() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
@@ -90,7 +91,7 @@ export default function ParksCard() {
                 <p>
                   {data.description} With the total campsites of{" "}
                   {data.numberOfSitesFirstComeFirstServe} that offer in first
-                  come first serve basis.
+                  come first serve basis. 
                   <br></br>
                   Visit the site - <a href={data.url}>{data.url}</a>
                 </p>
@@ -107,8 +108,10 @@ export default function ParksCard() {
                   </div>
                 ))}
                 <p>
-                  <a href={data.directionsUrl ? data.directionsUrl : null}>
-                    {data.directionsUrl}
+                  <a href={data.directionsUrl}>
+                    {data.directionsUrl ? (
+                      <p>Get direction here - {data.directionsUrl}</p>
+                    ) : null}
                   </a>
                 </p>
 
@@ -134,25 +137,20 @@ export default function ParksCard() {
                   <a href={data.reservationUrl}>{data.reservationUrl}</a>
                 </p>
                 <p>Entrance Fees:</p>
-                <br></br>
                 {data.fees.map((fees, i) => (
                   <li key={i}>
                     {fees.title} - {fees.cost} - {fees.description}
                   </li>
                 ))}
                 <br></br>
-
-                {data.operatingHours.map((operatingHours, i) => (
-                  <>
+              {data.operatingHours.map((operatingHours, i) => (
+                 <>
                     {operatingHours ? (
                       <>
                         <h6>Opreating hours</h6>
-                        <p>It is open all day in standard hours or time.</p>
-                        <p key={i}>
-                          {operatingHours.name} - {operatingHours.description} 
-                        </p>
-
                         <p>
+                        It is open all day in standard hours or time. {" "}
+                          {operatingHours.name} - {operatingHours.description} {" "}
                           {operatingHours.exceptions.map((exceptions, i) => (
                             <span key={i}>
                               {exceptions.name} - start on{" "}
@@ -163,8 +161,11 @@ export default function ParksCard() {
                         </p>
                       </>
                     ) : null}
-                  </>
+                 </>
                 ))}
+              <p>Accessibility - {data.accessibility.adaInfo} { " "} {data.accessibility.fireStovePolicy} {" "} {data.accessibility.rvAllowed ? data.accessibility.rvAllowed : null} {" "} {data.accessibility.rvInfo ? data.accessibility.rvInfo : null} {" "} {"Wheelchair access is - "} {data.accessibility.wheelchairAccess ? data.accessibility.wheelchairAccess : null} {" "} {data.accessibility.accessRoads ? data.accessibility.accessRoads : null} {" "} <b>Classifications:</b> {data.accessibility.classifications}
+</p>
+              
               </div>
 
               <div className="parkImages">
