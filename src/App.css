@@ -60,9 +60,12 @@
     padding: 15px;
 }
 .alert{
-    display: flex;
     background-color: rgb(134, 67, 67);
     color: white !important;
+    overflow: auto;
+    height: 150px;
+    text-align: center;
+    padding: 15px;
     
 }
 .openHours{

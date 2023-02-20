@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import { styled } from "@mui/material/styles";
@@ -46,27 +45,25 @@ export default function Alert() {
 
   return (
     <div className="alert">
-      <Container>
-        {data &&
-          data.data.map((data) => (
-            <AlertTooltip
-              title={
-                <>
+      {data &&
+        data.data.map((data) => (
+          <AlertTooltip
+            title={
+              <>
                 <React.Fragment>
                   <Typography color="inherit">{data.title}</Typography>
                   <em>{data.description}</em> {" - "}
-                  <Link href={data.url}>{data.url}</Link> {" "}<br></br>
+                  <Link href={data.url}>{data.url}</Link> <br></br>
                   <u> Date: {data.lastIndexedDate}</u>.
                 </React.Fragment>
-                </>
-              }
-            >
-              <Button color="info" variant="standard" key={data.category}>
-                ALERT! {data.category} - {data.parkCode}
-              </Button>
-            </AlertTooltip>
-          ))}
-      </Container>
+              </>
+            }
+          >
+            <Button  variant="standard" key={data.category}>
+             {data.category} - {data.parkCode}
+            </Button>
+          </AlertTooltip>
+        ))}
     </div>
   );
 }
