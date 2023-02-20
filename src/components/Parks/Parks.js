@@ -96,7 +96,6 @@ export default function ParksCard() {
                 </p>
                 <p>{data.directionsOverview ? data.audioDescription : null}</p>
 
-
                 {data.addresses.map((addresses, i) => (
                   <div>
                     {addresses ? (
@@ -112,7 +111,7 @@ export default function ParksCard() {
                     {data.directionsUrl}
                   </a>
                 </p>
-              
+
                 <p>
                   <b>Weather: </b> {data.weatherOverview} - {data.latLong}
                 </p>
@@ -134,8 +133,40 @@ export default function ParksCard() {
                   {data.reservationInfo}{" "}
                   <a href={data.reservationUrl}>{data.reservationUrl}</a>
                 </p>
-                {data.fees.map((fees, i) => <li key={i}>Entrance Fees: {fees.title} - {fees.cost} - {fees.description}</li>)}
+                <p>Entrance Fees:</p>
+                <br></br>
+                {data.fees.map((fees, i) => (
+                  <li key={i}>
+                    {fees.title} - {fees.cost} - {fees.description}
+                  </li>
+                ))}
+                <br></br>
+
+                {data.operatingHours.map((operatingHours, i) => (
+                  <>
+                    {operatingHours ? (
+                      <>
+                        <h6>Opreating hours</h6>
+                        <p>It is open all day in standard hours or time.</p>
+                        <p key={i}>
+                          {operatingHours.name} - {operatingHours.description} 
+                        </p>
+
+                        <p>
+                          {operatingHours.exceptions.map((exceptions, i) => (
+                            <span key={i}>
+                              {exceptions.name} - start on{" "}
+                              {exceptions.startDate} and end on{" "}
+                              {exceptions.endDate}
+                            </span>
+                          ))}
+                        </p>
+                      </>
+                    ) : null}
+                  </>
+                ))}
               </div>
+
               <div className="parkImages">
                 <DoubleArrowIcon /> Scroll left to see more images
                 {data.images.map((images, i) => (
