@@ -5,6 +5,8 @@ import Home from "./pages/home/Home";
 import Reviews from "./pages/reviews/Reviews";
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
+import Profile from "./pages/profile/Profile";
+
 import {
   ApolloClient,
   InMemoryCache,
@@ -44,6 +46,7 @@ function App() {
           <Route exact path="/reviews" element={<Reviews/>} />
          <Route exact path="/login" element={<Login/>} />
          <Route exact path="/signup" element={<Signup/>} />
+         <Route exact path="/profile" element={<Profile/>} />
          </Routes>
       </Router>
       </ApolloProvider>

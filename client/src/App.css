@@ -128,4 +128,7 @@ p a{
     color: white;
     padding: 15px;
 }
-
+.profile{
+    width: 60%;
+    margin: 5% auto;
+}

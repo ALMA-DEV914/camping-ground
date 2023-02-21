@@ -18,7 +18,7 @@ export default function ParksCard() {
 
   useEffect(() => {
     fetch(
-      `https://developer.nps.gov/api/v1/campgrounds?parkCode=yose&limit=600&api_key=5cLj8vdJGzTYxCGdpR1WhAyQFw5OXf8EI8uimKwF`
+      `https://developer.nps.gov/api/v1/campgrounds?all&limit=600&api_key=5cLj8vdJGzTYxCGdpR1WhAyQFw5OXf8EI8uimKwF`
     )
       .then((response) => {
         if (!response.ok) {
