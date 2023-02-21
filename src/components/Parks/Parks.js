@@ -47,8 +47,11 @@ export default function ParksCard() {
           item[newItem].toString().toLowerCase().indexOf(query.toLowerCase()) >
           -1
         );
+       
       });
+      
     });
+    
   }
 
   if (error) {

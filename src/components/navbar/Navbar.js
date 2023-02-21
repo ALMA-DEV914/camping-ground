@@ -26,7 +26,7 @@ export default function ButtonAppBar() {
           <a href='/campgrounds'>Campgrounds</a>
           <a href='/reviews'>Reviews</a>
          </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit" href='/login'>SIGNUP/LOGIN</Button>
         </Toolbar>
       </AppBar>
     </Box>
