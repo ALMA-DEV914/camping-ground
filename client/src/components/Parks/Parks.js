@@ -18,7 +18,7 @@ export default function ParksCard() {
 
   useEffect(() => {
     fetch(
-      `https://developer.nps.gov/api/v1/campgrounds?all&limit=600&api_key=5cLj8vdJGzTYxCGdpR1WhAyQFw5OXf8EI8uimKwF`
+      `https://developer.nps.gov/api/v1/campgrounds?parkCode=yose&limit=600&api_key=5cLj8vdJGzTYxCGdpR1WhAyQFw5OXf8EI8uimKwF`
     )
       .then((response) => {
         if (!response.ok) {
@@ -47,11 +47,8 @@ export default function ParksCard() {
           item[newItem].toString().toLowerCase().indexOf(query.toLowerCase()) >
           -1
         );
-       
       });
-      
     });
-    
   }
 
   if (error) {
@@ -75,7 +72,7 @@ export default function ParksCard() {
               width: { lg: "1150px", xs: "350px" },
               backgroundColor: "#fff",
               borderRadius: "40px",
-              margin: "-10% auto"
+              margin: "-10% auto",
             }}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
@@ -107,13 +104,13 @@ export default function ParksCard() {
                       </p>
                     ) : null}
                   </div>
-                ))}
-                <p>
-                  <b>Weather: </b> {data.weatherOverview} - {data.latLong}
-                </p>
-                <p>{data.regulationsOverview}</p>
+                ))}<br></br>
+                <p><b>Weather: </b> {data.weatherOverview} - {data.latLong}
+                </p><br></br>
+                
                 <p>{data.reservationInfo}</p>
-                <p>Entrance Fees:</p>
+                <br></br>
+                <p><b>Entrance Fees:</b></p>
                 {data.fees.map((fees, i) => (
                   <li key={i}>
                     {fees.title} - {fees.cost} - {fees.description}
@@ -124,7 +121,7 @@ export default function ParksCard() {
                   <>
                     {operatingHours ? (
                       <>
-                        <h6>Opreating hours</h6>
+                        <p><b>Opreating hours</b></p>
                         <p>
                           It is open all day in standard hours or time.{" "}
                           {operatingHours.name} - {operatingHours.description}{" "}
@@ -139,9 +136,9 @@ export default function ParksCard() {
                       </>
                     ) : null}
                   </>
-                ))}
+                ))}<br></br>
                 <p>
-                  Accessibility - {data.accessibility.adaInfo}{" "}
+                  <b>Accessibility</b> - {data.accessibility.adaInfo}{" "}
                   {data.accessibility.fireStovePolicy}{" "}
                   {data.accessibility.rvAllowed
                     ? data.accessibility.rvAllowed
@@ -157,21 +154,29 @@ export default function ParksCard() {
                   <b>Classifications:</b> {data.accessibility.classifications}
                 </p>
                 <div className="links">
-                  <Link href={data.url} underline="hover" className='button'>{data.url ? <p>Visit the site here </p> : null}</Link>
-                  <Link href={data.directionsUrl} underline="hover" className='button'>
-                    {data.directionsUrl ? (
-                      <p>Get direction here</p>
-                    ) : null}
+                  <Link href={data.url} underline="hover" className="button">
+                    {data.url ? <p>Visit the site here </p> : null}
                   </Link>
-                  <Link href={data.reservationUrl} underline="hover" className='button'>
-                    {data.reservationUrl ? (
-                      <p>Reserved your spot</p>
-                    ) : null}
+                  <Link
+                    href={data.directionsUrl}
+                    underline="hover"
+                    className="button"
+                  >
+                    {data.directionsUrl ? <p>Get direction here</p> : null}
                   </Link>
-                  <Link href={data.regulationsUrl} underline="hover" className='button'>
-                    {data.regulationsUrl
-                      ? <p> Read the regulations</p>
-                      :  null}
+                  <Link
+                    href={data.reservationUrl}
+                    underline="hover"
+                    className="button"
+                  >
+                    {data.reservationUrl ? <p>Reserved your spot</p> : null}
+                  </Link>
+                  <Link
+                    href={data.regulationsUrl}
+                    underline="hover"
+                    className="button"
+                  >
+                    {data.regulationsUrl ? <p> Read the regulations - {data.regulationsUrl} </p>  : <p> Read the regulations - {data.regulationsurl} </p>}
                   </Link>
                 </div>
               </div>
