@@ -7,7 +7,7 @@ import TextField from "@mui/material/TextField";
 import InputLabel from "@mui/material/InputLabel";
 import Button from "@mui/material/Button";
 import { Container } from "@mui/material";
-
+import ReplyAllIcon from '@mui/icons-material/ReplyAll';
 const Login = (props) => {
   const [formState, setFormState] = useState({ email: "", password: "" });
   const [login, { error }] = useMutation(LOGIN_USER);
@@ -46,6 +46,9 @@ const Login = (props) => {
   return (
     <>
     <Container>
+    <Button color="inherit" href="/">
+           <ReplyAllIcon/>  Back to home
+            </Button>
       <Box
         component="form"
         className="formData"
@@ -58,7 +61,7 @@ const Login = (props) => {
             Login failed! Incorrect credentials.
           </div>
         )}
-        <h2 className="text-secondary mb-2 text-center">Signup</h2>
+        <h2 className="text-secondary mb-2 text-center">Login</h2>
         <InputLabel shrink htmlFor="bootstrap-input">
           Email
         </InputLabel>
