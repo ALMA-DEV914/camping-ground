@@ -6,11 +6,46 @@ import Typography  from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import Auth from "../../utils/auth";
+import { Link } from 'react-router-dom';
 
-export default function ButtonAppBar() {
+
+export default function ButtonAppBar() { 
+  const logout = (event) => {
+    event.preventDefault();
+    Auth.logout();
+  };
+
   return (
+    <>
+  
     <Box sx={{ flexGrow: 1}}>
       <AppBar position="static">
+      {Auth.loggedIn() ? (
+        <Toolbar>
+          <IconButton
+            size="large"
+            edge="start"
+            href='/'
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon /> 
+          </IconButton>
+         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <a href='/campgrounds'>Campgrounds</a>
+          <a href='/reviews'>Reviews</a>
+         </Typography>
+          <Button color="inherit" href='/login'>SIGNUP/LOGIN</Button>
+          <Link to="/profile">
+                <Button color="inherit">PROFILE</Button>
+              </Link>
+              <Link href="/" onClick={logout}>
+                <Button color="inherit">LOGOUT</Button>
+              </Link>
+        </Toolbar> ) : (
+        <>
         <Toolbar>
           <IconButton
             size="large"
@@ -28,7 +63,10 @@ export default function ButtonAppBar() {
          </Typography>
           <Button color="inherit" href='/login'>SIGNUP/LOGIN</Button>
         </Toolbar>
+        </>
+        )}
       </AppBar>
     </Box>
+    </>
   );
 }

@@ -8,6 +8,8 @@ import InputLabel from "@mui/material/InputLabel";
 import Button from "@mui/material/Button";
 import { Container } from "@mui/material";
 import ReplyAllIcon from '@mui/icons-material/ReplyAll';
+import { Link } from 'react-router-dom';
+
 const Login = (props) => {
   const [formState, setFormState] = useState({ email: "", password: "" });
   const [login, { error }] = useMutation(LOGIN_USER);
@@ -57,7 +59,7 @@ const Login = (props) => {
         onSubmit={handleFormSubmit}
       >
         {error && (
-          <div className="bg-danger text-white p-2 opacity-75 text-center">
+          <div className="warning">
             Login failed! Incorrect credentials.
           </div>
         )}
@@ -91,8 +93,10 @@ const Login = (props) => {
           id="password"
           value={formState.password}
           onChange={handleChange}
-        />
-      
+        /><br></br>
+       <Button className="submitbtn" type="submit" onSubmit={handleFormSubmit}>
+                Submit
+              </Button>
       <div className="buttons">
         <Button color="inherit" href="/signup" className="btn">
           SIGNUP

@@ -17,17 +17,13 @@ const resolvers = {
     users: async () => {
       return User.find()
         .select("-__v -password")
-        .populate("friends")
-        .populate("bookings")
-        .populate("thoughts");
+        
     },
     // get a user by username
     user: async (parent, { username }) => {
       return User.findOne({ username })
         .select("-__v -password")
-        .populate("friends")
-        .populate("bookings")
-        .populate("thoughts");
+        
     },
   },
   Mutation: {

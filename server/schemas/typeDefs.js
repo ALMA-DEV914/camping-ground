@@ -6,10 +6,7 @@ const typeDefs = gql`
     _id: ID
     username: String
     email: String
-    friendCount: Int
-    thoughts: [Thought]
-    bookings:[Booking]
-    friends: [User]
+    
   }
   type Auth {
     token: ID!
