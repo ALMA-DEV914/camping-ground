@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
-import { useMutation } from '@apollo/client';
-import { LOGIN_USER } from '../../utils/mutations';
-import Auth from '../../utils/auth';
+import React, { useState } from "react";
+import { useMutation } from "@apollo/client";
+import { LOGIN_USER } from "../../utils/mutations";
+import Auth from "../../utils/auth";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import InputLabel from "@mui/material/InputLabel";
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
+import { Container } from "@mui/material";
 
 const Login = (props) => {
-  const [formState, setFormState] = useState({ email: '', password: '' });
-  const [login, {error}] = useMutation(LOGIN_USER);
+  const [formState, setFormState] = useState({ email: "", password: "" });
+  const [login, { error }] = useMutation(LOGIN_USER);
 
   // update state based on form input changes
   const handleChange = (event) => {
@@ -37,27 +38,29 @@ const Login = (props) => {
 
     // clear form values
     setFormState({
-      email: '',
-      password: '',
+      email: "",
+      password: "",
     });
   };
 
   return (
     <>
-    <Box
+    <Container>
+      <Box
         component="form"
-        sx={{
-          "& > :not(style)": { m: 1, width: "25ch" },
-        }}
+        className="formData"
         noValidate
         autoComplete="off"
         onSubmit={handleFormSubmit}
       >
-
-{error && <div className='bg-danger text-white p-2 opacity-75 text-center'>Login failed! Incorrect credentials.</div>}    
+        {error && (
+          <div className="bg-danger text-white p-2 opacity-75 text-center">
+            Login failed! Incorrect credentials.
+          </div>
+        )}
         <h2 className="text-secondary mb-2 text-center">Signup</h2>
         <InputLabel shrink htmlFor="bootstrap-input">
-         Email
+          Email
         </InputLabel>
         <TextField
           label="Outlined secondary"
@@ -86,11 +89,18 @@ const Login = (props) => {
           value={formState.password}
           onChange={handleChange}
         />
-      </Box>
       
-      <Button color="inherit" href="/signup">SIGNUP</Button>
-     
-      <Button color="inherit" href='/login'>LOGIN</Button>
+      <div className="buttons">
+        <Button color="inherit" href="/signup" className="btn">
+          SIGNUP
+        </Button>
+
+        <Button color="inherit" href="/login" className="btn">
+          LOGIN
+        </Button>
+      </div>
+      </Box>
+      </Container>
     </>
   );
 };

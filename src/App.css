@@ -86,4 +86,32 @@ p a{
 .button{
     padding: 8px 16px;
 }
+.formData{
+    margin: 5% auto;
+    width: 50%;
+    
+}
+.formData label{
+    margin: 8px auto;
+}
+
+.form-input{
+    width: 100%;
+   
+}
+.buttons{
+    margin: 5% auto;
+}
+.btn{
+    margin: 0 8px !important;
+    background-color: rgb(19, 128, 97) !important;
+    color: white !important;
+    padding: 12px 16px !important;
+}
+.btn:hover{
+    margin: 0 8px !important;
+    background-color: rgb(19, 106, 128) !important;
+    color: white !important;
+    padding: 12px 16px !important;
+}
 
