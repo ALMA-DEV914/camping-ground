@@ -1,5 +1,5 @@
 import React from 'react';
-import ParksCard from '../../components/Parks/Parks'; 
+import CampgroundsCard from '../../components/Parks/Campgrounds';
 import BannerCamp from '../../components/banner/BannerCamp';
 import ButtonAppBar from '../../components/navbar/Navbar';
 
@@ -8,7 +8,7 @@ export default function CampingGround() {
     <div>
     <ButtonAppBar/>
     <BannerCamp/>
-     <ParksCard/>
+    <CampgroundsCard/>
     </div>
   )
 }

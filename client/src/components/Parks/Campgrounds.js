@@ -4,16 +4,79 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import { Box} from "@mui/material";
+import { Box, TextField } from "@mui/material";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import Link from "@mui/material/Link";
 
-export default function ParksCard() {
+export default function CampgroundsCard() {
   const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [query, setQuery] = useState("");
+
+  // Sample options for search box
+  const myOptions = [
+    "acad",
+    "arch",
+    "badl",
+    "bibe",
+    "bisc",
+    "brca",
+    "cany",
+    "care",
+    "cave",
+    "chis",
+    "cong",
+    "crla",
+    "cuva",
+    "dena",
+    "deva",
+    "drto",
+    "ever",
+    "gaar",
+    "glac",
+    "glba",
+    "grca",
+    "grsa",
+    "grsm",
+    "grte",
+    "gumo",
+    "hale",
+    "havo",
+    "hosp",
+    "indu",
+    "isro",
+    "jeff",
+    "jotr",
+    "katm",
+    "kefj",
+    "kova",
+    "lacl",
+    "lavo",
+    "maca",
+    "meve",
+    "mora",
+    "neri",
+    "noca",
+    "npsa",
+    "olym",
+    "pepo",
+    "pinn",
+    "redw",
+    "romo",
+    "sagu",
+    "seki",
+    "shen",
+    "thro",
+    "viis",
+    "voya",
+  ];
+
+  const [searchParam] = useState(["parkCode", "name"]);
 
   useEffect(() => {
     fetch(
-      `https://developer.nps.gov/api/v1/parks?&limit=10&api_key=5cLj8vdJGzTYxCGdpR1WhAyQFw5OXf8EI8uimKwF`
+      `https://developer.nps.gov/api/v1/campgrounds?all&limit=600&api_key=5cLj8vdJGzTYxCGdpR1WhAyQFw5OXf8EI8uimKwF`
     )
       .then((response) => {
         if (!response.ok) {
@@ -25,20 +88,60 @@ export default function ParksCard() {
       })
       .then((actualData) => {
         console.log(actualData);
-       
+        setIsLoaded(true);
         setData(actualData);
-        
+        setError(null);
       })
       .catch((err) => {
-      
+        setError(err.message);
         setData(null);
       });
   }, []);
 
+  function search(items) {
+    return items.filter((item) => {
+      return searchParam.some((newItem) => {
+        return (
+          item[newItem].toString().toLowerCase().indexOf(query.toLowerCase()) >
+          -1
+        );
+      });
+    });
+  }
+
+  if (error) {
+    return (
+      <p>
+        {error.message}, if you get this error, the free API I used might have
+        stopped working, but I created a simple example that demonstrate how
+        this works.
+      </p>
+    );
+  } else if (!isLoaded) {
+    <div>A moment please...</div>;
+  } else {
     return (
       <Container>
+        <Box position="relative" mb="72px">
+          <TextField
+            height="80px"
+            sx={{
+              input: { fontWeight: "700", border: "none", borderRadius: "4px" },
+              width: { lg: "1150px", xs: "350px" },
+              backgroundColor: "#fff",
+              borderRadius: "40px",
+              margin: "-10% auto",
+            }}
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search Campgrounds by park code"
+            type="search"
+            name="search-form"
+            id="search-form"
+          />
+        </Box>
         <Box sx={{ position: "relative", width: "100%", p: "20px" }}>
-          {data && data.data.map((data, i) => (
+          {search(data && data.data).map((data, i) => (
             <>
               <div key={i} className="parkInfo">
                 <h1 key={data.id}>
@@ -71,9 +174,9 @@ export default function ParksCard() {
                 <p>
                   <b>Entrance Fees:</b>
                 </p>
-                {data.entranceFees.map((entranceFees, i) => (
+                {data.fees.map((fees, i) => (
                   <li key={i}>
-                    {entranceFees.title} - {entranceFees.cost} - {entranceFees.description}
+                    {fees.title} - {fees.cost} - {fees.description}
                   </li>
                 ))}
                 <br></br>
@@ -100,6 +203,22 @@ export default function ParksCard() {
                   </>
                 ))}
                 <br></br>
+                <p>
+                  <b>Accessibility</b> - {data.accessibility.adaInfo}{" "}
+                  {data.accessibility.fireStovePolicy}{" "}
+                  {data.accessibility.rvAllowed
+                    ? data.accessibility.rvAllowed
+                    : null}{" "}
+                  {data.accessibility.rvInfo ? data.accessibility.rvInfo : null}{" "}
+                  {"Wheelchair access is - "}{" "}
+                  {data.accessibility.wheelchairAccess
+                    ? data.accessibility.wheelchairAccess
+                    : null}{" "}
+                  {data.accessibility.accessRoads
+                    ? data.accessibility.accessRoads
+                    : null}{" "}
+                  <b>Classifications:</b> {data.accessibility.classifications}
+                </p>
                 <div className="links">
                   <Link href={data.url} underline="hover" className="button">
                     {data.url ? <p>Visit the site here </p> : null}
@@ -165,4 +284,4 @@ export default function ParksCard() {
       </Container>
     );
   }
-
+}

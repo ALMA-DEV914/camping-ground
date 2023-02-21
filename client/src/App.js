@@ -6,7 +6,6 @@ import Reviews from "./pages/reviews/Reviews";
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
 import Profile from "./pages/profile/Profile";
-
 import {
   ApolloClient,
   InMemoryCache,
@@ -24,6 +23,7 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
+      'Access-Control-Allow-Origin': '*',
       authorization: token ? `Bearer ${token}` : '',
     },
   };

@@ -19,6 +19,8 @@ import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import bird from "../../images/bird.jpeg"
+import { Button } from "@mui/material";
+import ReplyAllIcon from '@mui/icons-material/ReplyAll';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -64,6 +66,10 @@ const Profile = (props) => {
   }
 
   return (
+    <>
+    <Button color="inherit" href="/">
+         <ReplyAllIcon/> Back to home
+        </Button>
     <Card className="profile">
       <CardHeader
         avatar={
@@ -77,7 +83,7 @@ const Profile = (props) => {
           </IconButton>
         }
         title={useParams ? `${user.username}` : 'Hello'}
-        subheader="September 14, 2016"
+        subheader={`${user.email}`}
       />
       <CardMedia
         component="img"
@@ -138,6 +144,7 @@ const Profile = (props) => {
         </CardContent>
       </Collapse>
     </Card>
+    </>
   );
 }
 
