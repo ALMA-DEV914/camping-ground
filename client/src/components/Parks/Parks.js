@@ -13,7 +13,7 @@ export default function ParksCard() {
 
   useEffect(() => {
     fetch(
-      `https://developer.nps.gov/api/v1/parks?&limit=10&api_key=5cLj8vdJGzTYxCGdpR1WhAyQFw5OXf8EI8uimKwF`
+      `https://developer.nps.gov/api/v1/parks?parkCode=yose&api_key=5cLj8vdJGzTYxCGdpR1WhAyQFw5OXf8EI8uimKwF`
     )
       .then((response) => {
         if (!response.ok) {

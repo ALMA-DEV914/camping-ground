@@ -2,14 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, sans-serif;
+    
+}
+p{
+    font-size: 1.2em;
 }
 
 .banner{
     background-image: url('https://wallpaperaccess.com/full/393735.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
+.div-title{
+    padding: 15px;
+    margin-bottom: 5%;
+}
+.title{
+    color: black;
+    position: absolute;
+   background-color: aliceblue;
+   opacity: .8;
+  }
+
 .bannerCamp{
     background-image: url('./images/camping.png');
     background-repeat: no-repeat;
@@ -23,6 +39,17 @@
 .parkInfo{
     padding: 15px;
 }
+.campSearch{
+    padding: 15px;
+    background-color: black;
+}
+.campbox{
+    background-color: bisque;
+    overflow: auto;
+    background: rgb(240, 237, 237);
+    height: 100vh;
+}
+
 .altText{
     font-size: 12px;
 }
@@ -52,16 +79,11 @@
     height: 200px;
     overflow: auto;
 }
-.footer{
-    background-color: black;
-    color: gray;
-    padding: 15px;
-}
 .alert{
     background-color: rgb(134, 67, 67);
     color: white !important;
     overflow: auto;
-    height: 150px;
+    height: 50px;
     text-align: center;
     padding: 15px;
     
@@ -131,4 +153,14 @@ p a{
 .profile{
     width: 60%;
     margin: 5% auto;
+}
+.footer{
+    background-color: black;
+    color: gray;
+    padding: 15px;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.col{
+    margin: 2%;
 }

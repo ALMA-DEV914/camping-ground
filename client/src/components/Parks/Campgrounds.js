@@ -8,75 +8,20 @@ import { Box, TextField } from "@mui/material";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import Link from "@mui/material/Link";
 
+
+
 export default function CampgroundsCard() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [query, setQuery] = useState("");
-
-  // Sample options for search box
-  const myOptions = [
-    "acad",
-    "arch",
-    "badl",
-    "bibe",
-    "bisc",
-    "brca",
-    "cany",
-    "care",
-    "cave",
-    "chis",
-    "cong",
-    "crla",
-    "cuva",
-    "dena",
-    "deva",
-    "drto",
-    "ever",
-    "gaar",
-    "glac",
-    "glba",
-    "grca",
-    "grsa",
-    "grsm",
-    "grte",
-    "gumo",
-    "hale",
-    "havo",
-    "hosp",
-    "indu",
-    "isro",
-    "jeff",
-    "jotr",
-    "katm",
-    "kefj",
-    "kova",
-    "lacl",
-    "lavo",
-    "maca",
-    "meve",
-    "mora",
-    "neri",
-    "noca",
-    "npsa",
-    "olym",
-    "pepo",
-    "pinn",
-    "redw",
-    "romo",
-    "sagu",
-    "seki",
-    "shen",
-    "thro",
-    "viis",
-    "voya",
-  ];
-
   const [searchParam] = useState(["parkCode", "name"]);
+  
+  
 
   useEffect(() => {
     fetch(
-      `https://developer.nps.gov/api/v1/campgrounds?all&limit=600&api_key=5cLj8vdJGzTYxCGdpR1WhAyQFw5OXf8EI8uimKwF`
+      `https://developer.nps.gov/api/v1/campgrounds?limit=50&api_key=5cLj8vdJGzTYxCGdpR1WhAyQFw5OXf8EI8uimKwF`
     )
       .then((response) => {
         if (!response.ok) {
@@ -96,17 +41,20 @@ export default function CampgroundsCard() {
         setError(err.message);
         setData(null);
       });
-  }, []);
+      
+  }, [data]);
+
+  
 
   function search(items) {
     return items.filter((item) => {
       return searchParam.some((newItem) => {
         return (
-          item[newItem].toString().toLowerCase().indexOf(query.toLowerCase()) >
+         item[newItem].toString().toLowerCase().indexOf(query.toLowerCase()) >
           -1
         );
       });
-    });
+   });
   }
 
   if (error) {
@@ -121,8 +69,9 @@ export default function CampgroundsCard() {
     <div>A moment please...</div>;
   } else {
     return (
-      <Container>
-        <Box position="relative" mb="72px">
+      <>
+      <Container className="campSearch">
+      <Box position="relative">
           <TextField
             height="80px"
             sx={{
@@ -130,20 +79,22 @@ export default function CampgroundsCard() {
               width: { lg: "1150px", xs: "350px" },
               backgroundColor: "#fff",
               borderRadius: "40px",
-              margin: "-10% auto",
+              margin: '0% auto'
             }}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search Campgrounds by park code"
+            placeholder="Search Campgrounds by park code or name"
             type="search"
             name="search-form"
             id="search-form"
           />
         </Box>
-        <Box sx={{ position: "relative", width: "100%", p: "20px" }}>
+      </Container>
+      <Container>
+        <Box sx={{ position: "relative", width: "100%", p: "20px" }} className="campbox">
           {search(data && data.data).map((data, i) => (
             <>
-              <div key={i} className="parkInfo">
+            <div key={i} className="parkInfo">
                 <h1 key={data.id}>
                   {data.name} - <span> {data.parkCode}</span>
                 </h1>
@@ -199,7 +150,10 @@ export default function CampgroundsCard() {
                           ))}
                         </p>
                       </>
-                    ) : null}
+                    ) : <div key={i} className="parkInfo">
+                    <h1 key={data.id}>
+                      {data.name} - <span> {data.parkCode}</span>
+                    </h1></div>}
                   </>
                 ))}
                 <br></br>
@@ -278,10 +232,11 @@ export default function CampgroundsCard() {
                   </>
                 ))}
               </div>
-            </>
+              </>
           ))}
         </Box>
       </Container>
+      </>
     );
   }
 }

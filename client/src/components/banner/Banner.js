@@ -9,7 +9,8 @@ export default function Banner() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="xlg" className='banner'>
-      <Box sx={{ height: '60vh'}} />
+      <Box sx={{ height: '60vh'}}/>
+   
      </Container>
     </React.Fragment>
   );

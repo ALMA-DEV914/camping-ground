@@ -4,6 +4,7 @@ import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import { Link } from "@mui/material";
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 const AlertTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} classes={{ popper: className }} />
@@ -45,6 +46,7 @@ export default function Alert() {
 
   return (
     <div className="alert">
+      <ArrowUpwardIcon/>
       {data &&
         data.data.map((data) => (
           <AlertTooltip
@@ -64,6 +66,7 @@ export default function Alert() {
             </Button>
           </AlertTooltip>
         ))}
+        
     </div>
   );
 }
