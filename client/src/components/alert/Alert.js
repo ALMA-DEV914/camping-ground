@@ -24,7 +24,7 @@ export default function Alert() {
 
   useEffect(() => {
     fetch(
-      `https://developer.nps.gov/api/v1/alerts?all&api_key=5cLj8vdJGzTYxCGdpR1WhAyQFw5OXf8EI8uimKwF`
+      `https://developer.nps.gov/api/v1/alerts?stateCode=AK,AZ,AR,CA,CO,CT,DE,FL,GA,HI,ID,IL,IN,IA,KS,KY,LA,ME,MT,MO,MS,MN,MI,MA,NE,NV,NH,NJ,NM,NY,NC,ND,OH,OR,PA,PR,RI,SC,SD,TN,TX,UT,VT,VA,VI,WA,WV,WI,WY&api_key=5cLj8vdJGzTYxCGdpR1WhAyQFw5OXf8EI8uimKwF`
     )
       .then((response) => {
         if (!response.ok) {

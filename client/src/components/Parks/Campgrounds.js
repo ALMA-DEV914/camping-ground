@@ -1,27 +1,20 @@
-import React, { useEffect, useState } from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
+import React, {useState, useEffect} from "react";
 import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
 import { Box, TextField } from "@mui/material";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import Link from "@mui/material/Link";
-
-
 
 export default function CampgroundsCard() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [query, setQuery] = useState("");
-  const [searchParam] = useState(["parkCode", "name"]);
-  
-  
+
+  const [searchParam] = useState(["stateCode", "name"]);
 
   useEffect(() => {
     fetch(
-      `https://developer.nps.gov/api/v1/campgrounds?limit=50&api_key=5cLj8vdJGzTYxCGdpR1WhAyQFw5OXf8EI8uimKwF`
+      `https://developer.nps.gov/api/v1/campgrounds?stateCode=AK,AZ,AR,CA,CO,CT,DE,FL,GA,HI,ID,IL,IN,IA,KS,KY,LA,ME,MT,MO,MS,MN,MI,MA,NE,NV,NH,NJ,NM,NY,NC,ND,OH,OR,PA,PR,RI,SC,SD,TN,TX,UT,VT,VA,VI,WA,WV,WI,WY&api_key=5cLj8vdJGzTYxcGdpR1WhAyQFw5OXf8EI8uimKwF`
     )
       .then((response) => {
         if (!response.ok) {
@@ -42,7 +35,7 @@ export default function CampgroundsCard() {
         setData(null);
       });
       
-  }, [data]);
+  }, [query, data]);
 
   
 
@@ -50,7 +43,7 @@ export default function CampgroundsCard() {
     return items.filter((item) => {
       return searchParam.some((newItem) => {
         return (
-         item[newItem].toString().toLowerCase().indexOf(query.toLowerCase()) >
+         item[newItem].toString().toLowercase().indexOf(query.toLowercase()) >
           -1
         );
       });
@@ -70,37 +63,37 @@ export default function CampgroundsCard() {
   } else {
     return (
       <>
-      <Container className="campSearch">
+      <container className="campSearch">
       <Box position="relative">
           <TextField
             height="80px"
             sx={{
               input: { fontWeight: "700", border: "none", borderRadius: "4px" },
               width: { lg: "1150px", xs: "350px" },
-              backgroundColor: "#fff",
+              backgroundcolor: "#fff",
               borderRadius: "40px",
               margin: '0% auto'
             }}
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search Campgrounds by park code or name"
+            onchange={(e) => setQuery(e.target.value)}
+            placeholder="Search campgrounds by park code or name"
             type="search"
             name="search-form"
             id="search-form"
           />
         </Box>
-      </Container>
-      <Container>
+      </container>
+      <container>
         <Box sx={{ position: "relative", width: "100%", p: "20px" }} className="campbox">
           {search(data && data.data).map((data, i) => (
             <>
             <div key={i} className="parkInfo">
                 <h1 key={data.id}>
-                  {data.name} - <span> {data.parkCode}</span>
+                  {data.name} - <span> {data.parkcode}</span>
                 </h1>
                 <p>
                   {data.description} With the total campsites of{" "}
-                  {data.numberOfSitesFirstComeFirstServe} that offer in first
+                  {data.numberOfSitesFirstcomeFirstServe} that offer in first
                   come first serve basis.
                 </p>
                 <p>{data.directionsOverview ? data.audioDescription : null}</p>
@@ -109,7 +102,7 @@ export default function CampgroundsCard() {
                     {addresses ? (
                       <p>
                         {addresses.city} - {addresses.line1} - {addresses.line2}{" "}
-                        - {addresses.postalCode} - {addresses.type}
+                        - {addresses.postalcode} - {addresses.type}
                       </p>
                     ) : null}
                   </div>
@@ -152,26 +145,26 @@ export default function CampgroundsCard() {
                       </>
                     ) : <div key={i} className="parkInfo">
                     <h1 key={data.id}>
-                      {data.name} - <span> {data.parkCode}</span>
+                      {data.name} - <span> {data.parkcode}</span>
                     </h1></div>}
                   </>
                 ))}
                 <br></br>
                 <p>
-                  <b>Accessibility</b> - {data.accessibility.adaInfo}{" "}
-                  {data.accessibility.fireStovePolicy}{" "}
-                  {data.accessibility.rvAllowed
-                    ? data.accessibility.rvAllowed
+                  <b>Acessibility</b> - {data.acessibility.adaInfo}{" "}
+                  {data.acessibility.fireStovePolicy}{" "}
+                  {data.acessibility.rvAllowed
+                    ? data.acessibility.rvAllowed
                     : null}{" "}
-                  {data.accessibility.rvInfo ? data.accessibility.rvInfo : null}{" "}
-                  {"Wheelchair access is - "}{" "}
-                  {data.accessibility.wheelchairAccess
-                    ? data.accessibility.wheelchairAccess
+                  {data.acessibility.rvInfo ? data.acessibility.rvInfo : null}{" "}
+                  {"Wheelchair acess is - "}{" "}
+                  {data.acessibility.wheelchairAcess
+                    ? data.acessibility.wheelchairAcess
                     : null}{" "}
-                  {data.accessibility.accessRoads
-                    ? data.accessibility.accessRoads
+                  {data.acessibility.acessRoads
+                    ? data.acessibility.acessRoads
                     : null}{" "}
-                  <b>Classifications:</b> {data.accessibility.classifications}
+                  <b>classifications:</b> {data.acessibility.classifications}
                 </p>
                 <div className="links">
                   <Link href={data.url} underline="hover" className="button">
@@ -209,13 +202,13 @@ export default function CampgroundsCard() {
                 <DoubleArrowIcon /> Scroll left to see more images
                 {data.images.map((images, i) => (
                   <>
-                    <Card key={images.id} className="cards">
-                      <CardMedia
+                    <card key={images.id} className="cards">
+                      <cardMedia
                         sx={{ height: 140 }}
                         image={images.url}
                         title={images.title}
                       />
-                      <CardContent key={images.id}>
+                      <cardcontent key={images.id}>
                         <Typography gutterBottom variant="h6" component="div">
                           {images.altText}
                         </Typography>
@@ -227,16 +220,18 @@ export default function CampgroundsCard() {
                           <br></br>
                           {images.caption} - photo credit from {images.credit}
                         </Typography>
-                      </CardContent>
-                    </Card>
+                      </cardcontent>
+                    </card>
                   </>
                 ))}
               </div>
               </>
           ))}
         </Box>
-      </Container>
+      </container>
       </>
     );
   }
 }
+
+

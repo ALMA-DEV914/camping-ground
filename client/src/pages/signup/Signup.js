@@ -64,8 +64,8 @@ const Signup = () => {
             </div>
           )}
           <br></br>
-          <h2 className="text-secondary mb-2 text-center">Signup</h2>
-          <InputLabel shrink htmlFor="bootstrap-input">
+          <h2>Signup</h2>
+          <InputLabel shrink htmlFor="bootstrap-input" className="label">
             Username
           </InputLabel>
           <TextField
@@ -80,7 +80,7 @@ const Signup = () => {
             value={formState.username}
             onChange={handleChange}
           />
-          <InputLabel shrink htmlFor="bootstrap-input">
+          <InputLabel shrink htmlFor="bootstrap-input" className="label">
             Email
           </InputLabel>
           <TextField
@@ -95,7 +95,7 @@ const Signup = () => {
             value={formState.email}
             onChange={handleChange}
           />
-          <InputLabel shrink htmlFor="bootstrap-input">
+          <InputLabel shrink htmlFor="bootstrap-input" className="label">
             Password
           </InputLabel>
           <TextField

@@ -63,8 +63,8 @@ const Login = (props) => {
             Login failed! Incorrect credentials.
           </div>
         )}
-        <h2 className="text-secondary mb-2 text-center">Login</h2>
-        <InputLabel shrink htmlFor="bootstrap-input">
+        <h2>Login</h2>
+        <InputLabel shrink htmlFor="bootstrap-input" className="label">
           Email
         </InputLabel>
         <TextField
@@ -79,7 +79,7 @@ const Login = (props) => {
           value={formState.email}
           onChange={handleChange}
         />
-        <InputLabel shrink htmlFor="bootstrap-input">
+        <InputLabel shrink htmlFor="bootstrap-input" className="label">
           Password
         </InputLabel>
         <TextField

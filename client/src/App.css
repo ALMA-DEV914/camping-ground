@@ -8,6 +8,13 @@
 p{
     font-size: 1.2em;
 }
+h1{
+    margin: 3% auto;
+}
+h2{
+    text-align: center;
+    font-size: 25px;
+}
 
 .banner{
     background-image: url('https://wallpaperaccess.com/full/393735.jpg');
@@ -36,18 +43,28 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.parkInfo{
-    padding: 15px;
+.btn-link{
+    font-size: 25px;
+    align-items: center !important;
+    color: #000;
+    
+}
+img{
+    width: 50px;
+   
+    align-items: center;
 }
 .campSearch{
     padding: 15px;
     background-color: black;
+    border-radius: 20px;
 }
 .campbox{
     background-color: bisque;
     overflow: auto;
     background: rgb(240, 237, 237);
     height: 100vh;
+    margin: 5% auto;
 }
 
 .altText{
@@ -123,6 +140,10 @@ p a{
 .form-input{
     width: 100%;
    
+}
+.label{
+    font-size: 1.5em !important;
+    font-weight: bold !important;
 }
 .buttons{
     margin: 5% auto;

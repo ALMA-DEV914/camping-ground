@@ -9,9 +9,7 @@ export default function CampingGround() {
     <div>
       <ButtonAppBar />
       <BannerCamp />
-
-      <CampgroundsCard />
-
+      <CampgroundsCard/>
       <Footer />
     </div>
   );

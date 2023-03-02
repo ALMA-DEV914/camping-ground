@@ -8,7 +8,7 @@ import Footer from "../../components/footer/Footer";
 export default function Home() {
   return (
     <div>
-       <Alert />
+      <Alert/>
       <ButtonAppBar />
       <Banner />
      <ParksCard/>
