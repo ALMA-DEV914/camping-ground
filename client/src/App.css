@@ -44,21 +44,16 @@ h2{
     background-size: cover;
 }
 .btn-link{
-    font-size: 25px;
-    align-items: center !important;
+    font-size: 22px;
     color: #000;
-    
+      
 }
+
 img{
     width: 50px;
-   
-    align-items: center;
+    height: 30px;
 }
-.campSearch{
-    padding: 15px;
-    background-color: black;
-    border-radius: 20px;
-}
+
 .campbox{
     background-color: bisque;
     overflow: auto;
@@ -185,3 +180,4 @@ p a{
 .col{
     margin: 2%;
 }
+

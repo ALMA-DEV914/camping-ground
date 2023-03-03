@@ -33,7 +33,8 @@ export default function ButtonAppBar() {
             <MenuIcon /> 
           </IconButton>
          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          <a href='/campgrounds'>Campgrounds</a>
+          <a href='/about'>About</a>
+          <a href='/faq'>Faq</a>
           <a href='/reviews'>Reviews</a>
          </Typography>
           <Button color="inherit" href='/login'>SIGNUP/LOGIN</Button>
@@ -57,7 +58,8 @@ export default function ButtonAppBar() {
             <MenuIcon /> 
           </IconButton>
          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          <a href='/campgrounds'>Campgrounds</a>
+         <a href='/about'>About</a>
+          <a href='/faq'>Faq</a>
           <a href='/reviews'>Reviews</a>
          </Typography>
           <Button color="inherit" href='/login'>SIGNUP/LOGIN</Button>
