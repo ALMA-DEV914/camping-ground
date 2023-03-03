@@ -1,36 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, sans-serif;
-    
+    font-family: 'Shantell Sans', cursive;
 }
 p{
     font-size: 1.2em;
 }
 h1{
     margin: 3% auto;
+    text-align: center;
+    color: rgb(14, 114, 114);
 }
 h2{
     text-align: center;
     font-size: 25px;
+    margin: 3% auto;
+}
+h2 span{
+    font-size: 18px;
+    color: rgb(158, 156, 153);
 }
 
 .banner{
     background-image: url('https://wallpaperaccess.com/full/393735.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+.about{
+    background-color: rgb(237, 241, 241);
+    padding: 15px;
+    text-align: left;
+}
+.about-info{
+    margin: 3% auto;
+    padding: 15px;
+}
+h3{
     
+    color: rgb(10, 79, 79);
+}
+.pricing{
+    background-color: rgb(195, 235, 216);
+    padding: 15px;
+    text-align: left;
+}
+.features{
+    background-color: rgb(208, 220, 237);
+    padding: 15px;
+    text-align: left;
 }
 .div-title{
     padding: 15px;
     margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
 }
-.title{
+.div-title button{
     color: black;
     position: absolute;
    background-color: aliceblue;
-   opacity: .8;
+   padding: 8px 24px;
+   width: 25%;
+   
   }
 
 .bannerCamp{
@@ -43,12 +76,9 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.btn-link{
-    font-size: 22px;
-    color: #000;
-      
+.backBtn{
+    color: rgb(10, 78, 78);
 }
-
 img{
     width: 50px;
     height: 30px;
@@ -60,6 +90,21 @@ img{
     background: rgb(240, 237, 237);
     height: 100vh;
     margin: 5% auto;
+}
+.box-info{
+    margin: 8% auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scrolled{
+    padding: 15px !important;
+    display: block; 
+}
+.paper{
+    padding: 15px;
+    width: 33%;
+    line-height: 1.8em;
 }
 
 .altText{
@@ -74,32 +119,7 @@ img{
     padding: 15px;
     margin-bottom: 5%;
 }
- h1{
-    text-align: center;
-    color: rgb(14, 114, 114);
-}
-.cards{
-    width: 100%;
-    margin: 5px 5px;
-    height: 400px;
-}
-.activityList{
-    column-count: 4;
-    background-color: aliceblue;
-    padding: 15px;
-    margin: 3% auto;
-    height: 200px;
-    overflow: auto;
-}
-.alert{
-    background-color: rgb(134, 67, 67);
-    color: white !important;
-    overflow: auto;
-    height: 50px;
-    text-align: center;
-    padding: 15px;
-    
-}
+ 
 a{
    color: aliceblue;
     text-decoration: none;
@@ -111,12 +131,7 @@ a:hover{
 p a{
     color: blue;
 }
-.links{
-    display: flex;
-    width: 100%;
-    background-color: azure;
-    
-}
+
 .btnlink{
     color: white ;
 }
@@ -178,6 +193,5 @@ p a{
     justify-content: space-between !important;
 }
 .col{
-    margin: 2%;
+    margin: 3%;
 }
-

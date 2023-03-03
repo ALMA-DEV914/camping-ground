@@ -7,6 +7,7 @@ const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/conection');
 const path = require('path');
 
+
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -44,6 +45,7 @@ app.get('*', (req, res) => {
 });
 
 db.once('open', () => {
+  console.log("Connected to database")
   app.listen(PORT, () => {
     console.log(`API server running on port ${PORT}!`);
   });
