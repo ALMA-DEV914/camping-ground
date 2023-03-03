@@ -85,12 +85,6 @@ const Profile = (props) => {
         title={useParams ? `${user.username}` : 'Hello'}
         subheader={`${user.email}`}
       />
-      <CardMedia
-        component="img"
-        height="194"
-        image={bird}
-        alt="Paella dish"
-      />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           This impressive paella is a perfect party dish and a fun meal to cook

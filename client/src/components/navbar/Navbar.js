@@ -30,14 +30,13 @@ export default function ButtonAppBar() {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <MenuIcon /> 
+            CAMPTRACK⛺️
           </IconButton>
          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           <a href='/about'>About</a>
           <a href='/faq'>Faq</a>
           <a href='/reviews'>Reviews</a>
          </Typography>
-          <Button color="inherit" href='/login'>SIGNUP/LOGIN</Button>
           <Link to="/profile">
                 <Button color="inherit">PROFILE</Button>
               </Link>

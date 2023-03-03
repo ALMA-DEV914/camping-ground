@@ -14,7 +14,6 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-import Park from "./components/Parks/Park";
 import Faq from "./pages/faq/Faq";
 
 const httpLink = createHttpLink({
@@ -45,7 +44,6 @@ function App() {
        <Router>
         <Routes>
           <Route exact path="/" element={<Home/>} />
-          <Route exact path="/park/:id" element={<Park />} />
           <Route exact path="/faq" element={<Faq/>} />
           <Route exact path="/about" element={<About/>} />
           <Route exact path="/reviews" element={<Reviews/>} />
