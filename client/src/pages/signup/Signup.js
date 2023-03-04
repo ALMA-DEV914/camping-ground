@@ -7,16 +7,16 @@ import TextField from "@mui/material/TextField";
 import InputLabel from "@mui/material/InputLabel";
 import Button from "@mui/material/Button";
 import { Container } from "@mui/material";
-import ReplyAllIcon from '@mui/icons-material/ReplyAll';
-import { Link } from 'react-router-dom';
+import ReplyAllIcon from "@mui/icons-material/ReplyAll";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   const [formState, setFormState] = useState({
     username: "",
     email: "",
     password: "",
-});
-const [addUser, { error }] = useMutation(ADD_USER);
+  });
+  const [addUser, { error }] = useMutation(ADD_USER);
 
   // update state based on form input changes
   const handleChange = (event) => {
@@ -47,7 +47,7 @@ const [addUser, { error }] = useMutation(ADD_USER);
     <>
       <Container>
         <Button color="inherit" href="/">
-         <ReplyAllIcon/> Back to home
+          <ReplyAllIcon /> Back to home
         </Button>
         <Box
           component="form"
@@ -57,9 +57,7 @@ const [addUser, { error }] = useMutation(ADD_USER);
           className="formData"
         >
           {error && (
-            <div className="warning">
-              Signup failed! Incorrect credentials.
-            </div>
+            <div className="warning">Signup failed! Incorrect credentials.</div>
           )}
           <br></br>
           <h2>Signup</h2>
@@ -93,6 +91,7 @@ const [addUser, { error }] = useMutation(ADD_USER);
             value={formState.email}
             onChange={handleChange}
           />
+      
           <InputLabel shrink htmlFor="bootstrap-input" className="label">
             Password
           </InputLabel>
@@ -108,9 +107,14 @@ const [addUser, { error }] = useMutation(ADD_USER);
             value={formState.password}
             onChange={handleChange}
           />
-       <Button className="submitbtn" type="submit" onSubmit={handleFormSubmit}>
-                Submit
-              </Button>
+          <br></br>
+          <Button
+            className="submitbtn"
+            type="submit"
+            onSubmit={handleFormSubmit}
+          >
+            Submit
+          </Button>
           <div className="buttons">
             <Button color="inherit" href="/signup" className="btn">
               SIGNUP

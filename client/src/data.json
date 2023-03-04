@@ -1,0 +1,395 @@
+[{
+    "name":"Yosemite National Park",
+    "states": "#1 in Best National Parks in the World - California ",
+    "description":"One of California's most formidable natural landscapes, Yosemite National Park features nearly 1,200 square miles of sheer awe: towering waterfalls, millennia-old sequoia trees, striking, daunting cliff faces and some of the most unique rock formations in the United States. But despite its enormous size, most of the tourist activity takes place within the 8-square-mile area of Yosemite Valley. Here you'll find the park's most famous landmarks – Half Dome and El Capitan – as well as excellent hiking trails through the natural monuments. Even inexperienced hikers can enjoy Yosemite: Guided tours and climbing lessons are available from local adventure outfitters (such as those featured on our list of the best California tours). Just don't expect to experience it by yourself. Like so many other American tourist destinations, crowds are the biggest obstacles to an enjoyable Yosemite vacation – approximately 4 million people visit each year. But if you go at the right time (and start your day a little earlier than usual), Mother Nature's wonders will reveal themselves to you in a miraculous and serene way.",
+    "subText": "If you can secure a campsite at one of the campgrounds in this area, it will save you an incredible amount of driving time. Here are some famous campgrounds in Yosemite: ",
+    "image":"https://images.pexels.com/photos/144251/yosemite-national-park-landscape-california-144251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
+    "campgrounds": [{
+    "campName": "North Pines Campground",
+    "description":"This campground opens in April and closes in early November.Set amid towering pines, granite cliff walls, and alongside a rushing river, North Pines Campground has a beautiful setting, a fantastic location, and a woodsy feel.Located at the far end of the Yosemite Valley, near Curry Village, you can walk right from this campground to some nearby hiking trails.For summer 2022, a test lottery system was put in place for bookings at North Pines between July 21st and September 14. The window ran from January 18th to February 6th. Successful applicants were granted the ability to book one site during a specific access window date and time.",
+    "image":"https://images.pexels.com/photos/733162/pexels-photo-733162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+},
+{
+    "campName": "Upper Pines Campground",
+    "description":"With 238 campsites, Upper Pines Campground is the largest of the three campgrounds in the Yosemite Valley. Divided into a number of individual loops, this doesn't feel like a huge campground, and finding your way around is easy. Clumps of large pines and cedars provide a mix of shade and sun, and in between are views to the surrounding valley walls.Most sites are quite open and offer little privacy. You can easily walk from here to the start of several trailheads.Sites are smaller than those at North Pines Campground, and equipment lengths are restricted to 35 feet for RVs and 24 feet for trailers. This campground is open year-round. Site are reservable up to five months in advance and released in a block on the 15th of the month; however, this may change in 2023 as the park moves to a lottery system.",
+    "image":"https://images.pexels.com/photos/542385/pexels-photo-542385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+},
+{
+    "campName": "Lower Pines Campground",
+    "description":"Lower Pines is the smallest of the three campgrounds near Curry Village. With a mix of pines and deciduous trees, this is a very pleasant campground, with views in all directions. Sites in the center are quite open and exposed, with more private and well-treed sites along the edges.One side of the campground runs along the river. In the spring, the campground is prone to flooding, and sites in this area are sometimes closed due to flooding. If you have reserved a site along this side in May or June on a year when the river is high, your reservation may be cancelled, leaving you scrambling to find a place to stay at the last minute.This campground has 60 sites and is open from mid April to late October. RVs up to 40 feet in length and trailers up to 35 feet are accepted. You can reserve sites up to five months in advance. Sites are released in a block on the 15th of the month, but as mentioned above, this may change in 2023, as the park moves to a lottery system.",
+    "image":"https://images.pexels.com/photos/13390754/pexels-photo-13390754.jpeg?auto=compress&cs=tinysrgb&w=1600"
+},
+{
+    "campName": "Camp 4",
+    "description":"Camp 4 is legendary among rock climbers. In the 1960s and 1970s, famous climbers camped out here throughout the climbing season, including such famous names as Royal Robbins and Warren Harding. The history of this particular campground is so important in the history of rock climbing that the campground is listed on the National Register of Historic Places. From mid-May to mid-September, campsites are assigned via an online lottery system one day in advance of your desired night. You will need to pay a $10 fee and register on a per-person basis and camp with whoever is assigned to the six-person campsite with you.From mid February through to mid-May, the campground operates on a first-come, first-served basis.",
+    "image":"https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg?auto=compress&cs=tinysrgb&w=1600"
+},
+{
+    "campName": "Tuolumne Meadows Campground",
+    "description":"If you are visiting the park in summer and interested in exploring the hikes and sites along the Tioga Road, Tuolumne Meadows Campground is a good choice. The elevation here is 8,600 feet, so even in summer, nights can be very cool. The Tioga Road is closed in winter, and this campground generally doesn't open until July and closes in September. The campground can accommodate tents, RVs, and trailers up to 35 feet. The 304 sites are a mix of first-come, first-served and reservable. Reservable sites can be booked up to five months in advance, and sites are released on the 15th of each month. The campground has flush toilets and potable water but no hookups.",
+    "image":"https://images.pexels.com/photos/7878831/pexels-photo-7878831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+},
+{
+    "campName": "Summerdale Campground",
+    "description":"About 1.5 miles outside the south entrance to the park on Highway 41 is the privately run Summerdale Campground. Sites are scattered around a central meadow and set among cottonwoods, cedars, and sugar pines. A river flows along one side of the campground.The campground offers 30 basic sites and vault toilets, and water is available. Each site has a picnic table and fire ring. Pets are welcome. Sites are reservable six months in advance on a rolling date basis.",
+    "image":"https://images.pexels.com/photos/542704/pexels-photo-542704.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+},
+{
+    "campName": "Wawona Campground",
+    "description":"The campground's 93 sites can accommodate tents, RVs, and trailers up to 35 feet in length.Reservations are available five months in advance April through September, and sites are released on a block basis on the 15th of each month. Sites are first-come, first-served from October to April.Nearby attractions include the Mariposa Grove, with a grove of giant sequoias, and the Pioneer Yosemite History Center. Located near the south entrance along Highway 41, on the road entering the park from the direction of Fresno, Wawona is almost an hour drive from Yosemite Valley, and longer if you run into traffic jams and congestion. However, if you can't secure camping in the valley, this is the next best alternative if you want a campsite you can reserve.The campground is set alongside the South Fork Merced River, and sites are spread out among pines. The elevation here is around 4,000 feet.",
+    "image":"https://images.pexels.com/photos/36363/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+},
+{
+    "campName": "Hodgdon Meadow Campground",
+    "description":"On Highway 140, heading towards Merced, the privately run Indian Flat RV Park is a good option if you can't find a campsite in the park or are looking for more amenities.The park offers 25 tent and 25 RV sites, some with full hookups, and guests can access the outdoor pool at the neighboring lodge. Large, leafy trees provide plenty of shade and a woodsy atmosphere. Generators are not allowed. Reservations can be made up to one year in advance and are recommended for the high season.",
+    "image":"https://images.pexels.com/photos/580151/pexels-photo-580151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+},
+{
+    "campName": "Tents and Cabins at Curry Village",
+    "description":"Although it's more expensive than bringing your own equipment and renting a campsite, you can rent canvas tent cabins or small, rustic cabins at Curry Village.A total of 319 cabins are available. They are closely spaced but are in a great location. Rustic wooden cabins are outfitted in a similar fashion. Of the 70 available, 56 have running water and bathrooms. All have heat and electrical outlets. For those 14 cabins without bathrooms, showers and washrooms are shared with the nearby tent campers. These cabins also come with daily housekeeping service.",
+    "image":"https://images.pexels.com/photos/15656391/pexels-photo-15656391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+},
+{
+    "campName": "Indian Flat RV Park",
+    "description":"On Highway 140, heading towards Merced, the privately run Indian Flat RV Park is a good option if you can't find a campsite in the park or are looking for more amenities. The park offers 25 tent and 25 RV sites, some with full hookups, and guests can access the outdoor pool at the neighboring lodge. Large, leafy trees provide plenty of shade and a woodsy atmosphere. Generators are not allowed. Reservations can be made up to one year in advance and are recommended for the high season.",
+    "image":"https://images.pexels.com/photos/533881/pexels-photo-533881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+}]
+
+},
+    
+ {"name":"Yellowstone National Park",
+ "states": "#1 in Best Cheap Family Vacations - WYOMING, MONTANA and IDAHO",
+  "description":"With dramatic peaks and pristine lakes, Yellowstone National Park is an outdoor enthusiast's paradise. Multicolored pools swirl around hot springs; verdant forests weave past expansive meadows; and volatile geysers launch streams of steaming water toward the sky. With so much unspoiled natural beauty, it's no wonder why everyone suspected John Colter (a scout for explorers Lewis and Clark) was embellishing when he first described Yellowstone's geothermal curiosities in 1807. Nowadays, there's no doubt that the park is indeed extraordinary. While you traverse its 3,000-plus square miles of mountains, canyons, geysers and waterfalls, be prepared to share the trails with permanent residents like buffalo, elk and sometimes even grizzlies. ",
+  "image":"https://images.pexels.com/photos/534398/pexels-photo-534398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
+  "campgrounds": [{
+    "campName": "",
+    "description":"",
+    "image":""
+},
+{
+    "campName": "",
+    "description":"",
+    "image":""
+},
+{
+    "campName": "",
+    "description":"",
+    "image":""
+},
+{
+    "campName": "",
+    "description":"",
+    "image":""
+},
+{
+    "campName": "",
+    "description":"",
+    "image":""
+},
+{
+    "campName": "",
+    "description":"",
+    "image":""
+}
+
+]},
+    
+ 
+ {"name":"Grand Canyon National Park ",
+ "states": "#1 in Best Day Trips from Phoenix - ARIZONA",
+ "description":"Grand doesn't begin to do this canyon justice. Measuring approximately 277 river miles in length, up to 18 miles in width and a mile deep, this massive chasm in northern Arizona is truly a natural wonder. For 6 million years, the Grand Canyon has expanded with the help of the mighty Colorado River, and for centuries, people from all over the globe have traveled to gaze out over its red and orange grandeur. Managed by the National Park Service and officially designated as a UNESCO World Heritage Site, the Grand Canyon leaves its approximately 6 million visitors per year awestruck.",
+  "image":"https://images.pexels.com/photos/4452121/pexels-photo-4452121.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
+  "campgrounds": [{
+    "campName": "",
+    "description":"",
+    "image":""
+},
+{
+    "campName": "",
+    "description":"",
+    "image":""
+},
+{
+    "campName": "",
+    "description":"",
+    "image":""
+},
+{
+    "campName": "",
+    "description":"",
+    "image":""
+},
+{
+    "campName": "",
+    "description":"",
+    "image":""
+},
+{
+    "campName": "",
+    "description":"",
+    "image":""
+}
+
+]
+},
+    
+ 
+ {"name":" Great Smoky Mountains National Park",
+ "states": "#2 in Best Places to Visit in the Carolinas - CAROLINA",
+ "description":"Great Smoky Mountains National Park spans both Tennessee and North Carolina, with the border running through the center of the 522,427-acre tract. The mountains have a long history of human settlers from the prehistoric Paleo Indians to 19th-century European settlers. Today, more than 10 million people visit the park each year – it's one of the few free national parks in America – to enjoy scenic drives to Cades Cove or along the Roaring Fork Motor Nature Trail and outdoor activities like hiking, biking and fishing. Pack a picnic for stunning hikes to Abrams or Rainbow Falls, or bike the Cades Cove Loop on Wednesdays between May and September when the road is closed to traffic. Explore the historic gristmill and Cable Mill at the Cades Cove Visitor Center or stop by Sugarlands Visitor Center to see wildlife exhibits, view a film about the park and pick up unique souvenirs at the gift shop.",
+ "image":"https://images.pexels.com/photos/547120/pexels-photo-547120.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
+ "campgrounds": [{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+}
+
+]},
+    
+ {"name":"Zion National Park",
+ "states": "#2 in Best Fall Vacations - UTAH",
+ "description":"Named for the Hebrew word 'refuge', Zion National Park – nestled in Utah's southwest corner – is no longer the quiet sanctuary it once was. The park is now one of the most visited in the country, welcoming more than four million visitors per year. It's as if travelers stumbled upon a secret and can't get enough of the apricot-colored Zion Canyon, which they can view wading through its Virgin River or ascending Angels Landing, with each bend in the river or turn in the trail affording an even more breathtaking view. Plus, the blanket of stars that illuminates the night sky is a welcome nightcap to a day filled with active pursuits. And when it's time to come back from the refuge to reality, the 166-mile drive from Las Vegas or the 308-mile drive from Salt Lake City is just about the right amount of time to process all the beauty you just experienced.",
+ "image":"https://images.pexels.com/photos/2872940/pexels-photo-2872940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
+ "campgrounds": [{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+}
+
+]},
+ {"name":"Rocky Mountain National Park",
+ "states": "#2 in Best Places to Visit in Colorado - COLORADO",
+ "description":"At roughly 265,000 acres, Rocky Mountain National Park isn't the country's largest national park, nor is it the most-frequented with about 4 million annual visitors (compared to Great Smoky Mountains National Park's more than 12 million visitors). But there is something definitively magical about RMNP, which rises 14,259 feet into the Colorado sky at its highest point, Longs Peak. The main attraction is hiking the park's 350-some miles of trails that wind through pine and spruce forests, glittering alpine lakes, swaths of wildflowers and, if you're lucky, some elk or bighorn sheep. And maybe it's the thinner atmosphere that goes to visitors' heads, but even the most jaded report feelings of awe and wonder after a day or two of breathing in that refreshing mountain air. ",
+ "image":"https://images.pexels.com/photos/4107412/pexels-photo-4107412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
+ "campgrounds": [{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+}
+
+]},
+   
+ {"name":"Acadia National Park",
+ "states": "MAINE",
+ "description":"Acadia National Park was America’s sixth most visited national park in 2021 rising two spots from 2020. In 2021 Acadia National Park saw 1.4 million more visitors than it did in 2020.Along the rocky shores of Maine’s coast you’ll find this easternmost national park. Once the exclusive domain of the gilded age elite, a few civic-minded residents decided to make Acadia’s beauty available to all Americans by donating the land to the national park service – and boy are we glad they did. With rounded mountains, shimmering lakes (called ponds here) , rugged coastline, and forests dotted with old stone roads and trails this New England national park is a real treasure.",
+ "image":"https://images.pexels.com/photos/5480824/pexels-photo-5480824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
+ "campgrounds": [{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+}
+
+]},
+ 
+ {"name":"Olympic National Park",
+ "states": "WASHINGTON",
+ "description":"Despite being ranked the best national park in America, Olympic National Park fell out of the top ten most visited national parks in 2021 to the twelfth most visited park. Olympic National Park is the most diverse national park in America, hands down. This park has everything from lowland forests, striking mountain ranges, pristine alpine lakes, sparkling rivers, temperate rainforests (the largest in North America), iconic wildlife, and over 50 miles of wild coastline! Oh, and it’s a stones throw from Seattle! Olympic National Park truly has it all and without the crowds that have become so insidious in other US national parks in recent years – which is why we rank this Pacific Northwest gem as the best national park in America.",
+ "image":"https://images.pexels.com/photos/7042875/pexels-photo-7042875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
+ "campgrounds": [{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+}
+
+]},
+    
+  
+ {"name":"Grand Teton National Park",
+ "states": "#3 in Best Cheap Vacations in the U.S. - WYOMING ",
+ "description":"Towering above Jackson Hole Valley with jagged snow-topped peaks, Wyoming's majestic Teton Mountains are in high relief at Grand Teton National Park. From the 13,770-foot Grand Teton to the glittering Jenny and Jackson lakes – which reflect the mountains in their depths – the photo-ops are endless. But the park isn't just for mountaineers and photographers. In the peak summer season, the area's trails call to hikers of all abilities and reveal gems like hidden waterfalls and breathtaking views of the Tetons. Meanwhile, the Snake River appeals to kayakers, rafters and those who simply fancy a float. Historic districts like Menors Ferry and Mormon Row attract history buffs interested in the 19th-century past of this piece of Western Frontier. ",
+ "image":"https://images.pexels.com/photos/12890090/pexels-photo-12890090.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
+ "campgrounds": [{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+},
+{
+   "campName": "",
+   "description":"",
+   "image":""
+}
+
+]},
+    
+ 
+ {"name":"Glacier National Park",
+ "states": "#1 in Best Cheap Summer Vacations - MONTANA",
+ "description":"Aside from its breathtaking geological features, it's also home to a fair amount of history. The Going-to-the-Sun Road – a scenic, 50-mile drive through the park – is a National Historic Landmark and an engineering marvel that offers spectacular views, as well as access to popular hiking trails. Plus, many of the park's lodges, chalets and hotels were constructed by the Great Northern Railway in the early 20th century and are on the National Register of Historic Places. Care to visit a UNESCO World Heritage Site? You'll find that here, too: the Waterton-Glacier International Peace Park. Named for the remnants of glaciers from the ice age, Glacier National Park is located on the border of Canada and Montana. It is often called the 'Crown of the Continent', because of its dizzying array of natural beauty. ",
+  "image":"https://images.pexels.com/photos/6108440/pexels-photo-6108440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
+  "campgrounds": [{
+    "campName": "",
+    "description":"",
+    "image":""
+},
+{
+    "campName": "",
+    "description":"",
+    "image":""
+},
+{
+    "campName": "",
+    "description":"",
+    "image":""
+},
+{
+    "campName": "",
+    "description":"",
+    "image":""
+},
+{
+    "campName": "",
+    "description":"",
+    "image":""
+},
+{
+    "campName": "",
+    "description":"",
+    "image":""
+}
+
+]}]

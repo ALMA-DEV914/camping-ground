@@ -24,14 +24,14 @@ h2 span{
 }
 
 .banner{
-    background-image: url('https://wallpaperaccess.com/full/393735.jpg');
+    background-image: url('https://images.pexels.com/photos/131720/pexels-photo-131720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-repeat: no-repeat;
     background-size: cover;
 }
 .about{
     background-color: rgb(237, 241, 241);
     padding: 15px;
-    text-align: left;
+    text-align: center;
 }
 .about-info{
     margin: 3% auto;
@@ -51,39 +51,44 @@ h3{
     padding: 15px;
     text-align: left;
 }
+
 .div-title{
     padding: 15px;
     margin-bottom: 5%;
-    background-color: green;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 20px;
+     
 }
-
-.div-title button{
-    color: black;
-   background-color: aliceblue;
-   padding: 8px 24px;
-  width: 25%;
-  }
+.cards{
+    padding: 15px;
+    
+}
+.camp-image{
+    width: 400px;
+}
+.div-camps{
+    display: flex ;
+    padding: 15px;
+    justify-content: space-between;
+    
+}
+.div-camps div{
+    margin: 2%;
+}
 
 .bannerCamp{
-    background-image: url('./images/camping.png');
-    background-repeat: no-repeat;
+    background-image: url('./images/2.jpg');
     background-size: cover;
+    height: 100vh;
 }
 .bannerReview{
-    background-image: url('./images/reviews.png');
-    background-repeat: no-repeat;
+    background-image: url('https://images.pexels.com/photos/131720/pexels-photo-131720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+   
     background-size: cover;
 }
 .backBtn{
     color: rgb(10, 78, 78);
-}
-img{
-    width: 50px;
-    height: 30px;
 }
 
 .campbox{

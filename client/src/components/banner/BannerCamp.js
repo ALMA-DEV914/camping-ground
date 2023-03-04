@@ -9,7 +9,11 @@ export default function BannerCamp() {
        <React.Fragment>
       <CssBaseline />
       <Container maxWidth="xlg" className='bannerCamp'>
-      <Box sx={{ height: '60vh'}} />
+      <Box sx={{ height: '60vh'}}>
+        <div className='about'>
+          
+        </div>
+      </Box>
      </Container>
     </React.Fragment>
     </div>
