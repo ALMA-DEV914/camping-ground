@@ -3,7 +3,7 @@
     "name":"Yosemite National Park",
     "states": "#1 in Best National Parks in the World - California ",
     "description":"One of California's most formidable natural landscapes, Yosemite National Park features nearly 1,200 square miles of sheer awe: towering waterfalls, millennia-old sequoia trees, striking, daunting cliff faces and some of the most unique rock formations in the United States. But despite its enormous size, most of the tourist activity takes place within the 8-square-mile area of Yosemite Valley. Here you'll find the park's most famous landmarks – Half Dome and El Capitan – as well as excellent hiking trails through the natural monuments. Even inexperienced hikers can enjoy Yosemite: Guided tours and climbing lessons are available from local adventure outfitters (such as those featured on our list of the best California tours). Just don't expect to experience it by yourself. Like so many other American tourist destinations, crowds are the biggest obstacles to an enjoyable Yosemite vacation – approximately 4 million people visit each year. But if you go at the right time (and start your day a little earlier than usual), Mother Nature's wonders will reveal themselves to you in a miraculous and serene way.",
-    "subText": "If you can secure a campsite at one of the campgrounds in this area, it will save you an incredible amount of driving time. Here are some famous campgrounds in Yosemite: ",
+    "subText": "Here are some famous campgrounds in",
     "image":"https://images.pexels.com/photos/144251/yosemite-national-park-landscape-california-144251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
     "campgrounds": [{
     "campName": "North Pines Campground",
@@ -62,37 +62,50 @@
     "name":"Yellowstone National Park",
  "states": "#1 in Best Cheap Family Vacations - WYOMING, MONTANA and IDAHO",
   "description":"With dramatic peaks and pristine lakes, Yellowstone National Park is an outdoor enthusiast's paradise. Multicolored pools swirl around hot springs; verdant forests weave past expansive meadows; and volatile geysers launch streams of steaming water toward the sky. With so much unspoiled natural beauty, it's no wonder why everyone suspected John Colter (a scout for explorers Lewis and Clark) was embellishing when he first described Yellowstone's geothermal curiosities in 1807. Nowadays, there's no doubt that the park is indeed extraordinary. While you traverse its 3,000-plus square miles of mountains, canyons, geysers and waterfalls, be prepared to share the trails with permanent residents like buffalo, elk and sometimes even grizzlies. ",
+  "subText": "The 12 campgrounds in Yellowstone National Park are managed by two separate entities: the National Park Service and Yellowstone National Park Lodges. Here are some famous campgrounds in ",
   "image":"https://images.pexels.com/photos/534398/pexels-photo-534398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
   "campgrounds": [{
-    "campName": "",
-    "description":"",
-    "image":""
+    "campName": "Canyon Campground",
+    "description":"If you’re looking for the perfect campground close to Yellowstone’s main attractions, like Old Faithful, Grand Prismatic Spring, and Grand Canyon of the Yellowstone, these three campgrounds are the best fit for you! Best for hikers and wildlife watchers who want a central location near Grand Canyon of the Yellowstone and Hayden Valley that managed by Yellowstone National Park Lodges. Reservations is available and 2023 operating dates are May 26 to September 17. Located a mile from the ultra-scenic Grand Canyon of the Yellowstone, Canyon Campground is one of the most popular campgrounds in Yellowstone. The campsites are surrounded by a lodgepole pine forest, giving the sites a more intimate feel.",
+    "image":"https://images.pexels.com/photos/15601501/pexels-photo-15601501.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-    "campName": "",
-    "description":"",
-    "image":""
+    "campName": "Madison Campground",
+    "description":"Located halfway between West Yellowstone and Old Faithful, Madison Campground provides the perfect location for those wanting to explore all of Yellowstone National Park. The Madison River runs near the campsite, giving plenty of opportunities to see bison and elk near camp. The nearby river also makes this camp a popular spot amongst fishers. Campsites here tend to be on the smaller end, so RVs feel a bit close. That said, this campground can still accommodate RVs up to 40 feet in length. Tent campers can book a site in the dedicated tent-only loop for a bit more space. While there are no showers at Madison Campground, all guests have access to a fire pit and picnic table at each campsite, plus flush toilets and drinking water.",
+    "image":"https://images.pexels.com/photos/4268140/pexels-photo-4268140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 },
 {
-    "campName": "",
-    "description":"",
-    "image":""
+    "campName": "Norris Campground",
+    "description":"Norris Campground is located along Grand Loop Road, only a short walk away from the largest geyser basin in the park: Norris Geyser Basin. In addition, the campground is located near a large meadow, providing plenty of opportunities to see wildlife like bison. There are limited campsites here that can accommodate RVs over 30 feet (only 7 out of the 112 sites). Campers here can enjoy the fire pit and picnic table at each site, along with drinking water and flush toilets. Norris Campground previously operated as a first-come, first-served campground. However, the park service has stated that Norris Campground is moving to reservation-only going forward.",
+    "image":"https://images.pexels.com/photos/8148525/pexels-photo-8148525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 },
 {
-    "campName": "",
-    "description":"",
-    "image":""
+    "campName": "Grant Village Campground",
+    "description":"The second-largest campground in Yellowstone, Grant Village Campground, is located in Grant Village in the southern part of the park. Its location makes it easy to get around south Yellowstone, notably Yellowstone Lake, West Thumb Geyser Basin, and Old Faithful. Tucked away in a lodgepole pine forest, Grant Village Campground has a picturesque location along the lake. The campground can accommodate anything from a tent to a 40 foot RV.Campers can enjoy the amenities found in Grant Village, like restaurants, a gas station, stores, and a visitor center. Each campsite comes with a fire pit and picnic table, plus access to flush toilets, drinking water, and a dump station. The nightly rate also includes two free showers!",
+    "image":"https://images.pexels.com/photos/13792989/pexels-photo-13792989.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 },
 {
-    "campName": "",
-    "description":"",
-    "image":""
+    "campName": "Fishing Bridge RV Park",
+    "description":"Fishing Bridge RV Park is the only campground in Yellowstone to have electrical, water, and sewer hookups. This amenity-filled campground is only available to RV campers due to frequent grizzly bear activity (no tent camping allowed). It’s located along Yellowstone Lake is perfect for accessing both Old Faithful and the Grand Canyon of the Yellowstone. Situated only a few minutes from Lake Village and Lake Yellowstone Hotel, guests can enjoy access to several restaurants and shops only a short drive away.",
+    "image":"https://images.pexels.com/photos/1630039/pexels-photo-1630039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 },
 {
-    "campName": "",
-    "description":"",
-    "image":""
+    "campName": "Bridge Bay Campground",
+    "description":"Bridge Bay Campground is located along Yellowstone Lake, close to Fishing Bridge RV Park. It provides an excellent opportunity for those looking for a more affordable option than Fishing Bridge who don’t need access to hookups. Bridge Bay is also the largest campground in Yellowstone National Park! From the campground, guests are rewarded with views of the lake and the Absaroka Range in the distance. Its location near the Bridge Bay Marina makes this campground a popular choice amongst anglers and boaters.",
+    "image":"https://images.pexels.com/photos/783575/pexels-photo-783575.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+},
+{
+    "campName": "Mammoth Campground",
+    "description":"Mammoth Campground is the only campground in Yellowstone that is open year-round. The lower elevation makes this area more accessible in the winter season. The campground provides excellent opportunities to spot elk and bison, particularly during the fall elk rut. Campsites at Mammoth Campground can accommodate anything from a tent to a 40-foot RV. However, sites for Class A RVs are limited. Only RVs up to 30 feet in length are allowed in the winter.",
+    "image":"https://images.pexels.com/photos/11256903/pexels-photo-11256903.jpeg?auto=compress&cs=tinysrgb&w=1600"
+},
+{
+    "campName": "Indian Creek Campground",
+    "description":"This smaller campground located along Grand Loop Road between Mammoth and Norris is best suited for tent campers. The sites are cozy here, tucked into wooded areas off the road. You’ll find stunning views of the Gallatin Mountains and Electric Peak from the campground. Indian Creek Campground is more primitive than other sites in Yellowstone, making it a better fit for tent campers. However, roughly half the sites can accommodate an RV up to 30 feet in length.",
+    "image":"https://images.pexels.com/photos/13733689/pexels-photo-13733689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 }
+
+
 
 ]},
     
@@ -103,37 +116,45 @@
  "description":"Grand doesn't begin to do this canyon justice. Measuring approximately 277 river miles in length, up to 18 miles in width and a mile deep, this massive chasm in northern Arizona is truly a natural wonder. For 6 million years, the Grand Canyon has expanded with the help of the mighty Colorado River, and for centuries, people from all over the globe have traveled to gaze out over its red and orange grandeur. Managed by the National Park Service and officially designated as a UNESCO World Heritage Site, the Grand Canyon leaves its approximately 6 million visitors per year awestruck.",
   "image":"https://images.pexels.com/photos/4452121/pexels-photo-4452121.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
   "campgrounds": [{
-    "campName": "",
-    "description":"",
-    "image":""
+    "campName": " Mather Campground",
+    "description":"Mather Campground is by far the most popular campground in Grand Canyon National Park. While there are no electrical, water, or sewer hook-ups, many of 319 sites are RV-friendly and generator use is allowed during specified hours.  With mature trees and a good layout, the campground doesn’t feel crowded, despite the large number of users. Shuttles to and from various viewing areas and trails occur on a regular basis during summer. Some campers recommend just bringing bikes to tour the South Rim. Expect to see wildlife like elk and very inquisitive ravens throughout the campground. It’s extremely important to keep a clean camp and follow posted rules and recommendations to keep you and the wildlife safe.",
+    "image":"https://images.pexels.com/photos/2872940/pexels-photo-2872940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 },
 {
-    "campName": "",
-    "description":"",
-    "image":""
+    "campName": "Desert View Campground",
+    "description":"There is no better way to feel right ‘on the edge’ of the South Rim than by scoring yourself a spot in Desert View Grand Canyon Campground. Entering the park from the East will put campers on the Desert View road, which provides some of the most expansive views. Behind this grand canyon campground, right on a precarious promontory is the famous Desert View watchtower built in 1932 by world renowned architect Mary Jane Coulter.",
+    "image":"https://images.pexels.com/photos/15768535/pexels-photo-15768535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 },
 {
-    "campName": "",
-    "description":"",
-    "image":""
+    "campName": "Trailer Village Campground",
+    "description":"This campground is the only one offering full RV hook-ups on the South Rim of the Grand Canyon. Because of this, it is very, very popular and should be booked as far in advance as possible.",
+    "image":"https://images.pexels.com/photos/13667753/pexels-photo-13667753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 },
 {
-    "campName": "",
-    "description":"",
-    "image":""
+    "campName": "North Rim Campground",
+    "description":"Waking up under Ponderosa Pines and Aspens will remind you of the ecological diversity of the Grand Canyon. You should dress warm in the winter though, as campers may find snow on the North Rim as late as May and as early as September. Hiking trails from the North Rim take campers to the visitor center, along the edge of the canyon, or through the sprawling desert forest. While no RV hook-ups are available, there is a dump station and potable water for campers needing these services.",
+    "image":"https://images.pexels.com/photos/2106380/pexels-photo-2106380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 },
 {
-    "campName": "",
-    "description":"",
-    "image":""
-},
-{
-    "campName": "",
-    "description":"",
-    "image":""
-}
-
-]
+    "campName": "Indian Garden  (Backcountry)",
+    "description":"In the Grand Canyon, many of the backcountry campgrounds like Indian Garden are only accessible by hikers or mule train riders. You would think that this would make finding a campsite easier, however most of these campgrounds still require reservations. That being said, the views and privacy make them well worth the effort. Places like Toroweap Overlook offer spectacular panoramic experiences which are only available to those willing to drive or hike the distance.",
+    "image":"https://images.pexels.com/photos/11756989/pexels-photo-11756989.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+ },
+ {
+    "campName": "Bright Angel  (Backcountry)",
+    "description":"Located at the bottom of the Grand Canyon, Bright Angel is the only officially recognized Grand Canyon campground.  Offering access to toilets, running water, and more; it’s a welcome retreat for tired and weary travelers year round. You should keep in mind that campers are only allowed to spend two nights here (similar to Cottonwood or Indian Garden). That being said, if you choose to come in the winter and/or spring (Nov. 15- Feb. 28) you can stay for up to 4 nights. Bright Angel also boast other amenities such as payphones, a ranger station, fishing (with a grand canyon fishing license) stargazing, and day hikes as well. Popular hikes nearby are the River Trail as well as the Phantom overlook.",
+    "image":"https://images.pexels.com/photos/5635347/pexels-photo-5635347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+ },
+ {
+    "campName": " Ten-X",
+    "description":"After an exhausting day of hiking, or dealing with a ton of tourists, Ten-X Campground is heaven sent. Located very close (within 4 miles) to the South Rim camp entrance, this campground is convenient and free from the chaos taking place in the Grand Canyon Village. Don’t expect much in amenities as there are only pit toilets, water faucets, and campfire pits, but the sites are large and clean. There are 70 single sites, 2 group camping sites and beautiful hiking trails all around.",
+    "image":"https://images.pexels.com/photos/14212569/pexels-photo-14212569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+ },
+ {
+    "campName": "Cottonwood Campground",
+    "description":"Cottonwood Camp, located on the North Kaibab Trail, can be found between the Colorado River and the North Rim. The North Rim is much less active than the South, only getting about 10% of the visitation. As a result, this Grand Canyon campground also gets fewer visitors. It is also carries a historical feel that can’t be matched by its South Rim neighboring Grand Canyon campgrounds.",
+    "image":"https://images.pexels.com/photos/13543911/pexels-photo-13543911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+ }]
 },
     
  

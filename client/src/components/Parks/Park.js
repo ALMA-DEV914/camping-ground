@@ -40,9 +40,10 @@ export default function Park() {
                 <CardContent>
                   <CardMedia component="img" image={data.image}></CardMedia>
                   <br></br>
-                  <Typography paragraph>{data.subText}</Typography>
+                  <Typography paragraph>{data.subText} {" "} {data.name}</Typography>
                 </CardContent>
                 <CardContent>
+                    <h2>The famous campgrounds</h2>
                   {data.campgrounds.map((campgrounds, i) => (
                     <div className="div-camps">
                       <div>
