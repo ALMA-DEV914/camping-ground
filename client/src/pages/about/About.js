@@ -8,6 +8,7 @@ export default function About() {
     <div>
       <ButtonAppBar />
       <BannerCamp />
+    
       <Footer />
     </div>
   );

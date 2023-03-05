@@ -24,6 +24,7 @@
     "graphql": "^16.6.0",
     "jwt-decode": "^3.1.2",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
     "react-cookie": "^4.1.1",
     "react-dom": "^18.2.0",
     "react-paginate": "^8.1.4",
@@ -31,6 +32,7 @@
     "react-router-dom": "^6.4.5",
     "react-scripts": "5.0.1",
     "react-select": "^5.7.0",
+    "react-slick": "^0.29.0",
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },

@@ -1,8 +1,7 @@
 import React from "react";
-
 import ButtonAppBar from "../../components/navbar/Navbar";
 import Banner from "../../components/banner/Banner";
-import Parks from "../../components/Parks/Parks";
+import Park from "../../components/Parks/Park";
 import Footer from "../../components/footer/Footer";
 
 export default function Home() {
@@ -10,7 +9,7 @@ export default function Home() {
     <div>
       <ButtonAppBar />
       <Banner />
-    <Parks/>
+    <Park/>
       <Footer/>
     </div>
   );

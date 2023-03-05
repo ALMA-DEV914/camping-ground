@@ -78,8 +78,6 @@ h3{
 }
 
 .bannerCamp{
-    background-image: url('./images/2.jpg');
-    background-size: cover;
     height: 100vh;
 }
 .bannerReview{
@@ -117,16 +115,7 @@ h3{
 .altText{
     font-size: 12px;
 }
-.parkImages{
-    display: flex-row;
-    justify-content: space-between;
-    overflow: auto;
-    column-count: 4;
-    height: 450px;
-    padding: 15px;
-    margin-bottom: 5%;
-}
- 
+
 a{
    color: aliceblue;
     text-decoration: none;
@@ -201,4 +190,9 @@ p a{
 }
 .col{
     margin: 3%;
+}
+.div-pages{
+   padding: 15px;
+  margin: 0 30%;
+   text-align: center;
 }
