@@ -114,6 +114,7 @@
     "name":"Grand Canyon National Park ",
  "states": "#1 in Best Day Trips from Phoenix - ARIZONA",
  "description":"Grand doesn't begin to do this canyon justice. Measuring approximately 277 river miles in length, up to 18 miles in width and a mile deep, this massive chasm in northern Arizona is truly a natural wonder. For 6 million years, the Grand Canyon has expanded with the help of the mighty Colorado River, and for centuries, people from all over the globe have traveled to gaze out over its red and orange grandeur. Managed by the National Park Service and officially designated as a UNESCO World Heritage Site, the Grand Canyon leaves its approximately 6 million visitors per year awestruck.",
+ "subText": "Everyone has an idea of what their perfect trip to the Grand Canyon might look like: the purple sunsets over the cliffs; hiking in the depths of the canyon; or cooking s’mores after a long day of desert exploring. But finding a Grand Canyon campground is easier said than done. Here are some famous campgrounds in",
   "image":"https://images.pexels.com/photos/4452121/pexels-photo-4452121.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
   "campgrounds": [{
     "campName": " Mather Campground",
@@ -162,36 +163,37 @@
     "name":" Great Smoky Mountains National Park",
  "states": "#2 in Best Places to Visit in the Carolinas - CAROLINA",
  "description":"Great Smoky Mountains National Park spans both Tennessee and North Carolina, with the border running through the center of the 522,427-acre tract. The mountains have a long history of human settlers from the prehistoric Paleo Indians to 19th-century European settlers. Today, more than 10 million people visit the park each year – it's one of the few free national parks in America – to enjoy scenic drives to Cades Cove or along the Roaring Fork Motor Nature Trail and outdoor activities like hiking, biking and fishing. Pack a picnic for stunning hikes to Abrams or Rainbow Falls, or bike the Cades Cove Loop on Wednesdays between May and September when the road is closed to traffic. Explore the historic gristmill and Cable Mill at the Cades Cove Visitor Center or stop by Sugarlands Visitor Center to see wildlife exhibits, view a film about the park and pick up unique souvenirs at the gift shop.",
+ "subText":"You’ll enjoy spending time in the Great Smoky Mountains National Park if you love being outdoors. The national park offers lots of ways to experience the outdoors for those who love nature, and one popular option is to go camping. Planning to go camping during your next visit to the Smokies? Here are 6 of the best campgrounds in the Great Smoky Mountains National Park ",
  "image":"https://images.pexels.com/photos/547120/pexels-photo-547120.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
  "campgrounds": [{
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Cades Cove Campground - Tennessee",
+   "description":"The Cades Cove Campground is near Townsend TN. This year-round campsite for tent and RV camping can be found in one of the most visited areas of the Smokies! During your stay, you’ll have the chance to take horseback, hay, and carriage rides or go bike riding. Also, Cades Cove is a great place to see wildlife like black bears, coyotes, and white-tailed deer or hike to Abrams Falls, which is part of a 5-mile, roundtrip trail. Finally, if you choose to spend some time at this campground, you have access to a general store and a ranger station if you need supplies or assistance.",
+   "image":"https://images.pexels.com/photos/1619349/pexels-photo-1619349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Elkmont Campground - Tennessee",
+   "description":"Interested in staying at a tent or RV campsite close to Gatlinburg TN? Try the Elkmont Campground, which is 9 miles away from the popular vacation destination! The Sugarlands Visitor Center is also  just a 15-minute drive from the seasonal campground. If you want to bring your furry friend along, pets are permitted to stay with you at this campground. Just ensure that they are leashed and are not taken on any trails. If you stay long enough, you can take some time to explore the Elkmont Ghost Town and find the troll bridge off Little River Trail! The Elkmont Campground area is also close to Laurel Falls, a waterfall with 80 feet of cascades.",
+   "image":"https://images.pexels.com/photos/957079/hintersee-ramsau-berchtesgaden-bavaria-957079.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Cataloochee Campground - North Carolina",
+   "description":"The tent-only campground in Cataloochee Valley has a peak season of April to October. You’ll find grills, a fire pit, and a comfort station available for use at this campground. After you’ve settled in, try hiking the almost 6 miles of Boogerman and Caldwell Fork Trails. You could also go on a backpacking adventure from this site. If you’re into history, you’ll be able to explore some historical buildings like Palmer Chapel or the Caldwell House. When you’re in this area, don’t forget to see if you spot any elk, as they mostly populate the Cataloochee Valley area of the Smoky Mountains!",
+   "image":"https://images.pexels.com/photos/1592461/pexels-photo-1592461.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Smokemont Campground -  North Carolina",
+   "description":"Like the Cades Cove Campground, the Smokemont Campground is also available for camping year-round in tents or RVs. You can find paved parking, restrooms, utility sinks, and other helpful amenities here. This pet friendly campsite near Cherokee NC is perfect for scenic views of the mountains as well as beautiful wildflowers in the spring or vibrant fall foliage too! Smokemont Campground is close to the Bradley Fork River, and you also have creek access if you stay here. Furthermore, Smoky Mountain camping guests at the campground have the choices to hike, fish, picnic, view wildlife, and take auto tours in this area. ",
+   "image":"https://images.pexels.com/photos/14691071/pexels-photo-14691071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Cosby Campground",
+   "description":"If you want to camp closer to the North Carolina/Tennessee line, the Cosby TN area is a great place to start. This site is versatile, as it allows for tent and RV camping. Right next to Cosby Creek, the Cosby Campground could easily be one of the best campgrounds in the Great Smoky Mountains National Park because of its amenities. These include: a picnic area and shelters, an emergency phone, restrooms, and much more! Other notable aspects of the Cosby Campground are that it has handicap accessible sites, and pets are allowed with the same restrictions in place that are at the Elkmont Campground.",
+   "image":"https://images.pexels.com/photos/954288/pexels-photo-954288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Big Creek Campground",
+   "description":"Big Creek Campground is near Waynesville NC in the northeastern corner where Tennessee and North Carolina meet. It hosts those who are tent-only campers and features a picnic area and a fire pit. If you love hiking, this is the campground to visit! It has access to: Big Creek Trail, the Appalachian Trail by way of Chestnut Branch Trail, and Baxter Creek Trail. You can also visit Mouse Creek Falls near Mouse & Big Creeks, and Midnight Hole, which is a deep pool formed from Big Creek flowing through big boulders.",
+   "image":"https://images.pexels.com/photos/547120/pexels-photo-547120.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 }
 
 ]},
@@ -200,74 +202,116 @@
     "name":"Zion National Park",
  "states": "#2 in Best Fall Vacations - UTAH",
  "description":"Named for the Hebrew word 'refuge', Zion National Park – nestled in Utah's southwest corner – is no longer the quiet sanctuary it once was. The park is now one of the most visited in the country, welcoming more than four million visitors per year. It's as if travelers stumbled upon a secret and can't get enough of the apricot-colored Zion Canyon, which they can view wading through its Virgin River or ascending Angels Landing, with each bend in the river or turn in the trail affording an even more breathtaking view. Plus, the blanket of stars that illuminates the night sky is a welcome nightcap to a day filled with active pursuits. And when it's time to come back from the refuge to reality, the 166-mile drive from Las Vegas or the 308-mile drive from Salt Lake City is just about the right amount of time to process all the beauty you just experienced.",
+ "subText":"Campers traveling with RVs should be aware that they will need to pay a modest fee and obtain a permit to pass through the tunnel on the Zion-Mount Carmel Highway. The tunnel is not large enough to accommodate RVs passing other traffic, so when a vehicle over a certain size is entering the tunnel, traffic is halted in the opposing direction. Fees need to be paid at the entrance stations. Here are the famous campgrounds in",
  "image":"https://images.pexels.com/photos/2872940/pexels-photo-2872940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
  "campgrounds": [{
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "South Campground",
+   "description":"South Campground is undoubtedly the best place to camp in Zion. Large, leafy trees provide some shade from the heat of the day. Campsites are large and spaced a good distance from each other, and the cliff walls in behind remind you that you are in one of the most spectacular landscapes in the Southwest. This campground is open from March 1 to late November, and reservations are recommended. Reservations are available up to 14 days before your arrival.",
+   "image":"https://images.pexels.com/photos/4134225/pexels-photo-4134225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Watchman Campground",
+   "description":"Not far from South Campground, Watchman Campground is also conveniently located and scenic. Fewer large trees mean there is less shade, and most campsites are in full sun, but this also allows for better views of the surrounding mountains. This campground is open year-round and does take reservations. Reservations can be made six months in advance, and you should book well in advance if you want to secure a site.",
+   "image":"https://images.pexels.com/photos/3881074/pexels-photo-3881074.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Zion Canyon Campground and RV Resort",
+   "description":"For convenience, it's hard to beat this RV park, located right outside the park's south gate in Springdale and within walking distance of the Zion National Park Visitor Center. The campground has a spacious area for RVs and a section reserved for tents. Large deciduous trees offer some shade, and the views here are fantastic. On-site is a heated pool, coin laundry, and showers. From the front desk, you can get information on river tubing and swimming, as well as other activities in the area.",
+   "image":"https://images.pexels.com/photos/4959950/pexels-photo-4959950.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Zion River Resort RV Park & Campground",
+   "description":"Zion River Resort is a popular RV resort with manicured grounds, lovely shady sites, paved parking pads, fire pits, and lawns. Located in the town of Virgin, between the towns of Hurricane and Springdale, this resort is about 20 minutes from Zion National Park. With pull-through sites, full hookups, tent sites, pool, Wi-Fi, showers, restrooms, and pet areas, this RV resort has everything you need. If you don't want to drive to Zion, the resort offers shuttles for a small fee.",
+   "image":"https://images.pexels.com/photos/14213488/pexels-photo-14213488.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Lava Point Campground",
+   "description":"Lava Point Campground is the smallest and most remote campground in Zion. Located on Kolob Plateau at 7,890 feet, this campground is almost 4,000 feet higher than South Campground. Temperatures are much cooler up here. Lava Point has six primitive sites set among a mix of aspen and pine trees. To get here, you'll need to drive 80 minutes from the south entrance back through the town of Virgin. The campground is first-come, first-served, and vehicles over 19 feet in length are not permitted. Picnic tables are provided, but no running water. The road to the campground can be rough; check conditions before venturing out.",
+   "image":"https://images.pexels.com/photos/6946662/pexels-photo-6946662.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
-}
+   "campName": "Coral Pink Sand Dunes State Park",
+   "description":"Coral Pink Sand Dunes is a spectacular little state park with a very nice campground. This park is one of the top state parks in Utah, and it's worth a trip in its own right just to explore the dunes. This campground is about a 40-minute drive from the east gate of Zion National Park, but it's worth considering if you are looking for some place to camp on the east side of the park.",
+   "image":"https://images.pexels.com/photos/8909739/pexels-photo-8909739.jpeg?auto=compress&cs=tinysrgb&w=1600"
+},
+{
+    "campName": "Hi-Road Campground",
+    "description":"Just outside the East Gate is the Hi-Road Campground. This is a convenient location if you are interested in getting an early start on the East Rim hike, or if you are arriving late from the east side of the park and want to stop and spend the night before driving through the park. Otherwise, this is not most campers' first choice, and it's not a place where most visitors linger. Hi-Ground has pull-through sites, full hookups, and tent sites. Facilities are very basic, and prices are high. Across the road from the campground is a trading post with some basic supplies.",
+    "image":"https://images.pexels.com/photos/14349453/pexels-photo-14349453.jpeg?auto=compress&cs=tinysrgb&w=1600"
+ },
+ {
+    "campName": "Dispersed Camping on BLM Lands Close to the Park",
+    "description":"Near Zion National Park, the best area for dispersed camping is off the Smithsonian Butte National Back Country Byway. The byway is a mere 6.2 miles from the park entrance. Find a road or trail that leads off this road for the minimum distance and set up camp. Note that to access the byway, you will need to pass over a bridge in Rockville with a low clearance of 13 feet, 4 inches. Another popular camping destination is called the North Creek Dispersed Area. Just over 15 miles from the park's gate, this is off the Kolob Terrace Road. Another spot just a bit farther out, at 16 miles from the park gates, is Sheep Bridge Road. Here, you'll find 48 marked campsites. Register at one of the kiosks.",
+    "image":"https://images.pexels.com/photos/730426/pexels-photo-730426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+ }
 
 ]},
  { "id": 6,
     "name":"Rocky Mountain National Park",
  "states": "#2 in Best Places to Visit in Colorado - COLORADO",
  "description":"At roughly 265,000 acres, Rocky Mountain National Park isn't the country's largest national park, nor is it the most-frequented with about 4 million annual visitors (compared to Great Smoky Mountains National Park's more than 12 million visitors). But there is something definitively magical about RMNP, which rises 14,259 feet into the Colorado sky at its highest point, Longs Peak. The main attraction is hiking the park's 350-some miles of trails that wind through pine and spruce forests, glittering alpine lakes, swaths of wildflowers and, if you're lucky, some elk or bighorn sheep. And maybe it's the thinner atmosphere that goes to visitors' heads, but even the most jaded report feelings of awe and wonder after a day or two of breathing in that refreshing mountain air. ",
+ "subText":"Rocky Mountain National Park is a must-visit attraction in the state of Colorado. With plenty of campers flocking to the park every summer, there are a number of great campsites to choose from, including RV sites and backcountry sites too. There is no better way to enjoy the natural wildlife, mountain scenery, and gorgeous Colorado weather than a stay at one of these top-rated campsites near Rocky Mountain National Park.",
  "image":"https://images.pexels.com/photos/4107412/pexels-photo-4107412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
  "campgrounds": [{
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Timber Creek Campground - Grand Lake",
+   "description":"For travelers heading to Rocky Mountain National Park from the west side near Grand Lake, Timber Creek Campground is a great camping option. Found along the Colorado River, this summertime campground sits in the Kawuneeche Valley surrounded by views of tree-covered mountains. Timber Creek Campground is home to 98 campsites, including RV and tent sites. There is no reservation system to stay here, as the sites are first-come, first-serve. This top-rated campsite has plenty of amenities, like an RV dump station, an amphitheater for ranger talks, firewood for sale, and of course running water and restrooms. With plenty of hiking trails easily accessible from the campground, Timber Creek Campground is a true gem.",
+   "image":"https://images.pexels.com/photos/3956284/pexels-photo-3956284.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Longs Peak Campground - Estes Park",
+   "description":"Found at the base of Rocky Mountain National Park’s 14,000-foot mountain, Longs Peak Campground is a popular option for hikers wanting to make the trek up this impressive peak. The campground here is a tents-only campground with 26 sites. Longs Peak Trailhead is a short walk from the campground. This particular trailhead offers a scenic hike to Chasm Lake, Peacock Pool, and of course Longs Peak. This Rocky Mountain campground may not have as many amenities as other campgrounds on this list; however, tent campers can still expect potable water, vault toilets, picnic tables, and bear boxes.",
+   "image":"https://images.pexels.com/photos/533769/pexels-photo-533769.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Yogi Bear’s Jellystone Park - Estes Park",
+   "description":"This family-friendly campground in Estes Park is not only in a gorgeous mountain setting but also has fun amenities that will keep every member of the family entertained. Stay in a campsite, RV, or cabin at Yogi Bear’s Jellystone Park. During the summer months, Jellystone Park hosts themed weekends along with a complete activity schedule featuring activities like bingo, outdoor movie nights, karaoke, crafts, and more. This campground is also home to a heated swimming pool, mini-golf course, and game room.",
+   "image":"https://images.pexels.com/photos/11513318/pexels-photo-11513318.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Moraine Park Campground - Estes Park",
+   "description":"Located in Rocky Mountain National Park, Moraine Park Campground offers camping spots year-round. Travelers who stayed at this campground rave about its spacious spots, frequent wildlife sightings, and stunning views of the grassy meadows of Moraine Park. To snag a coveted spot at this popular campground during the peak summer season, make a reservation online. Both tent campers and RVers will be pleased with a stay at Moraine Park Campground. Complete with flush toilets, drinking water spigots, a dish-washing station, and solar-shower stalls, this campground offers plenty of amenities, as well as an ideal base location for campers wanting to explore different areas of Rocky Mountain National Park.",
+   "image":"https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Glacier Basin Campground - Estes Park",
+   "description":"With 151 campsites, Glacier Basin Campground is a popular camping option in Rocky Mountain National Park. Tent sites, group sites, and RV sites without hookups are found here. Some of the campsites here are tucked away in the pines, while other sites are out in the open and offer views of the surrounding mountains. A bathroom with flush toilets, firewood for sale, picnic tables at each site, and food storage boxes are the main amenities at this summer campground. There is a trailhead at Glacier Basin Campground that leads to an easy trek to Sprague Lake.",
+   "image":"https://images.pexels.com/photos/7445844/pexels-photo-7445844.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
-}
+   "campName": "Aspenglen Campground - Estes Park",
+   "description":"Tent sites, RV sites, and walk-in sites are found at this campground at the Fall River entrance of Rocky Mountain National Park. With sites scattered among Douglas firs, Lodgepole pines, and Ponderosa pines, Aspenglen Campground offers plenty of shady spots. Six of the 53 spots here are walk-in spots along Fall River, which are perfect for campers wanting a more private campsite. This seasonal campground in Rocky Mountain National Park has flush toilets and drinking water.",
+   "image":"https://images.pexels.com/photos/14213488/pexels-photo-14213488.jpeg?auto=compress&cs=tinysrgb&w=1600"
+},
+{
+    "campName": "Fern Lake Campsite - Estes Park",
+    "description":"Backcountry campers looking for a wooded, secluded place to camp in the Rockies will enjoy the campsites at Fern Lake. These campsites are not accessible by car, therefore you’ll have to strap on your backpack full of gear to enjoy a night at Fern Lake Campsite. With only three campsites and one group site, this campground offers a more private camping experience compared to the larger campgrounds in the park. There are two vault toilets at Fern Lake. Remember to retrieve a backcountry permit before overnight camping here.",
+    "image":"https://images.pexels.com/photos/6272361/pexels-photo-6272361.jpeg?auto=compress&cs=tinysrgb&w=1600"
+ },
+ {
+    "campName": "Estes Park KOA Holiday - Estes Park",
+    "description":"RVers will find all the amenities they need at Estes Park KOA Holiday. This campground is truly suited for RVs and trailers, however, there are tent sites and cabins here too. With a location only five miles from Rocky Mountain National Park, this KOA campground is conveniently located to both the park and the town of Estes Park, making it a great spot for travelers wanting to explore both attractions. Free Wi-Fi, complimentary marshmallow roasts, and onsite showers and laundry facilities make for a pleasant camping experience at Estes Park KOA Holiday.",
+    "image":"https://images.pexels.com/photos/6243264/pexels-photo-6243264.jpeg?auto=compress&cs=tinysrgb&w=1600"
+ },
+ {
+    "campName": "Estes Park Campground at East Portal - Estes Park",
+    "description":"Estes Park Campground at East Portal is a seasonal campsite located just west of Estes Park. Tent campers and campers with small RVs and trailers will all find an ideal spot among one of the 66 sites in this heavily shaded campground. Wildlife enthusiasts should keep a lookout for elk and deer, as both are regular visitors here. This campground offers RV hookups, hot showers, drinking water, flush toilets, and even a playground.",
+    "image":"https://images.pexels.com/photos/6272357/pexels-photo-6272357.jpeg?auto=compress&cs=tinysrgb&w=1600"
+ },
+ {
+    "campName": "Estes Park Campground at Marys Lake - Estes Park",
+    "description":"The views from this Estes Park campground are exactly what keeps visitors coming back to this 128-site campground. At the base of Twin Sisters Peaks and adjacent to Marys Lake, Estes Park Campground at Marys Lake is one of the most picturesque campgrounds on this list. Fish in Marys Lake, take a dip in the heated swimming pool or take a short drive to explore Estes Park’s Riverwalk or Rocky Mountain National Park. No matter if you have an RV or a tent, Estes Park Campground at Marys Lake will make a great home base for your Colorado camping trip.",
+    "image":"https://images.pexels.com/photos/2990678/pexels-photo-2990678.jpeg?auto=compress&cs=tinysrgb&w=1600"
+ },
+ {
+    "campName": "Manor RV Park - Estes Park",
+    "description":"RV campers in search of a picturesque campground in Estes Park will find breathtaking Colorado views from Manor RV Park. Panoramic views of snow-capped mountains and forest-laden hills pair perfectly with the rushing water of the Big Thompson River found right on the property. Both nature and comfort are found here. If you do pry yourself away from the campground, Manor RV Park is a short distance from both Estes Park and Rocky Mountain National Park. Free Wi-Fi, complimentary Saturday breakfasts, a playground, and laundry facilities are the top amenities found at this RV-only campground.",
+    "image":"https://images.pexels.com/photos/4552240/pexels-photo-4552240.jpeg?auto=compress&cs=tinysrgb&w=1600"
+ },
+ {
+    "campName": "Hermits Hollow Campground - Estes Park",
+    "description":"Found two miles from Estes Park is Hermit Park Open Space, a nature area home to Hermits Hollow Campground. Hikers, bikers, and horseback riders enjoy the miles of trails here that traverse through forests and meadows. Hermits Hollow Campground, although has minimal amenities, offers spacious tent sites and vault toilets. ",
+    "image":"https://images.pexels.com/photos/4552243/pexels-photo-4552243.jpeg?auto=compress&cs=tinysrgb&w=1600"
+ }
 
 ]},
    
@@ -275,36 +319,37 @@
     "name":"Acadia National Park",
  "states": "MAINE",
  "description":"Acadia National Park was America’s sixth most visited national park in 2021 rising two spots from 2020. In 2021 Acadia National Park saw 1.4 million more visitors than it did in 2020.Along the rocky shores of Maine’s coast you’ll find this easternmost national park. Once the exclusive domain of the gilded age elite, a few civic-minded residents decided to make Acadia’s beauty available to all Americans by donating the land to the national park service – and boy are we glad they did. With rounded mountains, shimmering lakes (called ponds here) , rugged coastline, and forests dotted with old stone roads and trails this New England national park is a real treasure.",
+ "subText":"As mentioned earlier, this is on the list of the top 10 most visited national parks in the United States. The statistics say that usually, 3.5 million travelers see here yearly since it is beautifully located along the United States’ Atlantic coastline.",
  "image":"https://images.pexels.com/photos/5480824/pexels-photo-5480824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
  "campgrounds": [{
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Schoodic Woods Campground",
+   "description":"This newcomer was built in 2015 to attract overnight visitors to the beautiful Schoodic Peninsula. It’s far from the hustle and bustle of Mount Desert Island, and offers a more intimate and secluded camping experience. Sites are wooded and private, with ample room for tents or RVs, but several roads on the peninsula are not suitable for RV travel, so be sure to check ahead before heading out. Pounding surf, friendly locals, and rugged cliffs and outcroppings make the Schoodic Woods Campground a great base camp for your Acadian adventure.",
+   "image":"https://images.pexels.com/photos/10053124/pexels-photo-10053124.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Seawall Campground",
+   "description":"Take a ride on the quiet side—Seawell Campground is tucked away in the far southern end of the park, a full 18-miles from the most popular sites and attractions of the park loop road. What this area lacks in popularity, it makes up for in rugged beauty. You’ll find quiet hiking trails, the beautiful Bass Harbor Lighthouse, and the perfect lake for swimming and boating. Seawell Campground is just a 10-minute walk from the ocean’s edge, so bring your camera and come out and explore this national treasure.",
+   "image":"https://images.pexels.com/photos/5210616/pexels-photo-5210616.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Blackwoods Campground",
+   "description":"Acadia is your spot for rugged adventure and ocean-side relaxation. It is one of the most visited National Parks in the United States, where you can take care of all your vacationing needs in one spot. Meander along the towering cliffs and sandy beaches, hike the miles of trail, bike the tree-lined carriage roads, or kayak the peaceful ponds and lakes. Blackwoods Campground is a ten-minute walk from the coast and a free shuttle service connects the campground with all of Acadia’s stellar attractions.",
+   "image":"https://images.pexels.com/photos/4552230/pexels-photo-4552230.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Duck Harbor Campground",
+   "description":"Leave your car and other modern technologies behind and head out to Isle au Haut where you will find the very best of primitive camping at Duck Harbor Campground. Ferry service from the mainland will drop you and your gear in Duck Harbor, and from there, you’re on your own. Explore the wild, rocky shores, hike the 18-miles of trails, or just kick back and relish the fact that you got a spot in this pristine paradise. Competition is fierce for these few sites, so be ready to plan way ahead.",
+   "image":"https://images.pexels.com/photos/733162/pexels-photo-733162.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Mount Desert Island Campground",
+   "description":"This is one of the most wooded campgrounds in Acadia National Parks. Located on the beautiful Mt. Desert Island and around 8 miles away from Bar Harbor. So, take Route 198. 516 Sound Drive, Mt Desert, Maine. You can have many amenities here like: WiFi, call service, picnic tables, fire rings, food stores, crab nets, free shuttles to campsites, parking, canoes, kayaks, and many more. The season time (from June to October) will be more crowded.",
+   "image":"https://images.pexels.com/photos/4857769/pexels-photo-4857769.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Smuggler’s Den campground",
+   "description":"Starting from the end of May to the end of October, this campground in Acadia National Park offers you numerous experiences. In the season time and in the offseason, you can have much more fun there. Actually, the offseason is much better for both tent sites as well as RV camps. Smuggler’s Den Campground is located on Mount Desert Island, 20 main street, Southwest Harbor, Maine (just 15 minutes from Bar Harbor and Acadia’s main loop in Southwest Harbor. You can check-in for a minimum of 2 nights at 3 pm, and the checkout time is at 11 am. Check for the rates and reservations before the visit.",
+   "image":"https://images.pexels.com/photos/15603336/pexels-photo-15603336.jpeg?auto=compress&cs=tinysrgb&w=1600"
 }
 
 ]},
@@ -313,6 +358,7 @@
     "name":"Olympic National Park",
  "states": "WASHINGTON",
  "description":"Despite being ranked the best national park in America, Olympic National Park fell out of the top ten most visited national parks in 2021 to the twelfth most visited park. Olympic National Park is the most diverse national park in America, hands down. This park has everything from lowland forests, striking mountain ranges, pristine alpine lakes, sparkling rivers, temperate rainforests (the largest in North America), iconic wildlife, and over 50 miles of wild coastline! Oh, and it’s a stones throw from Seattle! Olympic National Park truly has it all and without the crowds that have become so insidious in other US national parks in recent years – which is why we rank this Pacific Northwest gem as the best national park in America.",
+ "subText":"",
  "image":"https://images.pexels.com/photos/7042875/pexels-photo-7042875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
  "campgrounds": [{
    "campName": "",
@@ -352,6 +398,7 @@
     "name":"Grand Teton National Park",
  "states": "#3 in Best Cheap Vacations in the U.S. - WYOMING ",
  "description":"Towering above Jackson Hole Valley with jagged snow-topped peaks, Wyoming's majestic Teton Mountains are in high relief at Grand Teton National Park. From the 13,770-foot Grand Teton to the glittering Jenny and Jackson lakes – which reflect the mountains in their depths – the photo-ops are endless. But the park isn't just for mountaineers and photographers. In the peak summer season, the area's trails call to hikers of all abilities and reveal gems like hidden waterfalls and breathtaking views of the Tetons. Meanwhile, the Snake River appeals to kayakers, rafters and those who simply fancy a float. Historic districts like Menors Ferry and Mormon Row attract history buffs interested in the 19th-century past of this piece of Western Frontier. ",
+ "subText":"",
  "image":"https://images.pexels.com/photos/12890090/pexels-photo-12890090.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
  "campgrounds": [{
    "campName": "",
@@ -391,6 +438,7 @@
     "name":"Glacier National Park",
  "states": "#1 in Best Cheap Summer Vacations - MONTANA",
  "description":"Aside from its breathtaking geological features, it's also home to a fair amount of history. The Going-to-the-Sun Road – a scenic, 50-mile drive through the park – is a National Historic Landmark and an engineering marvel that offers spectacular views, as well as access to popular hiking trails. Plus, many of the park's lodges, chalets and hotels were constructed by the Great Northern Railway in the early 20th century and are on the National Register of Historic Places. Care to visit a UNESCO World Heritage Site? You'll find that here, too: the Waterton-Glacier International Peace Park. Named for the remnants of glaciers from the ice age, Glacier National Park is located on the border of Canada and Montana. It is often called the 'Crown of the Continent', because of its dizzying array of natural beauty. ",
+ "subText":"",
   "image":"https://images.pexels.com/photos/6108440/pexels-photo-6108440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
   "campgrounds": [{
     "campName": "",
