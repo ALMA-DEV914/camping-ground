@@ -60,7 +60,6 @@ export default function ButtonAppBar() {
           <a href='/faq'>Faq</a>
           <a href='/reviews'>Reviews</a>
          </Typography>
-          <Button color="inherit" href='/login'>SIGNUP/LOGIN</Button>
         </Toolbar>
         </>
         )}

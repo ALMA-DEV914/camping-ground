@@ -3,9 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Georgia,  serif;
+  font-family: Georgia, serif;
 }
-.navbar{
+.navbar {
   background-color: rgb(92, 41, 5) !important;
 }
 p {
@@ -28,7 +28,6 @@ h2 span {
 
 .banner {
   background-image: url("../src/images/sun.png");
-  
 }
 .about {
   background-color: rgb(237, 241, 241);
@@ -80,18 +79,18 @@ h3 {
   color: rgb(10, 78, 78);
 }
 .campbox {
-    background-color: bisque;
-    overflow: auto;
-    background: rgb(240, 237, 237);
-    height: 100vh;
-    margin: 5% auto;
-  }
-  .box-info {
-    margin: 8% auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  
+  background-color: bisque;
+  overflow: auto;
+  background: rgb(240, 237, 237);
+  height: 100vh;
+  margin: 5% auto;
+}
+.box-info {
+  margin: 8% auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .scrolled {
   padding: 15px !important;
   display: block;
@@ -124,7 +123,7 @@ p a {
 }
 .formData {
   margin: 3% auto;
-  width: 100%;
+  width: 80%;
 }
 .formData label {
   margin: 8px auto;
@@ -148,15 +147,16 @@ p a {
 }
 .btn:hover {
   margin: 0 8px !important;
-  background-color: rgb(19, 106, 128) !important;
+  background-color: rgb(14, 147, 142) !important;
   color: white !important;
   padding: 12px 16px !important;
 }
 .submitbtn {
   width: 100% !important;
   margin: 2% auto !important;
-  background-color: rgb(227, 236, 232) !important;
+  background-color: rgb(14, 147, 142) !important;
   padding: 12px !important;
+  color: aliceblue !important;
 }
 .warning {
   background-color: rgb(148, 38, 38);
@@ -184,41 +184,61 @@ p a {
 }
 .box-modal {
   text-align: center;
-  height: 60vh; 
+  height: 60vh;
 }
 
 .modal-btn {
-  background-color: rgb(14, 134, 86) !important;
+  background-color: rgb(14, 147, 142) !important;
   padding: 22px 44px !important;
   margin: 8% auto !important;
   color: aliceblue !important;
 }
-.subtitle{
-    color: antiquewhite;
-    font-family: Georgia,  serif;
-    font-weight: 900;
-    font-size: 40px;
+.subtitle {
+  color: rgb(232, 237, 237);
+  font-family: Georgia, serif;
+  font-weight: 900;
+  font-size: 40px;
 }
-.subp{
-    color: antiquewhite;
-    font-family: Georgia,  serif;
+.subp {
+  color: antiquewhite;
+  font-family: Georgia, serif;
+  font-weight: 800;
 }
-#park, #campground{
+#park,
+#campground {
   padding: 15px;
   font-size: 18px;
-  border: 2px solid rgb(19, 128, 64);
   background-color: rgb(235, 229, 229);
+  border: 2px solid rgb(14, 147, 58);
+}
+#date,
+#time {
+  border: 2px solid rgb(14, 147, 58);
 }
 
-.signModal{
+.signModal {
   position: absolute;
-  top: 50% ;
-  left: 50% ;
-  transform: translate(-50%, -50%) ;
-  width: 50% ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
   height: 70%;
   overflow: auto;
   box-shadow: 4px 4px 4px 4px rgb(7, 51, 29);
   background-color: rgb(235, 229, 229);
   padding: 15px;
+}
+.select {
+  display: flex;
+}
+.select div{
+  width: 100%;
+}
+
+.select-date {
+  display: flex;
+  
+}
+.select-date div{
+  width: 100%;
 }
