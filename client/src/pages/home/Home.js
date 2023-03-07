@@ -9,8 +9,8 @@ export default function Home() {
     <div>
       <ButtonAppBar />
       <Banner />
-    <Park/>
-      <Footer/>
+      <Park />
+      <Footer />
     </div>
   );
 }

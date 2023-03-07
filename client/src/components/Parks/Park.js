@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import { Container } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import CardContent from "@mui/material/CardContent";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
-import { Pagination, Box } from "@mui/material";
+import { Pagination} from "@mui/material";
 import usePagination from "./Pagination";
 import { default as data } from "../../data.json";
 
@@ -16,14 +16,17 @@ export default function Park() {
   const count = Math.ceil(data.length / PER_PAGE);
   const _DATA = usePagination(data, PER_PAGE);
 
+  const goToTop = () => { window.scrollTo({ top: 0, behavior: 'smooth', }); }
+
   const handleChange = (e, p) => {
     setPage(p);
+    goToTop(true)
     _DATA.jump(p);
   };
 
   return (
     <Container>
-      <h1>EXPLORE CAMPGROUNDS AND PARKS IN THE UNITED STATES</h1>
+      <h1>The 10 FAMOUS NATIONAL PARK IN THE US</h1>
       <br></br>
       {_DATA.currentData().map((data) => {
         return (

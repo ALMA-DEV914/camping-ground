@@ -358,37 +358,67 @@
     "name":"Olympic National Park",
  "states": "WASHINGTON",
  "description":"Despite being ranked the best national park in America, Olympic National Park fell out of the top ten most visited national parks in 2021 to the twelfth most visited park. Olympic National Park is the most diverse national park in America, hands down. This park has everything from lowland forests, striking mountain ranges, pristine alpine lakes, sparkling rivers, temperate rainforests (the largest in North America), iconic wildlife, and over 50 miles of wild coastline! Oh, and it’s a stones throw from Seattle! Olympic National Park truly has it all and without the crowds that have become so insidious in other US national parks in recent years – which is why we rank this Pacific Northwest gem as the best national park in America.",
- "subText":"",
+ "subText":"There are 14 developed campgrounds in Olympic National Park. All are first-come, first-served, except for Kalaloch, Sol Duc, and Mora which offers advance reservations during the summer.",
  "image":"https://images.pexels.com/photos/7042875/pexels-photo-7042875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
  "campgrounds": [{
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Deer Park Campground",
+   "description":"Deer Park Campground is unique as the only car campground in Olympic National Park that’s located in high-alpine country. Camp here for 360° views of the Olympic Mountains, Puget Sound, and the Strait of Juan de Fuca. The campground’s isolation makes for breathtaking views of the sky at night. Deer Park is open July to September (depending on snow). It has just 14 non-reservable spots. RVs are not allowed. Pit toilets are the sole amenity.",
+   "image":"https://images.pexels.com/photos/3566237/pexels-photo-3566237.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Dosewallips Campground (Walk-In Only)",
+   "description":"Dosewallips Campground is the sole walk-in campground in Olympic National Park (aside from backcountry campsites). It’s very popular with hikers making their way into or out of the backcountry. But I highly recommend the hike along Dosewallips River Road to all visitors. The campground is located alongside the swift Dosewallips River and requires about a 5.5-mile hike to reach. It’s open year-round and has 30 non-reservable tent campsites. Pit toilets are the only amenity available.",
+   "image":"https://images.pexels.com/photos/5118547/pexels-photo-5118547.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Fairholme Campground",
+   "description":"Fairholme Campground is an excellent option for visiting Lake Crescent. The campground fills up fast in the summer, so arrive early to secure one of the coveted lakeside campsites. It’s also an excellent jumping off point for exploring nearby Sol Duc Falls and Hurricane Ridge. The campground is open from April to October. It has 88 non-reservable campsites and is RV friendly (up to 21 feet). Flush toilets, running water, and an RV dump station are available.",
+   "image":"https://images.pexels.com/photos/4552230/pexels-photo-4552230.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Graves Creek Campground",
+   "description":"Graves Creek Campground is perhaps my second favorite campground in Olympic National Park (after Kalaloch). Located in the Quinault Rainforest alongside the serene Quinault River, the campground is quite remote and peaceful. It’s close to several popular hiking trails, including the world-class Enchanted Valley (a 26-mile roundtrip trail). This campground is open year round. It has 30 non-reservable spots. No RVs or trailers are allowed due to the narrow, rough, winding access road. Pit toilets are the only amenity.",
+   "image":"https://images.pexels.com/photos/15048398/pexels-photo-15048398.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Heart O’ the Hills Campground",
+   "description":"Located smack dab in the middle of an old growth forest, Heart O’ the Hills is a popular Olympic National Park campground for family camping. Kids love the fun summer ranger programs. Plus, the campground is just a few miles from Port Angeles, making it one of the most easily accessible in the park. But the real draw of Heart O’the Hills is its close proximity to Hurricane Ridge. The breathtaking destination is located a short 14-mile drive away. Heart O’ the Hills is open year round. However, the area receives heavy snow in the winter, making it walk-in only when snow is on the ground.",
+   "image":"https://images.pexels.com/photos/15048495/pexels-photo-15048495.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Hoh Campground",
+   "description":"Tucked away in the country’s most famous rainforest, Hoh Campground is a very central jumping off point for many of Olympic National Park’s best attractions. Camp here for easy access to popular hiking trails like the Hoh River Trail and the Hall of Mosses. As one of the wettest locations in America, campers should adequately prepare for rain, even in the middle of summer. The campground is open year round. It contains 88 non-reservable spots and is RV friendly (up to 21 feet). Flush toilets, running water, and an RV dump station are available.",
+   "image":"https://images.pexels.com/photos/6526177/pexels-photo-6526177.jpeg?auto=compress&cs=tinysrgb&w=1600"
+},
+{
+    "campName": "Kalaloch Campground",
+    "description":"Kalaloch Campground is my favorite campground in Olympic National Park – it’s also the most popular. Why do people love it so much? The answer is simple. It’s beautiful. Situated on a bluff alongside sandy Kalaloch Beach, many campsites have amazing views of the Pacific Ocean. Even those that don’t are just a very short walk away. The campground is open year round. It contains 170 reservable spots and is RV friendly (up to 35 feet for some spots). Flush toilets, running water, an RV dump station, and a year-round general store are available.",
+    "image":"https://images.pexels.com/photos/15048432/pexels-photo-15048432.jpeg?auto=compress&cs=tinysrgb&w=1600"
+},
+{
+    "campName": "Mora Campground",
+    "description":"Mora Campground is situated near the Quillayute River, just a few miles from Rialto Beach. It’s just a hop, skip, and a jump away from many popular Olympic National Park destinations including Hole in the Wall, Second Beach, and Strawberry Bay Falls. Because of its location near the village of La Push, it’s sometimes called La Push Campground instead of Mora. The campground is open year round. It has 95 non-reservable spots and is RV friendly (up to 35 feet for some spots). Pit toilets, running water, and an RV dump station are available.",
+    "image":"https://images.pexels.com/photos/15048412/pexels-photo-15048412.jpeg?auto=compress&cs=tinysrgb&w=1600"
+},
+{
+    "campName": "North Fork Campground",
+    "description":"North Fork Campground is perfect for campers looking for a more secluded Olympic National Park camping experience. Hidden along the Quinault River, this tiny campground is located close several to beautiful hikes including Skyline Ridge Primitive Trails. Deer, elk, and bears visit the area often. The campground is open year round. It contains 9 non-reservable spots. It isn’t RV friendly. Running water isn’t available although North Fork has pit toilets.",
+    "image":"https://images.pexels.com/photos/730427/pexels-photo-730427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+},
+{
+    "campName": "Ozette Campground",
+    "description":"Ozette Campground is an often overlooked gem of an Olympic National Park campground. Miles from anywhere else, the campground is set on the shores of Lake Ozette. Most campsites have views of the lake. Do note that the road in is often rough and muddy. The campsites can be equally wet. The campground is open year round. It contains 15 non-reservable spots and is RV friendly (up to 21 feet). Pit toilets are the only amenity.",
+    "image":"https://images.pexels.com/photos/8046603/pexels-photo-8046603.jpeg?auto=compress&cs=tinysrgb&w=1600"
+},
+{
+    "campName": "Queets Campground",
+    "description":"Queets Campground is among the most remote campgrounds in Olympic National Park. This remoteness makes it perfect for those looking to experience the park in as much solitude as possible. It’s also located in one of the least visited sections of the park. The campground is open year round. It contains 20 non-reservable spots. It isn’t RV friendly. Running water isn’t available although there are pit toilets.",
+    "image":"https://images.pexels.com/photos/8043291/pexels-photo-8043291.jpeg?auto=compress&cs=tinysrgb&w=1600"
+},
+{
+    "campName": "South Beach Campground",
+    "description":"Though it’s right off of Highway 101 and just minutes from Kalaloch, South Beach Campground is surprisingly isolated. Its scenic location on a bluff provides campers with great views of the Pacific Ocean, especially at sunset. It’s also the perfect jumping off point to explore the Quinault and Queets Rainforests. The campground is open from May to September. It has 50 non-reservable spots and is RV friendly (up to 35 feet in some campsites). Running water isn’t available although it does have pit toilets and an RV dump station.",
+    "image":"https://images.pexels.com/photos/7042875/pexels-photo-7042875.jpeg?auto=compress&cs=tinysrgb&w=1600"
 }
 
 ]},
@@ -398,38 +428,43 @@
     "name":"Grand Teton National Park",
  "states": "#3 in Best Cheap Vacations in the U.S. - WYOMING ",
  "description":"Towering above Jackson Hole Valley with jagged snow-topped peaks, Wyoming's majestic Teton Mountains are in high relief at Grand Teton National Park. From the 13,770-foot Grand Teton to the glittering Jenny and Jackson lakes – which reflect the mountains in their depths – the photo-ops are endless. But the park isn't just for mountaineers and photographers. In the peak summer season, the area's trails call to hikers of all abilities and reveal gems like hidden waterfalls and breathtaking views of the Tetons. Meanwhile, the Snake River appeals to kayakers, rafters and those who simply fancy a float. Historic districts like Menors Ferry and Mormon Row attract history buffs interested in the 19th-century past of this piece of Western Frontier. ",
- "subText":"",
+ "subText":"Grand Teton National Park is filled with incredible hikes, scenic drives, and must-do adventures. Plus, there’s no shortage of places to stay near all the best things to do in Grand Teton. There are seven campgrounds in Grand Teton National Park: Colter Bay, Colter Bay RV Park, Headwaters, Lizard Creek, Signal Mountain, Jenny Lake, and Gros Ventre.",
  "image":"https://images.pexels.com/photos/12890090/pexels-photo-12890090.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
  "campgrounds": [{
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Colter Bay Campground",
+   "description":"Colter Bay Campground is the largest in Grand Teton National Park. This large, forested campground offers relatively private campsites with excellent access to amenities and restaurants in Colter Bay Village, only a short walk to Jackson Lake. Here you’ll find 324 standard campsites that can accommodate both tents and RVs, plus ten hiker/biker sites, 10 group sites, and 13 campsites with electric hookups. Colter Bay Village is only a short walk away, providing campers access to a general store, several restaurants, laundry facilities, and more. 2023 Operating Dates: May 25 to September 26",
+   "image":"https://images.pexels.com/photos/1592461/pexels-photo-1592461.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Colter Bay RV Park",
+   "description":"Located next door to Colter Bay Campground, the RV Park is an excellent option for those looking for a campsite with full hookups. This RV-specific campground can accommodate motorhomes of all sizes with both pull-through and back-in sites. In Colter Bay RV Park, you’ll find 102 pull-through sites with full hookups and ten back-in sites with full hookups. Plus, you’re within walking distance to laundry facilities, restaurants, a general store, and the visitor center in Colter Bay Village! 2023 Operating Dates: May 4 to October 7",
+   "image":"https://images.pexels.com/photos/7005517/pexels-photo-7005517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Gros Ventre Campground",
+   "description":"Gros Ventre Campground is located in the southern part of Grand Teton, near Jackson. With 322 sites, it’s the second large campground in the park, second to Colter Bay Campground. The campground sites along the Gros Ventre River providing excellent views of the surrounding region, including the Tetons! Here you’ll find 279 standard campsites that can accommodate both tents and RVs, plus 39 sites with electric-only hookups and 4 group sites. Campers can enjoy a prime location in Grand Teton, plus access to a convenient RV dump station. 2023 Operating Dates: April 28 to October 14",
+   "image":"https://images.pexels.com/photos/7928029/pexels-photo-7928029.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Headwaters Campground",
+   "description":"Headwaters Campground at Flagg Ranch is located in the far northern part of Grand Teton along John D. Rockefeller Jr. Memorial Parkway. This campground is roughly halfway between Yellowstone and Grand Teton, making it perfect for those exploring both national parks on one trip. The large campground has 34 standard sites to accommodate tents and RVs, plus 97 additional full hookup pull-through RV sites. Campers can enjoy access to the nearby restaurant, lodge, and ranger information station. Operating Dates: May 12 to September 30",
+   "image":"https://images.pexels.com/photos/9031183/pexels-photo-9031183.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
+   "campName": "Jenny Lake Campground",
+   "description":"Jenny Lake Campground is the only campground in Grand Teton that is tent-only. It also has arguably the best location in the park, nestled along the shores of the ultra-scenic Jenny Lake. From your campsite, you can take in incredible Teton Range views and have access to many of the best hiking trails in the park. With 61 tent-only sites, campers will enjoy a quieter camping experience in the forested campground with excellent opportunities for spotting wildlife. Campers here can enjoy flush toilets, nearby showers, and all that the prime location near Jenny Lake has to offer..2023 Operating Dates: May 5 to September 26",
+   "image":"https://images.pexels.com/photos/8877756/pexels-photo-8877756.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-   "campName": "",
-   "description":"",
-   "image":""
-}
+   "campName": "Lizard Creek Campground",
+   "description":"Lizard Creek Campground is the least developed campground in Grand Teton National Park. While the campground still offers amenities like flush toilets, you won’t find laundry, showers, or RV hookups here. The campground is heavily wooded with 60 tent and RV-friendly campsites, providing plenty of privacy. If you’re looking for a less crowded, more secluded camping experience, choose to stay at Lizard Creek in Grand Teton. .2023 Operating Dates: June 9 to September 10",
+   "image":"https://images.pexels.com/photos/12890082/pexels-photo-12890082.jpeg?auto=compress&cs=tinysrgb&w=1600"
+},
+{
+    "campName": "Signal Mountain Campground",
+    "description":"Signal Mountain Campground is centrally located along Teton Park Road in the heart of Grand Teton. Its location near Signal Mountain Lodge offers plenty of amenities, like restaurants and a general store. Plus, its tree-filled campsites provide guests with some privacy. Here you’ll find 56 standard campsites that can accommodate both tents and RVs, plus an additional 25 sites with electric-only hookups. The location of Signal Mountain Campground makes it the perfect home base for exploring all that Grand Teton offers.2023 Operating Dates: May 12 to October 14",
+    "image":"https://images.pexels.com/photos/2836719/pexels-photo-2836719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+ }
 
 ]},
     
@@ -438,37 +473,45 @@
     "name":"Glacier National Park",
  "states": "#1 in Best Cheap Summer Vacations - MONTANA",
  "description":"Aside from its breathtaking geological features, it's also home to a fair amount of history. The Going-to-the-Sun Road – a scenic, 50-mile drive through the park – is a National Historic Landmark and an engineering marvel that offers spectacular views, as well as access to popular hiking trails. Plus, many of the park's lodges, chalets and hotels were constructed by the Great Northern Railway in the early 20th century and are on the National Register of Historic Places. Care to visit a UNESCO World Heritage Site? You'll find that here, too: the Waterton-Glacier International Peace Park. Named for the remnants of glaciers from the ice age, Glacier National Park is located on the border of Canada and Montana. It is often called the 'Crown of the Continent', because of its dizzying array of natural beauty. ",
- "subText":"",
+ "subText":"There are thirteen established campgrounds in Glacier National Park with over 1,000 campsites for tents and RV campers. There are also hundreds of primitive backcountry campsites available for backpackers. Overflow campgrounds and free primitive campgrounds are numerous outside of the park.",
   "image":"https://images.pexels.com/photos/6108440/pexels-photo-6108440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
   "campgrounds": [{
-    "campName": "",
-    "description":"",
-    "image":""
+    "campName": "Many Glacier Campground",
+    "description":"When most people think of camping in Glacier National Park, Many Glacier comes to mind. This campground is perfectly located near the continental divide with abundant hiking opportunities and nearby views of the famous glaciers. As one of the most popular campgrounds in the park, Many Glacier comes with all of the amenities including showers, a dump station, flush toilets, and potable water. Large campsites can accommodate RVs and campers up to 35 feet long and generators are acceptable.",
+    "image":"https://images.pexels.com/photos/2414093/pexels-photo-2414093.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-    "campName": "",
-    "description":"",
-    "image":""
+    "campName": "Rising Sun Campground",
+    "description":"Rising Sun is located 6 miles west of St Mary Lake and 12 miles east of Logan Pass where many popular day hikes in the park take place. Campsites are breezy, shaded, and private so spending the night here is a tranquil experience. Flush toilets, potable water, and a dump station are all available for campers. The sites are relatively small but will fit RVs up to 25-feet long. Reservations are not available here, so you’ll want to arrive early for the best campsites.",
+    "image":"https://images.pexels.com/photos/13578358/pexels-photo-13578358.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-    "campName": "",
-    "description":"",
-    "image":""
+    "campName": "Two Medicine Campground",
+    "description":"f you’re looking for a more private experience away from the crowds, Two Medicine Campground is a great place to stay. These accommodations are nestled 13 miles from East Glacier in a quieter portion of the park. 100 campsites are located at Two Medicine for tents and RVs up to 35-feet long. The campsites are shaded and spread apart so you won’t be staying directly next to the neighbors. However, the trees are spaced so you will see other campers–particularly on the loop next to the lake.",
+    "image":"https://images.pexels.com/photos/3684372/pexels-photo-3684372.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-    "campName": "",
-    "description":"",
-    "image":""
+    "campName": "St Mary Campground",
+    "description":"As the largest campground on the east side of Glacier National Park, St Mary Campground has activities that can be enjoyed by every type of traveler. From the campsite, you can enjoy dramatic views of Singleshot, Flattop, and Red Eagle Mountain. Aside from hiking, boat tours are available on St Mary Lake. This campground is also open year-round and reservations can be made up to 6-months in advance. St Mary has a mix of shaded and sunny campsites, Loop A is the most sheltered for tents while Loops B and C are good for RVs up to 35-feet long.",
+    "image":"https://images.pexels.com/photos/413788/pexels-photo-413788.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-    "campName": "",
-    "description":"",
-    "image":""
+    "campName": "Apgar Campground",
+    "description":"Apgar campground is the largest in Glacier National Park. It is located on the Going to the Sun Road and near Apgar village. With nearly 200 campsites and facilities nearby including restaurants, camping supplies, boat docks, and a visitor center; it’s no wonder this campground is among the most popular in the park.As of 2022, reservations are required at Apgar campground. You can make reservations on Recreation.gov. At Apgar, you get access to flush toilets, showers, and an RV dump station. Some sites are large enough for RVs up to 40 feet long, and there are large, paved paths for walking and biking. The campground operates year-round, and during the winter season, it has free primitive camping.",
+    "image":"https://images.pexels.com/photos/259630/pexels-photo-259630.jpeg?auto=compress&cs=tinysrgb&w=1600"
 },
 {
-    "campName": "",
-    "description":"",
-    "image":""
-}
-
-]}]
+    "campName": "Fish Creek Campground",
+    "description":"The Fish Creek campground is located on the west side of the Glacier National Park along the Camas Road and a few miles from the Apgar village. It is the second-largest campground in the Glacier National Park. Here, there are 178 sites surrounded by cedars, larches, lodgepole pines, and many other trees that provide lots of shade and privacy to every camper. The Fish Creek campground accepts both RV campers and tent campers from all over the world. 62 sites can house RVs up to 27 feet long, and 18 are large enough for 35-foot campers. The campground has access to potable water, restroom facilities that provide flush toilets, and showers. ",
+    "image":"https://images.pexels.com/photos/326256/pexels-photo-326256.jpeg?auto=compress&cs=tinysrgb&w=1600"
+},
+ {"campName": "Avalanche Campground",
+    "description":"Like many campgrounds in the park, reservations at Avalanche are not accepted so you’ll want to arrive early if you want one of these coveted locations. From the campground, you can walk to Avalanche Lake which is 4.5 miles roundtrip. The Trail of Cedars is within walking distance, and Lake McDonald is only a 10-minute shuttle ride away. Located in the front-country along the continental divide, Avalanche Campground is positioned in one of the most popular sections of the park. Tall cedar and hemlock trees provide cool shade and insulation from other campers. There is a free shuttle service that makes stops here, so it’s the perfect take-off point for nearby hiking trails. Of the 87 campsites, 50 can hold RVs up to 26 feet long. You’ll find flush toilets and sinks at Avalanche so it’s a good place to stay if you don’t want to go primitive.",
+    "image":"https://images.pexels.com/photos/206796/pexels-photo-206796.jpeg?auto=compress&cs=tinysrgb&w=1600"
+},
+{
+    "campName": "Sprague Creek Campground",
+    "description":"Sitting on the shores of Lake McDonald is Sprague Creek Campground. This is another popular location where you’ll want to arrive early to snag a spot because it’s first-come, first-served only. There are only 25 campsites here, but many have unobstructed views of the lake and plenty of shade. Sites are small, so it’s a tent-camping only area. As of 2022, reservations are required at Sprague Creek Campground. You can make your reservations on Recreation.gov",
+    "image":"https://images.pexels.com/photos/2589456/pexels-photo-2589456.jpeg?auto=compress&cs=tinysrgb&w=1600"
+}]
+}]

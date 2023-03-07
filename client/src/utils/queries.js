@@ -6,7 +6,12 @@ export const QUERY_USER = gql`
     user(username: $username) {
       _id
       username
+      phone
       email
+      park
+      campground
+      date
+      time
     }
   }
 `;
@@ -16,7 +21,12 @@ export const QUERY_ME = gql`
     me {
       _id
       username
+      phone
       email
+      park
+      campground
+      date
+      time
     }
   }
 `;
@@ -26,7 +36,12 @@ export const QUERY_ME_BASIC = gql`
     me {
       _id
       username
+      phone
       email
+      park
+      campground
+      date
+      time
     }
   }
 `;
