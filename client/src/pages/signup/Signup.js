@@ -6,10 +6,9 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import InputLabel from "@mui/material/InputLabel";
 import Button from "@mui/material/Button";
-import { Container, Autocomplete } from "@mui/material";
+import { Container } from "@mui/material";
 import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import "react-datepicker/dist/react-datepicker.css";
-import { default as data } from "../../data.json";
 
 const Signup = () => {
   const [formState, setFormState] = useState({
@@ -27,10 +26,13 @@ const Signup = () => {
   // update state based on form input changes
   const handleChange = (event) => {
     const { name, value } = event.target;
+    const { park, campground } = event.target.value;
 
     setFormState({
       ...formState,
       [name]: value,
+      [park]: value,
+      [campground]: value,
     });
   };
 
@@ -71,7 +73,6 @@ const Signup = () => {
             Username
           </InputLabel>
           <TextField
-            label="Outlined secondary"
             color="success"
             focused
             className="form-input"
@@ -86,7 +87,6 @@ const Signup = () => {
             Phone number
           </InputLabel>
           <TextField
-            label="Outlined secondary"
             color="success"
             focused
             className="form-input"
@@ -102,7 +102,6 @@ const Signup = () => {
             Email
           </InputLabel>
           <TextField
-            label="Outlined secondary"
             color="success"
             focused
             className="form-input"
@@ -116,34 +115,124 @@ const Signup = () => {
           <InputLabel shrink htmlFor="bootstrap-input" className="label">
             Park
           </InputLabel>
-          <TextField
-            label="Outlined secondary"
+          <select
             color="success"
             focused
             className="form-input"
-            placeholder="Which park you want to camp?"
+            placeholder="Select park"
             name="park"
             type="park"
             id="park"
             value={formState.park}
             onChange={handleChange}
-          />
+          >
+            <option></option>
+            <option value="Yosemite National Park">
+              Yosemite National Park
+            </option>
+            <option value="Yosemite National Park">
+              Yosemite National Park
+            </option>
+            <option value="Grand Canyon National Park">
+              Grand Canyon National Park
+            </option>
+            <option value="Great Smoky Mountains National Park">
+              Great Smoky Mountains National Park
+            </option>
+            <option value="Zion National Park">Zion National Park</option>
+            <option value="Rocky Mountain National Park">
+              Rocky Mountain National Park
+            </option>
+            <option value="Acadia National Park">Acadia National Park</option>
+            <option value="Olympic National Park">Olympic National Park</option>
+            <option value="Grand Teton National Park">
+              Grand Teton National Park
+            </option>
+            <option value="Glacier National Park">Glacier National Park</option>
+          </select>
+
           <InputLabel shrink htmlFor="bootstrap-input" className="label">
             Campground
           </InputLabel>
-
-          <TextField
-            label="Outlined secondary"
+          <select
             color="success"
             focused
             className="form-input"
-            placeholder="Campground name?"
+            placeholder="Select campground"
             name="campground"
             type="campground"
             id="campground"
             value={formState.campground}
             onChange={handleChange}
-          />
+          >
+            <option></option>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+            <options value=""></options>
+          </select>
+          <br></br>
+
           <InputLabel shrink htmlFor="bootstrap-input" className="label">
             Choose your date
           </InputLabel>
@@ -153,7 +242,6 @@ const Signup = () => {
             name="date"
             label="Choose the date of arrival"
             type="date"
-            defaultValue="2023-02-24"
             InputLabelProps={{
               shrink: true,
             }}
@@ -162,7 +250,6 @@ const Signup = () => {
           />
           <TextField
             label="Expected time of arrival"
-            defaultValue="04:20"
             type="time"
             name="time"
             id="time"
@@ -176,7 +263,6 @@ const Signup = () => {
             Password
           </InputLabel>
           <TextField
-            label="Outlined secondary"
             color="success"
             focused
             className="form-input"

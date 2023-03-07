@@ -18,7 +18,7 @@ export default function ButtonAppBar() {
   return (
     <>
     <Box sx={{ flexGrow: 1}}>
-      <AppBar position="static">
+      <AppBar position="static" className="navbar">
       {Auth.loggedIn() ? (
         <Toolbar>
           <IconButton

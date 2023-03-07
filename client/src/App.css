@@ -3,13 +3,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Shantell Sans", cursive;
+  font-family: Georgia,  serif;
+}
+.navbar{
+  background-color: rgb(92, 41, 5) !important;
 }
 p {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 h1 {
-  margin: 3% auto;
+  margin: 2% auto;
   text-align: center;
   color: rgb(14, 114, 114);
 }
@@ -24,15 +27,13 @@ h2 span {
 }
 
 .banner {
-  background-image: url("https://images.pexels.com/photos/131720/pexels-photo-131720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("../src/images/sun.png");
   
 }
 .about {
   background-color: rgb(237, 241, 241);
   padding: 15px;
-  text-align: center;
+  text-align: left;
 }
 .about-info {
   margin: 3% auto;
@@ -75,13 +76,6 @@ h3 {
   margin: 2%;
 }
 
-.bannerCamp {
-  height: 100vh;
-}
-.bannerReview {
-  background-image: url("https://images.pexels.com/photos/131720/pexels-photo-131720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-  background-size: cover;
-}
 .backBtn {
   color: rgb(10, 78, 78);
 }
@@ -104,10 +98,9 @@ h3 {
 }
 .paper {
   padding: 15px;
-  width: 33%;
+  width: 32%;
   line-height: 1.8em;
 }
-
 .altText {
   font-size: 12px;
 }
@@ -123,7 +116,6 @@ a:hover {
 p a {
   color: blue;
 }
-
 .btnlink {
   color: white;
 }
@@ -132,7 +124,7 @@ p a {
 }
 .formData {
   margin: 3% auto;
-  width: 50%;
+  width: 100%;
 }
 .formData label {
   margin: 8px auto;
@@ -192,14 +184,14 @@ p a {
 }
 .box-modal {
   text-align: center;
-  height: 60vh;
-  
+  height: 60vh; 
 }
 
 .modal-btn {
-  background-color: antiquewhite !important;
+  background-color: rgb(14, 134, 86) !important;
   padding: 22px 44px !important;
-  margin: 10% auto !important;
+  margin: 8% auto !important;
+  color: aliceblue !important;
 }
 .subtitle{
     color: antiquewhite;
@@ -210,4 +202,23 @@ p a {
 .subp{
     color: antiquewhite;
     font-family: Georgia,  serif;
+}
+#park, #campground{
+  padding: 15px;
+  font-size: 18px;
+  border: 2px solid rgb(19, 128, 64);
+  background-color: rgb(235, 229, 229);
+}
+
+.signModal{
+  position: absolute;
+  top: 50% ;
+  left: 50% ;
+  transform: translate(-50%, -50%) ;
+  width: 50% ;
+  height: 70%;
+  overflow: auto;
+  box-shadow: 4px 4px 4px 4px rgb(7, 51, 29);
+  background-color: rgb(235, 229, 229);
+  padding: 15px;
 }
