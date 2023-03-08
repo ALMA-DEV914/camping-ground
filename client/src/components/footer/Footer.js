@@ -1,7 +1,9 @@
 import React from "react";
-import CssBaseline from "@mui/material/CssBaseline";
-import Box from "@mui/material/Box";
+import FacebookIcon from '@mui/icons-material/Facebook';
 import Container from "@mui/material/Container";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import {Box, TextField, InputLabel, Button} from "@mui/material";
 
 function Footer() {
   return (
@@ -16,7 +18,33 @@ function Footer() {
             manage our healthy life-style, and make progress. Health@Wellness
             was created for your custom and generic search for a healthy diet
             plan.
-          </p>
+          </p><br></br>
+          <Box
+          component="form"
+          noValidate
+          autoComplete="off"
+          className="subsData"
+        >
+          <h5>Subscribe to receieve updates</h5>
+          <div>
+          <TextField
+            focused
+            className="subscribe-input"
+            placeholder="Subscribe here..."
+            name="username"
+            type="username"
+            id="username"
+            
+          />
+          <Button className="subs-btn">Submit</Button></div>
+          </Box>
+        </div>
+        <div className="col">
+          <div className="col-icons">
+          <FacebookIcon />
+          <InstagramIcon/>
+          <TwitterIcon />
+          </div>
         </div>
         <div className="col">
           <h5>Contact Us</h5>

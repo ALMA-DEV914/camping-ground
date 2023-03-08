@@ -51,7 +51,7 @@ export default function About() {
         <div className="about-more">
           <Container>
             <Typography variant="h6">
-              WE LOVE OUTDOORS.<br></br> CLIMBING, HIKING ARE CAMPING ARE OUR
+              WE LOVE OUTDOORS.<br></br> CLIMBING, HIKING AND CAMPING ARE OUR
               FAVORITE{" "}
             </Typography>
             <br></br>

@@ -235,8 +235,29 @@ p a {
   display: flex !important;
   justify-content: space-between !important;
 }
+.subsData{
+  background-color: rgb(213, 125, 52);
+  padding: 15px;
+}
+.subscribe-input{
+  width: 90%;
+  border: 2px solid white !important;
+  background-color: rgb(232, 239, 239) !important;
+  border-radius: 10px !important;
+  
+}
+.subs-btn{
+  background-color: rgb(9, 139, 130) !important;
+  padding: 15px !important;
+  color: azure !important;
+}
+
 .col {
   margin: 3%;
+}
+.col-icons{
+  display: flex;
+
 }
 .div-pages {
   padding: 15px;
