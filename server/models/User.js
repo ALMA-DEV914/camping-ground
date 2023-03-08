@@ -9,6 +9,9 @@ const userSchema = new Schema(
       unique: true,
       trim: true
     },
+    images: {
+      type: String,
+    },
     phone: {
       type: String,
       required: true,

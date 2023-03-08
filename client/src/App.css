@@ -242,3 +242,10 @@ p a {
 .select-date div{
   width: 100%;
 }
+.textarea{
+  padding: 15px;
+}
+.comments{
+  width: 90%;
+  padding: 20px;
+}

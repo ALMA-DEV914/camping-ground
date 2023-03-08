@@ -1,13 +1,16 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { Container } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import CardContent from "@mui/material/CardContent";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
-import { Pagination} from "@mui/material";
+import { Pagination } from "@mui/material";
 import usePagination from "./Pagination";
 import { default as data } from "../../data.json";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import ShareIcon from "@mui/icons-material/Share";
+import IconButton from "@mui/material/IconButton";
 
 export default function Park() {
   let [page, setPage] = useState(1);
@@ -16,11 +19,13 @@ export default function Park() {
   const count = Math.ceil(data.length / PER_PAGE);
   const _DATA = usePagination(data, PER_PAGE);
 
-  const goToTop = () => { window.scrollTo({ top: 0, behavior: 'smooth', }); }
+  const goToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   const handleChange = (e, p) => {
     setPage(p);
-    goToTop(true)
+    goToTop(true);
     _DATA.jump(p);
   };
 
@@ -43,10 +48,12 @@ export default function Park() {
                 <CardContent>
                   <CardMedia component="img" image={data.image}></CardMedia>
                   <br></br>
-                  <Typography paragraph>{data.subText} {" "} {data.name}</Typography>
+                  <Typography paragraph>
+                    {data.subText} {data.name}
+                  </Typography>
                 </CardContent>
                 <CardContent>
-                    <h2>The famous campgrounds</h2>
+                  <h2>The famous campgrounds</h2>
                   {data.campgrounds.map((campgrounds, i) => (
                     <div className="div-camps">
                       <div>
@@ -63,6 +70,12 @@ export default function Park() {
                       </div>
                     </div>
                   ))}
+                  <IconButton aria-label="add to favorites">
+                    <FavoriteIcon />
+                  </IconButton>
+                  <IconButton aria-label="share">
+                    <ShareIcon />
+                  </IconButton>
                 </CardContent>
               </Card>
             </div>
@@ -78,7 +91,7 @@ export default function Park() {
           shape="rounded"
           onChange={handleChange}
         />
-  </div>
+      </div>
     </Container>
   );
 }

@@ -10,6 +10,7 @@ import { Container } from "@mui/material";
 import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import "react-datepicker/dist/react-datepicker.css";
 
+
 const Signup = () => {
   const [formState, setFormState] = useState({
     username: "",
@@ -20,22 +21,26 @@ const Signup = () => {
     date: "",
     time: "",
     password: "",
+    images: "",
   });
-  const [addUser, { error }] = useMutation(ADD_USER);
 
+  const [addUser, { error }] = useMutation(ADD_USER);
+  
+  
   // update state based on form input changes
   const handleChange = (event) => {
     const { name, value } = event.target;
-    const { park, campground } = event.target.value;
-
+    const { park, campground} = event.target.value;
+   
+    
     setFormState({
       ...formState,
       [name]: value,
       [park]: value,
       [campground]: value,
+      
     });
   };
-
   // submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -83,6 +88,7 @@ const Signup = () => {
             value={formState.username}
             onChange={handleChange}
           />
+          
           <InputLabel shrink htmlFor="bootstrap-input" className="label">
             Phone number
           </InputLabel>
@@ -420,6 +426,7 @@ const Signup = () => {
               />
             </div>
           </div>
+
           <InputLabel shrink htmlFor="bootstrap-input" className="label">
             Password
           </InputLabel>
