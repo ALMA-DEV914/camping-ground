@@ -39,7 +39,7 @@ export default function Questions() {
         </p>
         <div className="box-info">
           <Paper className="paper">
-            <h2>ABOUT</h2>
+            <h3>ABOUT</h3>
             <Box className={scrolled ? "scrolled" : ""}>
               <Link href="#what's-all" underline="none">
                 What’s all this campground tracking about?
@@ -74,7 +74,7 @@ export default function Questions() {
           </Paper>
 
           <Paper className="paper">
-            <h2>PRICING</h2>
+            <h3>PRICING</h3>
             <Box className={scrolled ? "scrolled" : ""}>
               <Link href="#is-free" underline="none">
                 Is CAMPTRACK free?
@@ -109,7 +109,7 @@ export default function Questions() {
           </Paper>
 
           <Paper className="paper">
-            <h2>FEATURES</h2>
+            <h3>FEATURES</h3>
             <Box className={scrolled ? "scrolled" : ""}>
               <Link href="#benefits" underline="none">
                 What are the benefits of CAMPTRACK?
@@ -148,10 +148,10 @@ export default function Questions() {
 
       <div className="about">
         <Container>
-          <h2>ABOUT</h2>
-          <Box sx={{ padding: 4, margin: 2, display: "flex" }}>
-            <div className="about-info">
-              <h3 id="what's-all">WHAT’S ALL THIS CAMPTRACK TRACKING ABOUT?</h3>
+          <h3>ABOUT</h3>
+          <Box sx={{ padding: 4,  display: "flex" }}>
+          <div className="about-info">
+              <h4 id="what's-all">WHAT’S ALL THIS CAMPTRACK TRACKING ABOUT?</h4>
               <br></br>
               <p>
                 Me and my husband hated how campsites were booked months in advance. We
@@ -163,7 +163,7 @@ export default function Questions() {
               </p>
               <br></br>
 
-              <h3 id="how-does">HOW DOES IT WORK?</h3>
+              <h4 id="how-does">HOW DOES IT WORK?</h4>
               <br></br>
               <p>
                 You fill in the form on our homepage, noting your camping
@@ -173,7 +173,7 @@ export default function Questions() {
                 available we send you a text message so you can grab it.
               </p>
               <br></br>
-              <h3 id="do-you-book">DO YOU BOOK A CAMPSITE FOR ME?</h3>
+              <h4 id="do-you-book">DO YOU BOOK A CAMPSITE FOR ME?</h4>
               <br></br>
               <p>
                 Nope. That’s not our deal. We just monitor the availability of
@@ -184,7 +184,7 @@ export default function Questions() {
             </div>
             <br></br>
             <div className="about-info">
-              <h3 id="does-really">IS CAMPTRACK REALLY LEGIT?</h3>
+              <h4 id="does-really">IS CAMPTRACK REALLY LEGIT?</h4>
               <br></br>
               <p>
                 Yes—CAMPTRACK absolutely works. It monitors parks for cancelations
@@ -202,9 +202,9 @@ export default function Questions() {
                 can help.
               </p>
               <br></br>
-              <h3 id="can-you-help">
+              <h4 id="can-you-help">
                 CAN YOU HELP ME BOOK A SPOT WHEN PARKS OPEN UP FOR RESERVATIONS?
-              </h3>
+              </h4>
               <br></br>
               <p>
                 Unfortunately, no, that’s not what our service is about. In
@@ -217,7 +217,7 @@ export default function Questions() {
                 between opening morning and your preferred arrival date.
               </p>
               <br></br>
-              <h3 id="who-made-this">WHO IS BEHIND THIS?</h3>
+              <h4 id="who-made-this">WHO IS BEHIND THIS?</h4>
               <br></br>
               <p>My husband proposed this idea and I built this app as personal project being a Web Developer. We’re both active in the outdoors, climbing and
                 love camping with our respective families in any given time available. 
@@ -229,10 +229,10 @@ export default function Questions() {
 
       <div className="pricing">
         <Container>
-          <h2>PRICING</h2>
+          <h3>PRICING</h3>
           <Box sx={{ padding: 4, margin: 2, display: "flex" }}>
             <div className="about-info">
-              <h3 id="is-free">IS CAMPTRACK FREE?</h3>
+              <h4 id="is-free">IS CAMPTRACK FREE?</h4>
               <br></br>
               <p>
                 Nope. My husband and I have built a number of products over the years.
@@ -253,7 +253,7 @@ export default function Questions() {
               </p>
               <br></br>
 
-              <h3 id="is-worth">IS CAMPTRACK WORTH IT?</h3>
+              <h4 id="is-worth">IS CAMPTRACK WORTH IT?</h4>
               <br></br>
               <p>
                 The answer to this question depends on you. If you have spare
@@ -264,9 +264,9 @@ export default function Questions() {
                 it’s less so.
               </p>
               <br></br>
-              <h3 id="what-are">
-                WHAT ARE THE BENEFITS OF A CAMPTRACK MEMBERSHIP?
-              </h3>
+              <h4 id="what-are">
+                WHAT ARE THE BENEFITS OF A CAMPTRACK MEMBERSHIP?</h4>
+              
               <br></br>
               <p>
                 Pay-per-use scans are fine for occasional campers. However,
@@ -288,7 +288,7 @@ export default function Questions() {
             </div>
             <br></br>
             <div className="about-info">
-              <h3 id="how-much">HOW MUCH DOES IT COST?</h3>
+              <h4 id="how-much">HOW MUCH DOES IT COST?</h4>
               <br></br>
               <p>
                 We offer two ways to use CAMPTRACK. The first is individual
@@ -308,9 +308,9 @@ export default function Questions() {
                 $50) depending on your needs.
               </p>
               <br></br>
-              <h3 id="can-cancel">
+              <h4 id="can-cancel">
                 CAN I CANCEL MY MEMBERSHIP AT THE END OF THE SUMMER?
-              </h3>
+              </h4>
               <br></br>
               <p>
                 Yes—you can cancel your monthly membership at any time. That
@@ -322,9 +322,9 @@ export default function Questions() {
                 that, too. 
               </p>
               <br></br>
-              <h3 id="do-refund">
+              <h4 id="do-refund">
                 DO YOU REFUND ME IF I DON’T RECEIVE ANY ALERTS?
-              </h3>
+              </h4>
               <br></br>
               <p>
                 Nope. When you sign up for CAMPTRACK, you’re effectively hiring us
@@ -349,10 +349,10 @@ export default function Questions() {
 
       <div className="features">
         <Container>
-          <h2>FEATURES</h2>
+          <h3>FEATURES</h3>
           <Box sx={{ padding: 4, margin: 2, display: "flex" }}>
             <div className="about-info">
-              <h3 id="benefits"> WHAT ARE THE BENEFITS OF CAMPTRACK?</h3>
+              <h4 id="benefits"> WHAT ARE THE BENEFITS OF CAMPTRACK?</h4>
               <br></br>
               <p>
                 Here are a handful of reasons why we consider CAMPTRACK
@@ -369,7 +369,7 @@ export default function Questions() {
               </p>
               <br></br>
 
-              <h3 id="can-scan">CAN I SCAN FOR A SPECIFIC CAMPSITE?</h3>
+              <h4 id="can-scan">CAN I SCAN FOR A SPECIFIC CAMPSITE?</h4>
               <br></br>
               <p>
                 YAAAS YOU CAN! We just added this feature, and it’s pretty
@@ -385,7 +385,7 @@ export default function Questions() {
                 “Specific sites” to choose the campsites you wish to monitor.
               </p>
               <br></br>
-              <h3 id="wilderness">DO YOU MONITOR WILDERNESS PERMITS?</h3>
+              <h4 id="wilderness">DO YOU MONITOR WILDERNESS PERMITS?</h4>
               <br></br>
               <p>
                 We currently monitor a number of wilderness permits the United States for cancelations / new availabilities.
@@ -397,10 +397,10 @@ export default function Questions() {
             </div>
             <br></br>
             <div className="about-info">
-              <h3 id="can-send">
+              <h4 id="can-send">
                 CAN YOU SEND NOTIFICATIONS ABOUT LOCKED SITES THAT ARE SET TO
                 RELEASE?
-              </h3>
+              </h4>
               <br></br>
               <p>
                 Yes! We can now scan Reserve California and Florida State Parks
@@ -418,9 +418,9 @@ export default function Questions() {
                 booking page all day long.
               </p>
               <br></br>
-              <h3 id="can-filter">
+              <h4 id="can-filter">
                 CAN I FILTER SEARCHES (ADA, STATES, ETC.)?
-              </h3>
+              </h4>
               <br></br>
               <p>
                 You sure can! Start by creating your scan and selecting your
@@ -430,10 +430,10 @@ export default function Questions() {
                 next, based on how that jurisdiction is set up.)
               </p>
               <br></br>
-              <h3 id="unlocked">
+              <h4 id="unlocked">
                 I WAS THERE THE EXACT MOMENT A CAMPSITE WAS SET TO UNLOCK, BUT
                 IT ISN’T AVAILABLE. WHAT GIVES?
-              </h3>
+              </h4>
               <br></br>
               <p>
                 Booking systems sometimes change release times for locked

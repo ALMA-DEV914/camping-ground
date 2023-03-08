@@ -1,22 +1,21 @@
-const express = require("express")
+const express = require("express");
 // import ApolloServer
-const { ApolloServer } = require('apollo-server-express');
-const { authMiddleware } = require('./utils/auth');
+const { ApolloServer } = require("apollo-server-express");
+const { authMiddleware } = require("./utils/auth");
 // import our typeDefs and resolvers
-const { typeDefs, resolvers } = require('./schemas');
-const db = require('./config/conection');
-const path = require('path');
-
+const { typeDefs, resolvers } = require("./schemas");
+const path = require("path");
+const db = require("./config/conection");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
 
 const startServer = async () => {
   // create a new Apollo server and pass in our schema data
-  const server = new ApolloServer({ 
-    typeDefs, 
-    resolvers, 
-    context: authMiddleware 
+  const server = new ApolloServer({
+    typeDefs,
+    resolvers,
+    context: authMiddleware,
   });
 
   // Start the Apollo server
@@ -36,16 +35,16 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // Serve up static assets
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/build')));
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "../client/build")));
 }
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
-db.once('open', () => {
-  console.log("Connected to database")
+db.once("open", () => {
+  console.log("Connected to database");
   app.listen(PORT, () => {
     console.log(`API server running on port ${PORT}!`);
   });

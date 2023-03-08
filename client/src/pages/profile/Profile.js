@@ -104,7 +104,7 @@ const Profile = (imageURLs) => {
         </CardActions>
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <div className="textarea">
-            <h3>Cretae post or comments here</h3><br></br>
+            <h3>Create post or comments here</h3><br></br>
         <TextareaAutosize name="comments" placeholder="Type in here…" className="comments" /><Button>Send</Button></div>
         </Collapse>
       </Card>
