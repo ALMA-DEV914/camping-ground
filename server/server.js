@@ -7,7 +7,7 @@ const { typeDefs, resolvers } = require("./schemas");
 const path = require("path");
 const db = require("./config/conection");
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 8000;
 const app = express();
 
 const startServer = async () => {

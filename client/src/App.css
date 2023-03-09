@@ -318,3 +318,10 @@ p a {
 .select-date div {
   width: 100%;
 }
+.reviews-form{
+  display: flex;
+}
+.div-reviews{
+  margin: 5% auto;
+  display: block;
+}

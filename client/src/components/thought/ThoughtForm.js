@@ -57,17 +57,17 @@ const ThoughtForm = () => {
   };
 
   return (
-    <div className="container">
+    <div className="reviews">
       <h1>Leave a Reviews</h1>
       <p
-        className={`m-0 ${characterCount === 500 || error ? "text-error" : ""}`}
+        className={`m-0 ${characterCount === 300 || error ? "text-error" : ""}`}
       >
-        Message-Reviews: {characterCount}/500 characters
+        Message-Reviews: {characterCount}/300 characters
         {error && <span className="ml-2"> Something went wrong...</span>}
       </p>
       <br></br>
       <form
-        className="flex-row justify-center justify-space-between-md align-stretch"
+        className="reviews-form"
         onSubmit={handleFormSubmit}
       >
         <textarea

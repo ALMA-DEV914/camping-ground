@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import HorizontalSplitIcon from "@mui/icons-material/HorizontalSplit";
 import { Link } from "react-router-dom";
 import Auth from "../../utils/auth";
 

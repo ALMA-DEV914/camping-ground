@@ -4,7 +4,6 @@ import { useQuery } from "@apollo/client";
 import { QUERY_USER, QUERY_ME } from "../../utils/queries";
 import Auth from "../../utils/auth";
 import { styled } from "@mui/material/styles";
-import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
@@ -13,7 +12,7 @@ import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import CommentsIcon from "@mui/icons-material/ExpandMore";
-import { Button} from "@mui/material";
+import { Button } from "@mui/material";
 import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import ThoughtForm from "../../components/thought/ThoughtForm";
 import ThoughtList from "../../components/thought/ThoughtList";
@@ -42,7 +41,6 @@ const Profile = (props) => {
 
   const user = data?.me || data?.user || {};
 
-  
   // redirect to personal profile page if username is yours
   if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {
     return <Link to="/profile" />;
@@ -66,20 +64,20 @@ const Profile = (props) => {
       <Button color="inherit" href="/">
         <ReplyAllIcon /> Back to home
       </Button>
-      <Card className="profile">
+      <div className="profile">
         <CardHeader
-         avatar={<Avatar></Avatar>}
+          avatar={<Avatar></Avatar>}
           title={useParams ? `${user.username}` : "Hello"}
-          subheader={`${user.email}`}
         />
-      <CardContent>
-            <p> Contact#: {user.phone}</p>
-            <p>Park to camp: {user.park}</p>
-            <p> Campground: {user.campground}</p>
-            <p>
-              Date of arrival: {user.date} - {user.time}
-            </p>
-          </CardContent>
+        <CardContent>
+          <p>Email: {user.email}</p>
+          <p> Contact#: {user.phone}</p>
+          <p>Park to camp: {user.park}</p>
+          <p> Campground: {user.campground}</p>
+          <p>
+            Date of arrival: {user.date} - {user.time}
+          </p>
+        </CardContent>
         <CardContent>
           <Typography variant="body2" color="text.secondary">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -90,11 +88,8 @@ const Profile = (props) => {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum."
           </Typography>
-          
         </CardContent>
         <CardActions disableSpacing>
-          
-         
           <ExpandMore
             expand={expanded}
             onClick={handleExpandClick}
@@ -105,11 +100,13 @@ const Profile = (props) => {
           </ExpandMore>
         </CardActions>
         <Collapse in={expanded} timeout="auto" unmountOnExit>
-          {!userParam && <ThoughtForm/>}
-          <ThoughtList thoughts={user.thoughts}
-              />
+          <ThoughtList
+            thoughts={user.thoughts}
+            title={`${user.username}'s reviews...`}
+          /><br></br>
+          <div className="textarea">{!userParam && <ThoughtForm />}</div>
         </Collapse>
-      </Card>
+      </div>
     </>
   );
 };

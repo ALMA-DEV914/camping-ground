@@ -21,7 +21,7 @@ const Signup = () => {
     date: "",
     time: "",
     password: "",
-    images: "",
+    
   });
 
   const [addUser, { error }] = useMutation(ADD_USER);
@@ -52,7 +52,7 @@ const Signup = () => {
 
       Auth.login(data.addUser.token);
     } catch (e) {
-      console.error(e);
+      console.error(e.message);
     }
   };
 
