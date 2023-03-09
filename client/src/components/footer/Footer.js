@@ -1,15 +1,16 @@
 import React from "react";
 import FacebookIcon from '@mui/icons-material/Facebook';
-import Container from "@mui/material/Container";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import {Box, TextField, InputLabel, Button} from "@mui/material";
+import {Box, TextField, Button, Container} from "@mui/material";
+
 
 function Footer() {
   return (
     <>
-      <Container maxWidth="xlg" className="footer">
-        <div className="col">
+      <Container maxWidth="xlg" className="footer"> 
+      <div className="container">
+        <div>
           <h5>Our Story</h5>
           <p>
             When we think about getting healthier and managing various problems
@@ -26,32 +27,27 @@ function Footer() {
           className="subsData"
         >
           <h5>Subscribe to receieve updates</h5>
-          <div>
+        
           <TextField
             focused
-            className="subscribe-input"
+            className="subs-input"
             placeholder="Subscribe here..."
-            name="username"
-            type="username"
-            id="username"
-            
           />
-          <Button className="subs-btn">Submit</Button></div>
+          <Button className="subs-btn">Submit</Button>
           </Box>
-        </div>
-        <div className="col">
-          <div className="col-icons">
-          <FacebookIcon />
-          <InstagramIcon/>
-          <TwitterIcon />
-          </div>
-        </div>
-        <div className="col">
-          <h5>Contact Us</h5>
-          <a href="mailto:aungonalna58@gmail.com">health@wellness@gmail.com</a>
+       </div>
+        
+        <div>
+          <h5>Contact Us</h5><p> <FacebookIcon />{" "}
+          <InstagramIcon/>{" "}
+          <TwitterIcon /></p>{" "}
+          
           <p>Phone: 7757425989</p>
+          <p><a href="mailto:aungonalna58@gmail.com">health@wellness@gmail.com</a></p>
           <p>Copyright @2022 The health&Wellness - All Rights Reserved</p>
+          
         </div>
+      </div>
       </Container>
     </>
   );

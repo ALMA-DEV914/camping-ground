@@ -1,70 +1,64 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography  from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
+import React, { useState } from "react";
+import HorizontalSplitIcon from "@mui/icons-material/HorizontalSplit";
+import { Link } from "react-router-dom";
 import Auth from "../../utils/auth";
-import { Link } from 'react-router-dom';
 
+const TopNav = (props) => {
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
-export default function ButtonAppBar() { 
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+
   const logout = (event) => {
     event.preventDefault();
     Auth.logout();
   };
 
   return (
-    <>
-    <Box sx={{ flexGrow: 1}}>
-      <AppBar position="static" className="navbar">
-      {Auth.loggedIn() ? (
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            href='/'
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            CAMPTRACK⛺️
-          </IconButton>
-         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          <a href='/about'>About</a>
-          <a href='/faq'>Faq</a>
-          <a href='/reviews'>Reviews</a>
-         </Typography>
-          <Link to="/profile">
-                <Button color="inherit">PROFILE</Button>
-              </Link>
-              <Link href="/" onClick={logout}>
-                <Button color="inherit">LOGOUT</Button>
-              </Link>
-        </Toolbar> ) : (
-        <>
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            href='/'
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            CAMPTRACK⛺️
-          </IconButton>
-         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-         <a href='/about'>About</a>
-          <a href='/faq'>Faq</a>
-          <a href='/reviews'>Reviews</a>
-         </Typography>
-        </Toolbar>
-        </>
-        )}
-      </AppBar>
-    </Box>
-    </>
+    <header>
+      <nav className=" navbar navbar-expand-lg justify-space-between ">
+        <div className="col-8">
+          <a className="subtitle-header " href="/">
+            CAMPTRACK⛺️{" "}
+          </a>
+        </div>
+        <button
+          className="custom-toggler navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarsExample09"
+          aria-controls="navbarsExample09"
+          aria-expanded={!isNavCollapsed ? true : false}
+          aria-label="Toggle navigation"
+          onClick={handleNavCollapse}
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
+          id="navbarsExample09"
+        >
+          {Auth.loggedIn() ? (
+            <>
+              <Link to="/about"> ABOUT</Link>
+              <Link to="/faq"> FAQ</Link>
+              <Link to="/reviews"> REVIEWS</Link>
+              <Link to="/profile">PROFILE</Link>
+              <a href="/" onClick={logout}>
+                LOGOUT
+              </a>
+            </>
+          ) : (
+            <>
+              <Link to="/about"> ABOUT</Link>
+              <Link to="/faq"> FAQ</Link>
+              <Link to="/reviews"> REVIEWS</Link>
+            </>
+          )}
+        </div>
+      </nav>
+    </header>
   );
-}
+};
+
+export default TopNav;

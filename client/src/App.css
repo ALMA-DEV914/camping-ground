@@ -6,7 +6,12 @@
   font-family: Georgia, serif;
 }
 .navbar {
-  background-color: rgb(92, 41, 5) !important;
+  background-color: rgb(92, 41, 5);
+  padding: 15px;
+}
+.subtitle-header{
+  font-weight: 800;
+  font-size: 22px;
 }
 p {
   font-size: 1em;
@@ -71,6 +76,10 @@ h2 span {
   column-count: 2;
   width: 50%;
   margin: 0 auto;
+}
+.box-modal{
+  text-align: center;
+  height: 60vh;
 }
 li {
   list-style: none;
@@ -232,41 +241,39 @@ p a {
   background-color: black;
   color: gray;
   padding: 15px;
-  display: flex !important;
-  justify-content: space-between !important;
+  
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.container div{
+  padding: 15px;
 }
 .subsData{
   background-color: rgb(213, 125, 52);
   padding: 15px;
+  align-items: center;
 }
-.subscribe-input{
-  width: 90%;
-  border: 2px solid white !important;
-  background-color: rgb(232, 239, 239) !important;
-  border-radius: 10px !important;
+.subs-input{
+  width: 80%;
   
 }
 .subs-btn{
   background-color: rgb(9, 139, 130) !important;
-  padding: 15px !important;
+  padding: 28px !important;
   color: azure !important;
+  margin: 1.8% auto !important;
 }
 
 .col {
   margin: 3%;
 }
-.col-icons{
-  display: flex;
 
-}
 .div-pages {
   padding: 15px;
   margin: 0 30%;
   text-align: center;
-}
-.box-modal {
-  text-align: center;
-  height: 60vh;
 }
 
 .modal-btn {
@@ -298,18 +305,6 @@ p a {
   border: 2px solid rgb(14, 147, 58);
 }
 
-.signModal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  height: 70%;
-  overflow: auto;
-  box-shadow: 4px 4px 4px 4px rgb(21, 21, 21);
-  background-color: rgb(235, 229, 229);
-  padding: 15px;
-}
 .select {
   display: flex;
 }
@@ -322,11 +317,4 @@ p a {
 }
 .select-date div {
   width: 100%;
-}
-.textarea {
-  padding: 15px;
-}
-.comments {
-  width: 90%;
-  padding: 20px;
 }

@@ -13,8 +13,10 @@ import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import CommentsIcon from "@mui/icons-material/ExpandMore";
-import { Button, TextareaAutosize} from "@mui/material";
+import { Button} from "@mui/material";
 import ReplyAllIcon from "@mui/icons-material/ReplyAll";
+import ThoughtForm from "../../components/thought/ThoughtForm";
+import ThoughtList from "../../components/thought/ThoughtList";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -27,7 +29,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-const Profile = (imageURLs) => {
+const Profile = (props) => {
   const { username: userParam } = useParams();
   const { loading, data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
     variables: { username: userParam },
@@ -103,9 +105,9 @@ const Profile = (imageURLs) => {
           </ExpandMore>
         </CardActions>
         <Collapse in={expanded} timeout="auto" unmountOnExit>
-          <div className="textarea">
-            <h3>Create post or comments here</h3><br></br>
-        <TextareaAutosize name="comments" placeholder="Type in here…" className="comments" /><Button>Send</Button></div>
+          {!userParam && <ThoughtForm/>}
+          <ThoughtList thoughts={user.thoughts}
+              />
         </Collapse>
       </Card>
     </>

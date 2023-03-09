@@ -9,9 +9,6 @@ const userSchema = new Schema(
       unique: true,
       trim: true
     },
-    images: {
-      type: String,
-    },
     phone: {
       type: String,
       required: true,
@@ -48,6 +45,12 @@ const userSchema = new Schema(
       required: true,
       minlength: 5
     },
+    thoughts: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Thought'
+      }
+    ],
   },
   {
     toJSON: {
