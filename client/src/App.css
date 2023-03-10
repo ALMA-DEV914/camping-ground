@@ -256,6 +256,9 @@ p a {
   align-items: center;
 }
 .subs-input{
+  background-color: aliceblue;
+}
+.subscribe-input{
   width: 80%;
   
 }
