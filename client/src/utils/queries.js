@@ -93,22 +93,7 @@ export const QUERY_ME_BASIC = gql`
       username
       phone
       email
-      park
-      campground
-      date
-      time
-      thoughts {
-        _id
-        thoughtText
-        createdAt
-        reactionCount
-        reactions {
-          _id
-          createdAt
-          reactionBody
-          username
-        }
-      }
+      
     }
   }
 `;

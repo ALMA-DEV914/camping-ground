@@ -50,7 +50,7 @@ function App() {
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/signup" element={<Signup />} />
             <Route exact path="/profile/:username?" element={<Profile />} />
-            <Route exact path="/thought/:id" component={SingleThought} />
+            <Route exact path="/thought/:id" element={<SingleThought/>} />
           </Routes>
         </Router>
       </ApolloProvider>

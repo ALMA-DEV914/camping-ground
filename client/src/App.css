@@ -325,3 +325,53 @@ p a {
   margin: 5% auto;
   display: block;
 }
+#profile{
+  width: 80px;
+}
+.profile{
+  width: 150px;
+}
+.profile-container{
+  margin: 5% auto;
+}
+.div-profile{
+  display: flex;
+}
+.text-username{
+  color: rgb(112, 44, 19);
+}
+.reviews-images{
+  display: flex;
+}
+.reviews-images img{
+  width: 200px;
+  margin: 5px;
+  border-radius: 8px;
+}
+.alert{
+  background-color: rgb(189, 101, 28);
+  color: azure;
+  font-size: larger;
+}
+.text-comments{
+  color: darkcyan ;
+}
+.card-header{
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  
+}
+.card-header img{
+  margin: 5px;
+}
+.reaction-link{
+  color: #7c3a08;
+}
+.card-review{
+  width: 70%;
+  border: none;
+}
+.mb-3{
+  background-color: rgb(247, 248, 248);
+}

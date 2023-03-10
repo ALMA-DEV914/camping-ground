@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useMutation } from "@apollo/client";
 import { ADD_THOUGHT } from "../../utils/mutations";
 import { QUERY_THOUGHTS, QUERY_ME } from "../../utils/queries";
+import { Container } from "@mui/system";
 
 const ThoughtForm = () => {
   const [thoughtText, setText] = useState("");
@@ -33,7 +34,7 @@ const ThoughtForm = () => {
 
   // update state based on form input changes
   const handleChange = (event) => {
-    if (event.target.value.length <= 280) {
+    if (event.target.value.length <= 500) {
       setText(event.target.value);
       setCharacterCount(event.target.value.length);
     }
@@ -59,28 +60,30 @@ const ThoughtForm = () => {
   return (
     <div className="reviews">
       <h1>Leave a Reviews</h1>
-      <p
-        className={`m-0 ${characterCount === 300 || error ? "text-error" : ""}`}
+      <span>The following are comments from users about their experiences with our service. Some of these notes come from social networks, but most are direct messages sent to us by our members. We’re happy that our little app has helped so many campers access otherwise sold-out campsites. Hopefully you’ll experience the same! Got a Campnab review to share? </span><br></br><br></br>
+      <p className={`m-0 ${characterCount === 500 || error ? "text-error" : ""}`}
       >
-        Message-Reviews: {characterCount}/300 characters
+       Create Post-Reviews: {characterCount}/500 characters
         {error && <span className="ml-2"> Something went wrong...</span>}
       </p>
       <br></br>
+      <Container>
       <form
         className="reviews-form"
         onSubmit={handleFormSubmit}
       >
         <textarea
-          placeholder="Here's a new review..."
+          placeholder="Here's a new review or post..."
           value={thoughtText}
-          className="form-input col-12 col-md-8 p-1"
+          className="form-input"
           onChange={handleChange}
         ></textarea>
 
-        <button className="btn col-12 bg-success  col-md-2" type="submit" id="btn">
+        <button className="btn" type="submit" id="btn">
           Submit
         </button>
       </form>
+      </Container>
     </div>
   );
 };

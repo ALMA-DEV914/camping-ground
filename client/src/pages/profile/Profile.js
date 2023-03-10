@@ -4,18 +4,22 @@ import { useQuery } from "@apollo/client";
 import { QUERY_USER, QUERY_ME } from "../../utils/queries";
 import Auth from "../../utils/auth";
 import { styled } from "@mui/material/styles";
-import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Collapse from "@mui/material/Collapse";
-import Avatar from "@mui/material/Avatar";
+import profile from "../../images/person.png";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import CommentsIcon from "@mui/icons-material/ExpandMore";
-import { Button } from "@mui/material";
-import ReplyAllIcon from "@mui/icons-material/ReplyAll";
+import TopNav from "../../components/navbar/Navbar";
 import ThoughtForm from "../../components/thought/ThoughtForm";
 import ThoughtList from "../../components/thought/ThoughtList";
+import { Container } from "@mui/system";
+import MailIcon from '@mui/icons-material/Mail';
+import CallIcon from '@mui/icons-material/Call';
+import ParkIcon from '@mui/icons-material/Park';
+import CabinIcon from '@mui/icons-material/Cabin';
+import ScheduleIcon from '@mui/icons-material/Schedule';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -61,52 +65,67 @@ const Profile = (props) => {
 
   return (
     <>
-      <Button color="inherit" href="/">
-        <ReplyAllIcon /> Back to home
-      </Button>
-      <div className="profile">
-        <CardHeader
-          avatar={<Avatar></Avatar>}
-          title={useParams ? `${user.username}` : "Hello"}
-        />
-        <CardContent>
-          <p>Email: {user.email}</p>
-          <p> Contact#: {user.phone}</p>
-          <p>Park to camp: {user.park}</p>
-          <p> Campground: {user.campground}</p>
-          <p>
-            Date of arrival: {user.date} - {user.time}
-          </p>
-        </CardContent>
-        <CardContent>
-          <Typography variant="body2" color="text.secondary">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
-          </Typography>
-        </CardContent>
-        <CardActions disableSpacing>
-          <ExpandMore
-            expand={expanded}
-            onClick={handleExpandClick}
-            aria-expanded={expanded}
-            aria-label="show more"
-          >
-            <CommentsIcon />
-          </ExpandMore>
-        </CardActions>
-        <Collapse in={expanded} timeout="auto" unmountOnExit>
-          <ThoughtList
-            thoughts={user.thoughts}
-            title={`${user.username}'s reviews...`}
-          /><br></br>
-          <div className="textarea">{!userParam && <ThoughtForm />}</div>
-        </Collapse>
-      </div>
+      <TopNav />
+      <Container>
+        <div className="profile-container">
+          <div className="div-profile">
+            <p className="card-header">
+              <img src={profile} alt="profile" className="profile" />
+              <Link
+                to={`/profile/${user.username}`}
+                style={{ fontWeight: 700 }}
+                className="text-info"
+              >
+                {user.username}
+                <br></br>
+              </Link>
+            </p>
+
+            <CardContent className="profile-info">
+              <Typography>
+               <MailIcon /> {user.email}
+                <br></br>
+                <CallIcon/> {user.phone}
+                <br></br>
+                <ParkIcon/> {user.park}
+                <br></br>
+                <CabinIcon /> {user.campground}
+                <br></br>
+                 <ScheduleIcon/> {user.date} - {user.time}
+              </Typography><br></br>
+
+              <Typography variant="body2" color="text.secondary">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </Typography>
+              <Container>{!userParam && <ThoughtForm />}</Container>
+            </CardContent>
+          </div>
+          <CardActions disableSpacing>
+            <ExpandMore
+              expand={expanded}
+              onClick={handleExpandClick}
+              aria-expanded={expanded}
+              aria-label="show more"
+            >
+              <CommentsIcon />
+            </ExpandMore>
+          </CardActions>
+
+          <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <ThoughtList
+              thoughts={user.thoughts}
+              title={user.username ? "Your reviews history" : `${user.username}'s reviews...`}
+            />
+
+          </Collapse>
+        </div>
+      </Container>
     </>
   );
 };

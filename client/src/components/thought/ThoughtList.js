@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import image from "../../images/1.jpg"
+import image1 from "../../images/2.jpg"
+import image2 from "../../images/2.png"
 
 const ThoughtList = ({ thoughts, title}) => {
   if (!thoughts) {
@@ -8,26 +11,28 @@ const ThoughtList = ({ thoughts, title}) => {
 
   return (
   <>
-    <div className='container'>
-      <h3>{title}</h3>
+    <div className='card-review'>
+      <h4>{title}</h4>
       {thoughts &&
         thoughts.map(thought => (
-          <div key={thought._id} className="card mb-3">
-            <p className="card-header">
+          <div key={thought._id} className="mb-3">
+            <div className="card-header">
               <img src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg" alt="profile" id='profile'></img>
-              <Link
-                to={`/profile/${thought.username}`}
-                style={{ fontWeight: 700 }}
-                className="text-info"
+              <p style={{ fontWeight: 700 }}
+                className="text-username"
               >
                 {thought.username}
-              </Link>{' '}
-             feedback on {thought.createdAt}
-            </p>
+              {' '} feedback on {thought.createdAt}</p>
+            </div>
             <div className="card-body">
+              <div className='reviews-images'>
+              <img src={image} alt=""></img>
+              <img src={image1} alt=""></img>
+              <img src={image2} alt=""></img>
+              </div>
             <p>{thought.thoughtText}</p>
               <Link to={`/thought/${thought._id}`}>
-                <p className="mb-0">
+                <p className="reaction-link">
                   Comments: {thought.reactionCount} || Click to{' '}
                   {thought.reactionCount ? 'see' : 'add'} a comments!
                 </p>
