@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Georgia, serif;
+  font-family: 'Shantell Sans';
 }
 .navbar {
   background-color: rgb(92, 41, 5);
@@ -19,7 +19,7 @@ p {
 h1 {
   margin: 2% auto;
   text-align: center;
-  color: rgb(14, 114, 114);
+  color: rgb(11, 112, 112);
 }
 h2 {
   text-align: center;
@@ -251,9 +251,10 @@ p a {
   padding: 15px;
 }
 .subsData{
-  background-color: rgb(213, 125, 52);
+  background-color: rgb(184, 89, 11);
   padding: 15px;
   align-items: center;
+  border-radius: 12px;
 }
 .subs-input{
   background-color: aliceblue;
@@ -335,10 +336,14 @@ p a {
   width: 150px;
 }
 .profile-container{
-  margin: 5% auto;
+  margin: 8% auto;
 }
 .div-profile{
   display: flex;
+  
+}
+.right-profile{
+  width: 80%;
 }
 .text-username{
   color: rgb(112, 44, 19);
@@ -371,10 +376,27 @@ p a {
 .reaction-link{
   color: #7c3a08;
 }
-.card-review{
+.card-reviews{
   width: 70%;
   border: none;
 }
+
 .mb-3{
   background-color: rgb(247, 248, 248);
+}
+.container-reaction{
+  width: 100%;
+  
+}
+.reaction-form, .reviews-form{
+   display: flex;
+   justify-content: space-between;
+}
+.reaction-form textarea , .reviews-form textarea{
+  width: 100%;
+  padding: 4px;
+  border: none;
+  border-bottom: 1px solid rgb(183, 183, 186);
+  background-color: transparent;
+  outline: none;
 }

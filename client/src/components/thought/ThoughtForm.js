@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import SendIcon from '@mui/icons-material/Send';
 import { useMutation } from "@apollo/client";
 import { ADD_THOUGHT } from "../../utils/mutations";
 import { QUERY_THOUGHTS, QUERY_ME } from "../../utils/queries";
@@ -63,7 +63,7 @@ const ThoughtForm = () => {
       <span>The following are comments from users about their experiences with our service. Some of these notes come from social networks, but most are direct messages sent to us by our members. We’re happy that our little app has helped so many campers access otherwise sold-out campsites. Hopefully you’ll experience the same! Got a Campnab review to share? </span><br></br><br></br>
       <p className={`m-0 ${characterCount === 500 || error ? "text-error" : ""}`}
       >
-       Create Post-Reviews: {characterCount}/500 characters
+       Create Post-Reviews
         {error && <span className="ml-2"> Something went wrong...</span>}
       </p>
       <br></br>
@@ -75,12 +75,12 @@ const ThoughtForm = () => {
         <textarea
           placeholder="Here's a new review or post..."
           value={thoughtText}
-          className="form-input"
+          className="reviews-input"
           onChange={handleChange}
         ></textarea>
 
         <button className="btn" type="submit" id="btn">
-          Submit
+         <SendIcon />
         </button>
       </form>
       </Container>

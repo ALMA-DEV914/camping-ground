@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { ADD_REACTION } from '../../utils/mutations';
+import SendIcon from '@mui/icons-material/Send';
 
 const ReactionForm = ({ thoughtId }) => {
   const [reactionBody, setBody] = useState('');
@@ -33,26 +34,26 @@ const ReactionForm = ({ thoughtId }) => {
   };
 
   return (
-    <div className='container mt-3 mb-3'>
+    <div className='container-reaction'>
       <p
         className={`m-0 ${characterCount === 500 || error ? 'text-error' : ''}`}
       >
-        Character Count: {characterCount}/500
+       
         {error && <span className="ml-2">Something went wrong...</span>}
       </p>
       <form
-        className="flex-row justify-center justify-space-between-md align-stretch"
+        className="reaction-form"
         onSubmit={handleFormSubmit}
       >
         <textarea
-          placeholder="Leave a comments to this review..."
+          placeholder="Reply to the comments..."
           value={reactionBody}
-          className="form-input col-12 col-md-9 p-1"
+          className="reaction-input"
           onChange={handleChange}
         ></textarea>
 
-        <button className="btn col-12 col-md-3 text-white bg-success" type="submit" id='btn'>
-          Submit
+        <button className="btn" type="submit" id='btn'>
+          <SendIcon />
         </button>
       </form>
 

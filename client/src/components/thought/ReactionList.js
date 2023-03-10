@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const ReactionList = ({ reactions }) => {
   return (
     <div className='container mt-3 p-2'>
