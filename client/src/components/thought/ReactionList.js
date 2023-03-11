@@ -11,7 +11,7 @@ const ReactionList = ({ reactions }) => {
         {reactions &&
           reactions.map(reaction => (
             <p className="pill mb-3" key={reaction._id}>
-             <p  style={{ fontWeight: 700 }}>
+             <p className='text-username'  style={{ fontWeight: 700 }}>
                 {reaction.username} on {reaction.createdAt} </p> {" "} "{reaction.reactionBody}"
               
             </p>

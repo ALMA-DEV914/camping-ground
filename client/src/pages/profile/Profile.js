@@ -18,7 +18,6 @@ import { Container } from "@mui/system";
 import MailIcon from "@mui/icons-material/Mail";
 import CallIcon from "@mui/icons-material/Call";
 import ParkIcon from "@mui/icons-material/Park";
-import CabinIcon from "@mui/icons-material/Cabin";
 import ScheduleIcon from "@mui/icons-material/Schedule";
 
 const ExpandMore = styled((props) => {
@@ -87,8 +86,6 @@ const Profile = (props) => {
                 <CallIcon /> {user.phone}
                 <br></br>
                 <ParkIcon /> {user.park}
-                <br></br>
-                <CabinIcon /> {user.campground}
                 <br></br>
                 <ScheduleIcon /> {user.date} - {user.time}
               </Typography>

@@ -46,7 +46,6 @@ export const QUERY_USER = gql`
       phone
       email
       park
-      campground
       date
       time
       thoughts {
@@ -67,7 +66,6 @@ export const QUERY_ME = gql`
       phone
       email
       park
-      campground
       date
       time
       thoughts {

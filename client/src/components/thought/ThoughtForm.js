@@ -34,7 +34,7 @@ const ThoughtForm = () => {
 
   // update state based on form input changes
   const handleChange = (event) => {
-    if (event.target.value.length <= 500) {
+    if (event.target.value.length <= 1000) {
       setText(event.target.value);
       setCharacterCount(event.target.value.length);
     }
@@ -61,7 +61,7 @@ const ThoughtForm = () => {
     <div className="reviews">
       <h1>Leave a Reviews</h1>
       <span>The following are comments from users about their experiences with our service. Some of these notes come from social networks, but most are direct messages sent to us by our members. We’re happy that our little app has helped so many campers access otherwise sold-out campsites. Hopefully you’ll experience the same! Got a Campnab review to share? </span><br></br><br></br>
-      <p className={`m-0 ${characterCount === 500 || error ? "text-error" : ""}`}
+      <p className={`m-0 ${characterCount === 1000 || error ? "text-error" : ""}`}
       >
        Create Post-Reviews
         {error && <span className="ml-2"> Something went wrong...</span>}

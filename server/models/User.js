@@ -25,11 +25,7 @@ const userSchema = new Schema(
       required: true,
       
     },
-   campground: {
-      type: String,
-      required: true,
-      
-    },
+  
     date: {
       type: String,
       required: true,

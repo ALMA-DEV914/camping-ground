@@ -10,7 +10,7 @@ const ReactionForm = ({ thoughtId }) => {
 
   // update state based on form input changes
   const handleChange = (event) => {
-    if (event.target.value.length <= 500) {
+    if (event.target.value.length <= 1000) {
       setBody(event.target.value);
       setCharacterCount(event.target.value.length);
     }
@@ -36,10 +36,10 @@ const ReactionForm = ({ thoughtId }) => {
   return (
     <div className='container-reaction'>
       <p
-        className={`m-0 ${characterCount === 500 || error ? 'text-error' : ''}`}
+        className={`m-0 ${characterCount === 1000 || error ? 'text-error' : ''}`}
       >
        
-        {error && <span className="ml-2">Something went wrong...</span>}
+        {error && <span className="ml-2">You are only allowed a 1000 characters</span>}
       </p>
       <form
         className="reaction-form"
