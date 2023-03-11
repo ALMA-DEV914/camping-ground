@@ -89,7 +89,7 @@ const Profile = (props) => {
                 <br></br>
                 <ParkIcon /> Camping at {user.park}
                 <br></br>
-                <ScheduleIcon /> Camping on {moment(`${user.date}`).format('ddd DD-MMM-YYYY, hh:mm A')}
+                <ScheduleIcon /> Camping on {moment(`${user.date}`).format('ddd DD-MMM-YYYY - hh:mm A')}
               </Typography>
               <br></br>
             </div>
