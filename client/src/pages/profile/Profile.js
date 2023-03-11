@@ -7,7 +7,7 @@ import { styled } from "@mui/material/styles";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Collapse from "@mui/material/Collapse";
-import profile from "../../images/person.png";
+import profile2 from "../../images/profilesub.png";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import CommentsIcon from "@mui/icons-material/ExpandMore";
@@ -71,7 +71,7 @@ const Profile = (props) => {
         <div className="profile-container">
           <div className="div-profile">
             <div className="left-profile">
-              <img src={profile} alt="profile" className="profile" />
+              <img src={profile2} alt="profile" className="profile" />
               <p>
                 <Link
                   to={`/profile/${user.username}`}
