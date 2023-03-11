@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import InputLabel from "@mui/material/InputLabel";
 import Button from "@mui/material/Button";
-import { Container, Select } from "@mui/material";
+import { Container} from "@mui/material";
 import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import "react-datepicker/dist/react-datepicker.css";
 import { default as data } from "../../data.json";
@@ -128,7 +128,7 @@ const Signup = () => {
                 onChange={handleChange}
               >
                 {data.campgrounds.map((campgrounds, i) => (
-                  <option key={i} value={[data.name,  campgrounds.campName]}>
+                  <option key={i} value={[data.name &&  campgrounds.campName]}>
                   {[data.name,  campgrounds.campName]}
                   </option>
                 ))}

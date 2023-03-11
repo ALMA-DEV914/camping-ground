@@ -19,6 +19,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import CallIcon from "@mui/icons-material/Call";
 import ParkIcon from "@mui/icons-material/Park";
 import ScheduleIcon from "@mui/icons-material/Schedule";
+import moment from "moment";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -61,6 +62,7 @@ const Profile = (props) => {
       </h4>
     );
   }
+  
 
   return (
     <>
@@ -85,9 +87,9 @@ const Profile = (props) => {
                 <br></br>
                 <CallIcon /> {user.phone}
                 <br></br>
-                <ParkIcon /> {user.park}
+                <ParkIcon /> Camping at {user.park}
                 <br></br>
-                <ScheduleIcon /> {user.date} - {user.time}
+                <ScheduleIcon /> Camping on {moment(`${user.date}`).format('ddd DD-MMM-YYYY, hh:mm A')}
               </Typography>
               <br></br>
             </div>
