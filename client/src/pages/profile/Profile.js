@@ -32,6 +32,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
+
 const Profile = (props) => {
   const { username: userParam } = useParams();
   const { loading, data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
@@ -62,8 +63,6 @@ const Profile = (props) => {
       </h4>
     );
   }
-  
-
   return (
     <>
       <TopNav />
@@ -89,7 +88,7 @@ const Profile = (props) => {
                 <br></br>
                 <ParkIcon /> Camping at {user.park}
                 <br></br>
-                <ScheduleIcon /> Camping on {moment(`${user.date}`).format('ddd DD-MMM-YYYY - hh:mm A')}
+                <ScheduleIcon /> Camping on {moment(`${user.date}`).format('ddd DD-MMM-YYYY')}<span> at {user.time >= 12 ? user.time + 'am' : user.time + 'pm'}</span>
               </Typography>
               <br></br>
             </div>

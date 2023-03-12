@@ -10,6 +10,7 @@ import image1 from "../../images/2.jpg";
 import image2 from "../../images/2.png";
 import image3 from "../../images/header.png";
 import profile from "../../images/profile.png";
+import TopNav from "../../components/navbar/Navbar";
 
 const SingleThought = (props) => {
   const { id: thoughtId } = useParams();
@@ -25,6 +26,8 @@ const SingleThought = (props) => {
   }
 
   return (
+    <>
+    <TopNav/>
     <div className="container mt-4">
       <div className="reviews-section mt-3 p-2">
         <div className="col-lg-10 mb-3">
@@ -58,6 +61,7 @@ const SingleThought = (props) => {
         {Auth.loggedIn() && <ReactionForm thoughtId={thought._id} />}
       </div>
     </div>
+    </>
   );
 };
 

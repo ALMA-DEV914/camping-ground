@@ -6,10 +6,11 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import InputLabel from "@mui/material/InputLabel";
 import Button from "@mui/material/Button";
-import { Container} from "@mui/material";
+import { Container } from "@mui/material";
 import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import "react-datepicker/dist/react-datepicker.css";
 import { default as data } from "../../data.json";
+import moment from "moment";
 
 const Signup = () => {
   const [formState, setFormState] = useState({
@@ -50,7 +51,6 @@ const Signup = () => {
     }
   };
 
-  
   return (
     <>
       <Container>
@@ -115,28 +115,28 @@ const Signup = () => {
           />
           <div className="select">
             <div>
-            <InputLabel shrink htmlFor="bootstrap-input" className="label">
-              Park
-            </InputLabel>
-            {data.map((data) => (
-              <select
-                placeholder="Choose your park and campgrounds"
-                name="park"
-                type="park"
-                id="park"
-                value={formState.park}
-                onChange={handleChange}
-              >
-                {data.campgrounds.map((campgrounds, i) => (
-                  <option key={i} value={[data.name &&  campgrounds.campName]}>
-                  {[data.name,  campgrounds.campName]}
-                  </option>
-                ))}
-              </select>
-            ))}
+              <InputLabel shrink htmlFor="bootstrap-input" className="label">
+                Park
+              </InputLabel>
+              {data.map((data) => (
+                <select
+                  placeholder="Choose your park and campgrounds"
+                  name="park"
+                  type="park"
+                  id="park"
+                  value={formState.park}
+                  onChange={handleChange}
+                >
+                  {data.campgrounds.map((campgrounds, i) => (
+                    <option key={i} value={[data.name, campgrounds.campName]}>
+                      {[data.name, campgrounds.campName]}
+                    </option>
+                  ))}
+                </select>
+              ))}
             </div>
           </div>
-          
+
           <br></br>
           <div className="select-date">
             <div>
