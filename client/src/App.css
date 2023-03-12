@@ -338,6 +338,7 @@ select{
 }
 #profile{
   width: 80px;
+  
 }
 .profile{
   width: 150px;
@@ -387,6 +388,9 @@ select{
 .card-reviews{
   width: 100%;
   border: none;
+}
+.singlethought{
+  display: flex;
 }
 
 .mb-3{

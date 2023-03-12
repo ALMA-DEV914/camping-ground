@@ -1,6 +1,6 @@
 import React from "react";
 
-const ReactionList = ({ reactions, users }) => {
+const ReactionList = ({ reactions}) => {
   return (
     <div className="container mt-3 p-2">
       <div className="card mb-3">
