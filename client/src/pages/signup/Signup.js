@@ -10,7 +10,6 @@ import { Container } from "@mui/material";
 import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import "react-datepicker/dist/react-datepicker.css";
 import { default as data } from "../../data.json";
-import moment from "moment";
 
 const Signup = () => {
   const [formState, setFormState] = useState({
