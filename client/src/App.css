@@ -33,12 +33,28 @@ h2 {
   font-size: 25px;
   margin: 3% auto;
 }
-h3 {
-  text-align: center;
-}
 h2 span {
   font-size: 18px;
   color: rgb(158, 156, 153);
+}
+
+h3 {
+  text-align: center;
+  font-weight: 800;
+}
+
+h3,
+h5 {
+  color: rgb(10, 79, 79);
+  padding: 15px;
+}
+h4{
+  font-size: 20px;
+}
+h6 {
+  text-align: center;
+  font-weight: 600;
+  padding: 15px;
 }
 
 .banner {
@@ -65,7 +81,7 @@ h2 span {
   padding: 15px;
 }
 .about-info {
-  margin: 2% auto;
+  margin: 0% auto;
   padding: 15px;
 }
 .about-us {
@@ -85,7 +101,7 @@ h2 span {
   background-color: rgb(242, 238, 229);
 }
 .about-more {
-  margin: 5% auto;
+  margin: 0% auto;
   background-color: rgb(242, 238, 229);
   padding: 15px;
 }
@@ -112,20 +128,11 @@ li {
 .camp-btn {
   color: rgb(143, 98, 14);
 }
-h3,
-h5 {
-  color: rgb(10, 79, 79);
-  padding: 15px;
-}
-h6 {
-  text-align: center;
-  font-weight: 600;
-  padding: 15px;
-}
+
 .box-pricing,
 .box-features,
 .box-about {
-  margin: 8% auto;
+  margin: 0% auto;
   display: flex;
   justify-content: space-between;
   padding: 15px;
@@ -141,7 +148,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  margin: 5% auto;
+  margin: 0% auto;
 }
 
 .pricing {
@@ -160,6 +167,10 @@ h6 {
 }
 .cards {
   padding: 15px;
+ 
+}
+.title, .desc{
+  font-family: "Shantell Sans" !important;
 }
 .camp-image {
   width: 400px;

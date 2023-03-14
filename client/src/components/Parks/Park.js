@@ -40,12 +40,12 @@ export default function Park() {
                   subheader={data.states}
                   className="title"
                 />
-                <Typography paragraph className="p">{data.description}</Typography>
+                <Typography paragraph className="desc">{data.description}</Typography>
 
                 <CardContent>
                   <CardMedia component="img" image={data.image}></CardMedia>
                   <br></br>
-                  <Typography paragraph>
+                  <Typography paragraph className="desc">
                     {data.subText} {data.name}
                   </Typography>
                 </CardContent>

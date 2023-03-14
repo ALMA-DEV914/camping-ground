@@ -33,7 +33,7 @@ export default function About() {
               <img src={about} alt="about-us" className="about-photo" />
             </CardMedia>
             <br></br>
-            <Typography>
+            <Typography className="desc">
               A lot of us are bouncing between meetings, processing emails, and
               dealing with one issue after another. Even when we enjoy our work,
               it sometimes becomes a bit much. This is a why we think it’s so
@@ -42,7 +42,7 @@ export default function About() {
               nature—with our families and friends.
             </Typography>
             <br></br>
-            <Typography>
+            <Typography className="desc">
               Unfortunately, booking a campsite is a real drag. It’s hard to
               find good information on which campground is right for you. It’s
               even harder to reserve a spot, when they’re in such high demand.
@@ -54,7 +54,7 @@ export default function About() {
         <br></br>
         <div className="about-more">
           <Container>
-            <Typography variant="h6">
+            <Typography variant="h6" className="desc">
               WE LOVE OUTDOORS.<br></br> CLIMBING, HIKING AND CAMPING ARE OUR
               FAVORITE{" "}
             </Typography>
@@ -65,7 +65,7 @@ export default function About() {
               </CardMedia>
               <CardContent className="about-text">
                 <h5>There has to be a better way…</h5>
-                <Typography>
+                <Typography className="desc">
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -74,8 +74,8 @@ export default function About() {
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                   cupidatat non proident, sunt in culpa qui officia deserunt
                   mollit anim id est laborum."
-                </Typography>
-                <Typography>
+                </Typography><br></br>
+                <Typography className="desc">
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -90,7 +90,7 @@ export default function About() {
             <Box className="about-creation">
               <CardContent className="about-text">
                 <h5>Join the CampTrack family!</h5>
-                <Typography>
+                <Typography className="desc">
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -99,8 +99,8 @@ export default function About() {
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                   cupidatat non proident, sunt in culpa qui officia deserunt
                   mollit anim id est laborum."
-                </Typography>
-                <Typography>
+                </Typography><br></br>
+                <Typography className="desc">
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -121,7 +121,7 @@ export default function About() {
               </CardMedia>
               <CardContent className="about-text">
                 <h5>It started with a hobbies</h5>
-                <Typography>
+                <Typography className="desc">
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -130,8 +130,8 @@ export default function About() {
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                   cupidatat non proident, sunt in culpa qui officia deserunt
                   mollit anim id est laborum."
-                </Typography>
-                <Typography>
+                </Typography><br></br>
+                <Typography className="desc">
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
