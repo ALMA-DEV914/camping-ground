@@ -6,7 +6,7 @@
   font-family: "Shantell Sans";
 }
 .navbar {
-  background-color: rgb(92, 41, 5);
+  background-color: rgb(5, 80, 92);
   padding: 15px;
 }
 .navbar-toggler {
@@ -42,8 +42,19 @@ h2 span {
 }
 
 .banner {
-  background-image: url("../src/images/sun.png");
+  background-image: url("../src/images/bg.png");
+  background-color: rgba(rgb(141, 138, 138), 0.75);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 2s ease all;
+  background-blend-mode: multiply;
 }
+.banner:hover {
+  background-color: rgba(rgb(167, 162, 162), 0);
+  background-size: 100%;
+  background-image: url("../src/images/snow.png");
+}
+
 .about {
   background-color: azure;
 }
@@ -194,7 +205,7 @@ a:hover {
   color: rgb(64, 196, 91);
 }
 p a {
-  color: blue;
+  color: rgb(0, 183, 255);
 }
 .btnlink {
   color: white;
@@ -284,10 +295,15 @@ p a {
 }
 
 .modal-btn {
-  background-color: rgb(14, 147, 142) !important;
-  padding: 22px 44px !important;
+  background-color: rgb(203, 96, 50) !important;
+  padding: 20px 40px !important;
   margin: 8% auto !important;
   color: aliceblue !important;
+  
+}
+.modal-btn a{
+  font-size: 25px !important;
+  font-family: "Georgia", sans-serif !important;
 }
 .subtitle {
   color: rgb(232, 237, 237);
@@ -384,6 +400,7 @@ select {
 .reaction-link {
   color: #7c3a08;
 }
+
 .card-reviews {
   width: 100%;
   border: none;

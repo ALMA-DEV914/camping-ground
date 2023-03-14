@@ -13,7 +13,7 @@ export default function Reviews() {
 
   const loggedIn = Auth.loggedIn();
   return (
-    <div>
+    <div className="reviews-section">
       <ButtonAppBar />
 
       <div className="container div-reviews">
