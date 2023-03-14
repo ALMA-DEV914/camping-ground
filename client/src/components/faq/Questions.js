@@ -149,7 +149,7 @@ export default function Questions() {
       <div className="about">
         <Container>
           <h3>ABOUT</h3>
-          <Box sx={{ padding: 4,  display: "flex" }}>
+          <Box className="box-about">
           <div className="about-info">
               <h4 id="what's-all">WHAT’S ALL THIS CAMPTRACK TRACKING ABOUT?</h4>
               <br></br>
@@ -230,7 +230,7 @@ export default function Questions() {
       <div className="pricing">
         <Container>
           <h3>PRICING</h3>
-          <Box sx={{ padding: 4, margin: 2, display: "flex" }}>
+          <Box className="box-pricing">
             <div className="about-info">
               <h4 id="is-free">IS CAMPTRACK FREE?</h4>
               <br></br>
@@ -350,7 +350,7 @@ export default function Questions() {
       <div className="features">
         <Container>
           <h3>FEATURES</h3>
-          <Box sx={{ padding: 4, margin: 2, display: "flex" }}>
+          <Box className="box-features">
             <div className="about-info">
               <h4 id="benefits"> WHAT ARE THE BENEFITS OF CAMPTRACK?</h4>
               <br></br>

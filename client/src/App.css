@@ -112,6 +112,19 @@ h6 {
   font-weight: 600;
   padding: 15px;
 }
+.box-pricing, .box-features, .box-about {
+  margin: 8% auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  text-align: left;
+}
+.box-info {
+  margin: 8% auto;
+  display: flex ;
+  justify-content: space-between;
+}
+
 .about-creation {
   display: flex;
   justify-content: space-between;
@@ -121,13 +134,11 @@ h6 {
 
 .pricing {
   background-color: rgb(212, 234, 224);
-  padding: 15px;
-  text-align: left;
+
 }
 .features {
   background-color: rgb(236, 226, 212);
-  padding: 15px;
-  text-align: left;
+
 }
 
 .div-title {
@@ -158,21 +169,8 @@ h6 {
   text-align: center;
 }
 
-
 .backBtn {
   color: rgb(10, 78, 78);
-}
-.campbox {
-  background-color: bisque;
-  overflow: auto;
-  background: rgb(240, 237, 237);
-  height: 100vh;
-  margin: 5% auto;
-}
-.box-info {
-  margin: 8% auto;
-  display: flex;
-  justify-content: space-between;
 }
 
 .scrolled {
@@ -467,6 +465,30 @@ select{
     width: 100%;
     margin: 0 auto;
   }
+  .box-info {
+    margin: 8% auto;
+    display: block;
+  }
+  .paper{
+    width: 100%;
+    margin: 8% auto;
+  }
+  .box-pricing, .box-features, .box-about {
+    margin: 8% auto;
+    display: block;
+    justify-content: space-between;
+    padding: 15px;
+    text-align: left;
+  }
+  .reviews-images{
+    display: flex;
+    overflow: auto;
+    background-color: antiquewhite;
+  }
+  .select-date {
+    display: block;
+  }
+  
 
 }
 
@@ -512,6 +534,26 @@ select{
     width: 100%;
     margin: 0 auto;
   }
+  .box-info {
+    margin: 8% auto;
+    display: block;
+  }
+  .paper{
+    width: 100%;
+    margin: 8% auto;
+  }
+  .box-pricing, .box-features, .box-about {
+    margin: 8% auto;
+    display: block;
+    justify-content: space-between;
+    padding: 15px;
+    text-align: left;
+  }
+  .reviews-images{
+    display: flex;
+    overflow: auto;
+    background-color: antiquewhite;
+  }
 
 }
 
@@ -556,6 +598,26 @@ select{
     column-count: 2;
     width: 100%;
     margin: 0 auto;
+  }
+  .box-info {
+    margin: 8% auto;
+    display: block;
+  }
+  .paper{
+    width: 100%;
+    margin: 8% auto;
+  }
+  .box-pricing, .box-features, .box-about {
+    margin: 8% auto;
+    display: block;
+    justify-content: space-between;
+    padding: 15px;
+    text-align: left;
+  }
+  .reviews-images{
+    display: flex;
+    overflow: auto;
+    background-color: antiquewhite;
   }
 
 }
