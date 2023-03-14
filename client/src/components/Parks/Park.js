@@ -8,9 +8,6 @@ import CardMedia from "@mui/material/CardMedia";
 import { Pagination } from "@mui/material";
 import usePagination from "./Pagination";
 import { default as data } from "../../data.json";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import ShareIcon from "@mui/icons-material/Share";
-import IconButton from "@mui/material/IconButton";
 
 export default function Park() {
   let [page, setPage] = useState(1);
@@ -43,7 +40,7 @@ export default function Park() {
                   subheader={data.states}
                   className="title"
                 />
-                <Typography paragraph>{data.description}</Typography>
+                <Typography paragraph className="p">{data.description}</Typography>
 
                 <CardContent>
                   <CardMedia component="img" image={data.image}></CardMedia>
@@ -59,7 +56,7 @@ export default function Park() {
                       <div>
                         <img
                           src={campgrounds.image}
-                          alt=""
+                          alt={campgrounds.campName}
                           key={i}
                           className="camp-image"
                         />
@@ -70,12 +67,6 @@ export default function Park() {
                       </div>
                     </div>
                   ))}
-                  <IconButton aria-label="add to favorites">
-                    <FavoriteIcon />
-                  </IconButton>
-                  <IconButton aria-label="share">
-                    <ShareIcon />
-                  </IconButton>
                 </CardContent>
               </Card>
             </div>

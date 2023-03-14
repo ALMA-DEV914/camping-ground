@@ -9,13 +9,21 @@
   background-color: rgb(92, 41, 5);
   padding: 15px;
 }
+.navbar-toggler{
+ background-color: aliceblue;
+}
 .subtitle-header{
   font-weight: 800;
   font-size: 22px;
 }
 p {
   font-size: 1em;
+  
 }
+.p{
+  font-family: 'Shantell Sans';
+}
+
 h1 {
   margin: 2% auto;
   text-align: center;
@@ -144,6 +152,12 @@ h6 {
 .div-camps div {
   margin: 2%;
 }
+.div-pages {
+  padding: 15px;
+  margin: 0 30%;
+  text-align: center;
+}
+
 
 .backBtn {
   color: rgb(10, 78, 78);
@@ -272,12 +286,6 @@ p a {
 
 .col {
   margin: 3%;
-}
-
-.div-pages {
-  padding: 15px;
-  margin: 0 30%;
-  text-align: center;
 }
 
 .modal-btn {
@@ -414,4 +422,140 @@ select{
 }
 .thougthList{
    width: 100%;
+}
+
+@media screen and (max-width:575px){
+  .div-camps{
+    display: block;
+  }
+  .div-camps div {
+    text-align: center;
+  }
+  .camp-image{
+    width: 350px;
+    height: 250px;
+  }
+  .div-pages{
+    width: 100%;
+    margin: 0 5px;
+  }
+  
+  .container{
+    display: block !important;
+    width: 100%;
+  }
+  .subs-btn{
+    padding: 10px !important;
+  color: azure !important;
+  margin: 1% auto !important;
+  width: 100%;
+  }
+  .subscribe-input{
+    width: 100% !important;
+  }
+  .about-creation {
+    display: block;
+    padding: 15px;
+    margin: 5% auto;
+  }
+  .camp-div {
+    column-count: 2;
+  }
+  .park-div {
+    padding: 15px;
+    column-count: 2;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 414px){
+  .div-camps{
+    display: block;
+  }
+  .div-camps div {
+    text-align: center;
+  }
+  .camp-image{
+    width: 350px;
+    height: 250px;
+}
+  .div-pages{
+    width: 100%;
+    margin: 0 5px;
+  }
+  .container{
+    display: block !important;
+    width: 100%;
+  }
+  .subs-btn{
+    padding: 10px !important;
+  color: azure !important;
+  margin: 1% auto !important;
+  width: 100%;
+  }
+  .subscribe-input{
+    width: 100% !important;
+  }
+  .about-creation {
+    display: block;
+    padding: 15px;
+    margin: 5% auto;
+  }
+  .camp-div {
+    column-count: 2;
+  }
+  .park-div {
+    padding: 15px;
+    column-count: 2;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width:390px){
+  .div-camps{
+    display: block;
+  }
+  .div-camps div {
+    text-align: center;
+  }
+  .camp-image{
+    width: 350px;
+    height: 250px;
+  }
+  .div-pages{
+    width: 100%;
+    margin: 0 5px;
+  }
+  .container{
+    display: block !important;
+    width: 100%;
+  }
+  .subs-btn{
+    padding: 10px !important;
+  color: azure !important;
+  margin: 1% auto !important;
+  width: 100%;
+  }
+  .subscribe-input{
+    width: 100% !important;
+  }
+  .about-creation {
+    display: block;
+    padding: 15px;
+    margin: 5% auto;
+  }
+  .camp-div {
+    column-count: 2;
+  }
+  .park-div {
+    padding: 15px;
+    column-count: 2;
+    width: 100%;
+    margin: 0 auto;
+  }
+
 }
