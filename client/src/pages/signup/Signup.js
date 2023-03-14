@@ -115,7 +115,7 @@ const Signup = () => {
           <div className="select">
             <div>
               <InputLabel shrink htmlFor="bootstrap-input" className="label">
-                Park
+                Park and Campground
               </InputLabel>
               {data.map((data) => (
                 <select
