@@ -48,7 +48,7 @@ h5 {
   color: rgb(10, 79, 79);
   padding: 15px;
 }
-h4{
+h4 {
   font-size: 20px;
 }
 h6 {
@@ -119,6 +119,34 @@ li {
   list-style: none;
   line-height: 1.2em;
 }
+.booking-section {
+  width: 100%;
+}
+.booking {
+  margin: 4px, 4px;
+  padding: 15px;
+  background-color: #f1f5f1;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  display: flex;
+  border-radius: 20px;
+}
+.booking-div {
+  background-color: rgb(252, 252, 252);
+  padding: 15px;
+  margin: 5px;
+}
+.booking-form {
+  display: flex;
+}
+.booking-input {
+  width: 90%;
+}
+.booking-btn {
+  padding: 8px 12px;
+}
 .camp-div {
   column-count: 4;
 }
@@ -167,9 +195,9 @@ li {
 }
 .cards {
   padding: 15px;
- 
 }
-.title, .desc{
+.title,
+.desc {
   font-family: "Shantell Sans" !important;
 }
 .camp-image {
@@ -310,9 +338,8 @@ p a {
   padding: 20px 40px !important;
   margin: 8% auto !important;
   color: aliceblue !important;
-  
 }
-.modal-btn a{
+.modal-btn a {
   font-size: 25px !important;
   font-family: "Georgia", sans-serif !important;
 }

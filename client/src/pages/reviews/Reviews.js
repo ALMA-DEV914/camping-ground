@@ -5,24 +5,31 @@ import ThoughtList from "../../components/thought/ThoughtList";
 import ThoughtForm from "../../components/thought/ThoughtForm";
 import Auth from "../../utils/auth";
 import { useQuery } from "@apollo/client";
-import { QUERY_THOUGHTS } from "../../utils/queries";
+import { QUERY_THOUGHTS} from "../../utils/queries";
+
 
 export default function Reviews() {
   const { loading, data } = useQuery(QUERY_THOUGHTS);
   const thoughts = data?.thoughts || [];
-
+  
   const loggedIn = Auth.loggedIn();
+
   return (
     <div className="reviews-section">
       <ButtonAppBar />
 
       <div className="container div-reviews">
         {loggedIn && (
+          <>
           <div className="col-10 mb-3">
             <ThoughtForm />
           </div>
+          
+        </>
         )}
-        {!loggedIn && (<div className="alert"> <span>Sharing your experience staying at a park or campground is a great way to help out fellow campers. We think good reviews are helpful, inclusive, and constructive. Even if you had a bad experience, please be nice. Signup or login to write some post or reviews...</span></div>)}
+        {!loggedIn && (<div className="alert"> <span>Sharing your experience staying at a park or campground is a great way to help out fellow campers. We think good reviews are helpful, inclusive, and constructive. Even if you had a bad experience, please be nice. Signup or login to write some post or reviews...</span></div>
+        )}
+
         <div className={`row ${loggedIn && "col-lg-10"}`}>
           {loading ? (
             <div>Loading...</div>
@@ -36,7 +43,6 @@ export default function Reviews() {
           )}
         </div>
       </div>
-
       <Footer />
     </div>
   );

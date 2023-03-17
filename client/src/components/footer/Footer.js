@@ -5,6 +5,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import { Box, TextField, Button, Container } from "@mui/material";
 
 function Footer() {
+
   return (
     <>
       <Container maxWidth="xlg" className="footer">
@@ -12,12 +13,10 @@ function Footer() {
           <div>
             <h5>Our Story</h5>
             <p>
-              When we think about getting healthier and managing various
-              problems conditions, one of the suggestions that always pops up is
-              diet or exercises. Healthy diet is a very crucial part of how we
-              recover, manage our healthy life-style, and make progress.
-              Health@Wellness was created for your custom and generic search for
-              a healthy diet plan.
+              When we think about getting a place to stay on and managing various problems or hassles in finding ideal places, one of the suggestions that always pops up is book in advance. Palnning in advance is a very crucial part of how we
+              saved time, manage our vacation or camping trip, and make good experience.
+              Camptrack was created for your custom and generic search for
+              a campsites that are fully booked most of the time.
             </p>
             <br></br>
             <Box
@@ -45,10 +44,10 @@ function Footer() {
             <p>Phone: 7757425989</p>
             <p>
               <a href="mailto:aungonalna58@gmail.com">
-                health@wellness@gmail.com
+                camptrack@gmail.com
               </a>
             </p>
-            <p>Copyright @2022 The health&Wellness - All Rights Reserved</p>
+            <p>Copyright @2022 The Camptrack - All Rights Reserved</p>
           </div>
         </div>
       </Container>

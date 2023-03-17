@@ -21,22 +21,6 @@ const userSchema = new Schema(
       unique: true,
       match: [/.+@.+\..+/, 'Must match an email address!']
     },
-    park: {
-      type: String,
-      required: true,
-      
-    },
-  
-    date: {
-      type: String,
-      required: true,
-      
-    },
-    time: {
-      type: String,
-      required: true,
-      
-    },
     password: {
       type: String,
       required: true,
@@ -46,6 +30,12 @@ const userSchema = new Schema(
       {
         type: Schema.Types.ObjectId,
         ref: 'Thought'
+      }
+    ],
+    parks: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Park'
       }
     ],
   },

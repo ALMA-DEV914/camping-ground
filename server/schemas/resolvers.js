@@ -1,4 +1,4 @@
-const { User, Thought } = require("../models");
+const { User, Thought, Park } = require("../models");
 const { AuthenticationError } = require("apollo-server-express");
 const { signToken } = require("../utils/auth");
 
@@ -9,6 +9,7 @@ const resolvers = {
         const userData = await User.findOne({ _id: context.user._id })
           .select("-__v -password")
           .populate("thoughts")
+          .populate("parks")
         return userData;
       }
 
@@ -19,12 +20,14 @@ const resolvers = {
       return User.find()
         .select("-__v -password")
         .populate("thoughts")
+        .populate("parks")
     },
     // get a user by username
     user: async (parent, { username }) => {
       return User.findOne({ username })
         .select("-__v -password")
         .populate("thoughts")
+        .populate("parks")
     },
     thoughts: async (parent, { username }) => {
       const params = username ? { username } : {};
@@ -33,6 +36,14 @@ const resolvers = {
     // place this inside of the `Query` nested object right after `reviews`
     thought: async (parent, { _id }) => {
       return Thought.findOne({ _id });
+    },
+    parks: async (parent, { username }) => {
+      const params = username ? { username } : {};
+      return Park.find(params).sort({ createdAt: -1 });
+    },
+    // place this inside of the `Query` nested object right after `reviews`
+    park: async (parent, { _id }) => {
+      return Park.findOne({ _id });
     },
   },
   Mutation: {
@@ -76,6 +87,27 @@ const resolvers = {
 
       throw new AuthenticationError("You need to be logged in!");
     },
+
+    addPark: async (parent, args, context) => {
+      if (context.user) {
+        const park = await Park.create({
+          ...args,
+          username: context.user.username,
+        });
+
+        await User.findByIdAndUpdate(
+          { _id: context.user._id },
+          { $push: { parks: park._id } },
+          { new: true }
+        );
+
+        return park;
+      }
+
+      throw new AuthenticationError("You need to be logged in!");
+    },
+
+
     addReaction: async (parent, { thoughtId, reactionBody }, context) => {
       if (context.user) {
         const updatedThought = await Thought.findOneAndUpdate(

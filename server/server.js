@@ -1,13 +1,13 @@
 const express = require("express");
-// import ApolloServer
+require('dotenv').config();
+const bodyParser = require('body-parser');
 const { ApolloServer } = require("apollo-server-express");
 const { authMiddleware } = require("./utils/auth");
-// import our typeDefs and resolvers
 const { typeDefs, resolvers } = require("./schemas");
 const path = require("path");
 const db = require("./config/conection");
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 const startServer = async () => {

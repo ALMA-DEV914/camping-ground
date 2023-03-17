@@ -31,8 +31,8 @@ module.exports = {
     // return updated request object
     return req;
   },
-  signToken: function({ username, phone, email, park, campground, date, time, _id }) {
-    const payload = { username, phone, email, park, campground, date, time,  _id };
+  signToken: function({ username, phone, email, _id }) {
+    const payload = { username, phone, email,  _id };
 
     return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
     

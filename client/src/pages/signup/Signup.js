@@ -9,7 +9,6 @@ import Button from "@mui/material/Button";
 import { Container } from "@mui/material";
 import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import "react-datepicker/dist/react-datepicker.css";
-import { default as data } from "../../data.json";
 
 const Signup = () => {
   const [formState, setFormState] = useState({
@@ -26,7 +25,7 @@ const Signup = () => {
 
   // update state based on form input changes
   const handleChange = (event) => {
-    const { name, value } = event.target;
+    const {name, value} = event.target;
     const { park } = event.target.value;
 
     setFormState({
@@ -112,61 +111,7 @@ const Signup = () => {
             value={formState.email}
             onChange={handleChange}
           />
-          <div className="select">
-            <div>
-              <InputLabel shrink htmlFor="bootstrap-input" className="label">
-                Park and Campground
-              </InputLabel>
-              {data.map((data) => (
-                <select
-                  placeholder="Choose your park and campgrounds"
-                  name="park"
-                  type="park"
-                  id="park"
-                  value={formState.park}
-                  onChange={handleChange}
-                >
-                  {data.campgrounds.map((campgrounds, i) => (
-                    <option key={i} value={[data.name, campgrounds.campName]}>
-                      {[data.name, campgrounds.campName]}
-                    </option>
-                  ))}
-                </select>
-              ))}
-            </div>
-          </div>
-
-          <br></br>
-          <div className="select-date">
-            <div>
-              <InputLabel shrink htmlFor="bootstrap-input" className="label">
-                Choose your date of arrival
-              </InputLabel>
-
-              <TextField
-                color="success"
-                id="date"
-                name="date"
-                type="date"
-                value={formState.date}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <InputLabel shrink htmlFor="bootstrap-input" className="label">
-                Choose your time of arrival
-              </InputLabel>
-              <TextField
-                color="success"
-                type="time"
-                name="time"
-                id="time"
-                value={formState.time}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-
+          
           <InputLabel shrink htmlFor="bootstrap-input" className="label">
             Password
           </InputLabel>

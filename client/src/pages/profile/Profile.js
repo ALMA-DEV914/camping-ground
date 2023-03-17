@@ -17,9 +17,8 @@ import ThoughtList from "../../components/thought/ThoughtList";
 import { Container } from "@mui/system";
 import MailIcon from "@mui/icons-material/Mail";
 import CallIcon from "@mui/icons-material/Call";
-import ParkIcon from "@mui/icons-material/Park";
-import ScheduleIcon from "@mui/icons-material/Schedule";
-import moment from "moment";
+import ParkForm from "../../components/Parks/ParkForm";
+import ParkList from "../../components/Parks/ParkList";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -31,7 +30,6 @@ const ExpandMore = styled((props) => {
     duration: theme.transitions.duration.shortest,
   }),
 }));
-
 
 const Profile = (props) => {
   const { username: userParam } = useParams();
@@ -47,8 +45,8 @@ const Profile = (props) => {
   const user = data?.me || data?.user || {};
 
   // redirect to personal profile page if username is yours
-  if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {
-    return <Link to="/profile" />;
+  if (Auth.loggedIn() && Auth.getProfile().data?.username === userParam) {
+    return <Link to={`{/profile/${user.username}`} />;
   }
 
   if (loading) {
@@ -63,6 +61,7 @@ const Profile = (props) => {
       </h4>
     );
   }
+
   return (
     <>
       <TopNav />
@@ -77,18 +76,15 @@ const Profile = (props) => {
                   style={{ fontWeight: 700 }}
                   className="text-info"
                 >
-                  {user.username}
+                  {user?.username}
                   <br></br>
                 </Link>
               </p>
               <Typography>
-                <MailIcon /> {user.email}
+                <MailIcon /> {user?.email}
                 <br></br>
-                <CallIcon /> {user.phone}
+                <CallIcon /> {user?.phone}
                 <br></br>
-                <ParkIcon /> Camping at {user.park}
-                <br></br>
-                <ScheduleIcon /> Camping on {moment(`${user.date}`).format('ddd DD-MMM-YYYY')}<span> at {user.time >= 12 ? user.time + 'am' : user.time + 'pm'}</span>
               </Typography>
               <br></br>
             </div>
@@ -105,6 +101,7 @@ const Profile = (props) => {
                   mollit anim id est laborum."
                 </Typography>
                 <Container>{!userParam && <ThoughtForm />}</Container>
+                <Container>{!userParam && <ParkForm />}</Container>
               </CardContent>
             </div>
           </div>
@@ -120,12 +117,18 @@ const Profile = (props) => {
           </CardActions>
 
           <Collapse in={expanded} timeout="auto" unmountOnExit>
-            <ThoughtList
-              thoughts={user.thoughts}
-              title={
-                user.username
-                  ? "Your reviews history"
+            <div className="booking-section">
+            <ParkList parks={user.parks} title={user.username
+                  ? "Your booking history"
                   : `${user.username}'s reviews...`
+              }/>
+              </div><br></br>
+            <ThoughtList
+              thoughts={user?.thoughts}
+              title={
+                user?.username
+                  ? "Your reviews history"
+                  : `${user?.username}'s reviews...`
               }
             />
           </Collapse>
