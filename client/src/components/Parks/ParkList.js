@@ -1,7 +1,6 @@
 import React from "react";
 import ParkIcon from "@mui/icons-material/Park";
 
-
 const ParkList = ({ parks, title}) => {
   if (!parks) {
     return <h3>No Booking History Yet</h3>;
@@ -26,6 +25,7 @@ const ParkList = ({ parks, title}) => {
               </div>
             </div>
           ))}
+         
       </div>
     </>
   );

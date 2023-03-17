@@ -20,6 +20,7 @@ import CallIcon from "@mui/icons-material/Call";
 import ParkForm from "../../components/Parks/ParkForm";
 import ParkList from "../../components/Parks/ParkList";
 import Footer from "../../components/footer/Footer";
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -127,9 +128,11 @@ const Profile = (props) => {
                     : `${user.username}'s reviews...`
                 }
               />
+              <ArrowRightAltIcon className="arrow-right"/>
             </div>
             <br></br>
             <div className="thoughts-section">
+           
               <ThoughtList
                 thoughts={user?.thoughts}
                 title={
@@ -138,6 +141,7 @@ const Profile = (props) => {
                     : `${user?.username}'s reviews...`
                 }
               />
+            
             </div>
           </Collapse>
         </div>

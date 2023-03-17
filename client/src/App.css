@@ -134,10 +134,10 @@ li {
   overflow-y: hidden;
   white-space: nowrap;
   display: flex;
-  background-color: rgb(241, 215, 202);
+  background-color: rgb(226, 239, 236);
 }
 .booking-div {
-  background-color: rgb(235, 243, 241);
+  background-color: rgb(244, 245, 245);
   padding: 15px;
   margin: 5px;
   border-radius: 10px;
@@ -150,6 +150,10 @@ li {
 }
 .booking-btn {
   padding: 8px 12px;
+}
+.arrow-right{
+  float: right;
+  color: rgb(7, 75, 134);
 }
 .camp-div {
   column-count: 4;
