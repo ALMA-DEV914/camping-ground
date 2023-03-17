@@ -19,6 +19,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import CallIcon from "@mui/icons-material/Call";
 import ParkForm from "../../components/Parks/ParkForm";
 import ParkList from "../../components/Parks/ParkList";
+import Footer from "../../components/footer/Footer";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -70,16 +71,16 @@ const Profile = (props) => {
           <div className="div-profile">
             <div className="left-profile">
               <img src={profile2} alt="profile" className="profile" />
-              <p>
+              <h4>
                 <Link
                   to={`/profile/${user.username}`}
                   style={{ fontWeight: 700 }}
                   className="text-info"
                 >
                   {user?.username}
-                  <br></br>
                 </Link>
-              </p>
+              </h4>{" "}
+              <br></br>
               <Typography>
                 <MailIcon /> {user?.email}
                 <br></br>
@@ -118,24 +119,30 @@ const Profile = (props) => {
 
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <div className="booking-section">
-            <ParkList parks={user.parks} title={user.username
-                  ? "Your booking history"
-                  : `${user.username}'s reviews...`
-              }/>
-              </div><br></br>
-              <div className="thoughts-section">
-            <ThoughtList
-              thoughts={user?.thoughts}
-              title={
-                user?.username
-                  ? "Your reviews history"
-                  : `${user?.username}'s reviews...`
-              }
-            />
+              <ParkList
+                parks={user.parks}
+                title={
+                  user.username
+                    ? "Your booking history"
+                    : `${user.username}'s reviews...`
+                }
+              />
+            </div>
+            <br></br>
+            <div className="thoughts-section">
+              <ThoughtList
+                thoughts={user?.thoughts}
+                title={
+                  user?.username
+                    ? "Your reviews history"
+                    : `${user?.username}'s reviews...`
+                }
+              />
             </div>
           </Collapse>
         </div>
       </Container>
+      <Footer/>
     </>
   );
 };

@@ -58,7 +58,7 @@ const ParkForm = () => {
 
   return (
     <div className="reviews">
-      <h1>Add booking</h1>
+      <h1>Where you want to camp?</h1>
       {error && <span className="ml-2"> Something went wrong...</span>}
 
       <br></br>
