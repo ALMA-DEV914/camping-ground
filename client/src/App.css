@@ -70,6 +70,9 @@ h6 {
   background-size: 100%;
   background-image: url("../src/images/snow.png");
 }
+.card-body{
+  padding: 15px;
+}
 
 .about {
   background-color: azure;
@@ -125,18 +128,18 @@ li {
 .booking {
   margin: 4px, 4px;
   padding: 15px;
-  background-color: #f1f5f1;
   width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
   display: flex;
-  border-radius: 20px;
+  background-color: rgb(241, 215, 202);
 }
 .booking-div {
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(235, 243, 241);
   padding: 15px;
   margin: 5px;
+  border-radius: 10px;
 }
 .booking-form {
   display: flex;

@@ -123,6 +123,7 @@ const Profile = (props) => {
                   : `${user.username}'s reviews...`
               }/>
               </div><br></br>
+              <div className="thoughts-section">
             <ThoughtList
               thoughts={user?.thoughts}
               title={
@@ -131,6 +132,7 @@ const Profile = (props) => {
                   : `${user?.username}'s reviews...`
               }
             />
+            </div>
           </Collapse>
         </div>
       </Container>

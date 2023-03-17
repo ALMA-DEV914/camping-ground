@@ -58,7 +58,7 @@ const ParkForm = () => {
 
   return (
     <div className="reviews">
-      <h1>Add new booking</h1>
+      <h1>Add booking</h1>
       {error && <span className="ml-2"> Something went wrong...</span>}
 
       <br></br>
@@ -76,8 +76,8 @@ const ParkForm = () => {
                   onChange={handleChange}
                 >
                   {data.campgrounds.map((campgrounds, i) => (
-                    <option key={i} value={[data.name, " ", campgrounds.campName]}>
-                      {[data.name, " ", campgrounds.campName]}
+                    <option key={i} value={[data.name + " - " + campgrounds.campName]}>
+                      {[data.name + " - " +  campgrounds.campName]}
                     </option>
                   ))}
                 </select>

@@ -42,8 +42,7 @@ export const QUERY_PARKS = gql`
       _id
       parkArea
       createdAt
-      username
-      
+      username 
     }
   }
 `;
