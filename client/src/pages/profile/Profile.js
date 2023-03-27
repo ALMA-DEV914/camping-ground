@@ -92,21 +92,11 @@ const Profile = (props) => {
             </div>
             <div className="right-profile">
               <CardContent className="profile-info">
-                <Typography variant="body2" color="text.secondary">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum."
-                </Typography>
-                <Container>{!userParam && <ThoughtForm />}</Container>
+                <Container>{!userParam && <ThoughtForm />}</Container><br></br>
                 <Container>{!userParam && <ParkForm />}</Container>
               </CardContent>
             </div>
-          </div>
+          </div><br></br>
           <CardActions disableSpacing>
             <ExpandMore
               expand={expanded}
@@ -130,7 +120,7 @@ const Profile = (props) => {
               />
               <ArrowRightAltIcon className="arrow-right"/>
             </div>
-            <br></br>
+            <br></br><br></br>
             <div className="thoughts-section">
            
               <ThoughtList
