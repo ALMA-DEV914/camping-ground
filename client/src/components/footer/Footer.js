@@ -11,14 +11,6 @@ function Footer() {
       <Container maxWidth="xlg" className="footer">
         <div className="container">
           <div>
-            <h5>Our Story</h5>
-            <p>
-              When we think about getting a place to stay on and managing various problems or hassles in finding ideal places, one of the suggestions that always pops up is book in advance. Palnning in advance is a very crucial part of how we
-              saved time, manage our vacation or camping trip, and make good experience.
-              Camptrack was created for your custom and generic search for
-              a campsites that are fully booked most of the time.
-            </p>
-            <br></br>
             <Box
               component="form"
               noValidate
@@ -33,6 +25,13 @@ function Footer() {
                 <Button className="subs-btn">Submit</Button>
               </div>
             </Box>
+            <h5>Our Story</h5>
+            <p>
+              When we think about getting a place to stay on and managing various problems or hassles in finding ideal places, one of the suggestions that always pops up is book in advance. Palnning in advance is a very crucial part of how we
+              saved time, manage our vacation or camping trip, and make good experience.
+              Camptrack was created for your custom and generic search for
+              a campsites that are fully booked most of the time.
+            </p>
           </div>
 
           <div>
