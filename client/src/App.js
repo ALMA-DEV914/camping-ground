@@ -52,7 +52,7 @@ function App() {
             <Route exact path="/signup" element={<Signup />} />
             <Route exact path="/profile/:username?" element={<Profile />} />
             <Route exact path="/thought/:id" element={<SingleThought/>} />
-      
+            
           </Routes>
         </Router>
       </ApolloProvider>

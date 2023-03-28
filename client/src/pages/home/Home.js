@@ -9,7 +9,6 @@ export default function Home() {
     <div>
       <ButtonAppBar />
       <Banner />
-      
       <Park />
       <Footer />
     </div>

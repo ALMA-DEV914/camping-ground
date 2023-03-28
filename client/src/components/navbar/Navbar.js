@@ -43,6 +43,9 @@ const TopNav = (props) => {
               <Link to="/faq"> FAQ</Link>
               <Link to="/reviews"> REVIEWS</Link>
               <Link to="/profile">PROFILE</Link>
+              <Link to="https://buy.stripe.com/test_7sI4io5qNdwK4OQ9AA">
+                BUYMECOFFEE
+              </Link>
               <a href="/" onClick={logout}>
                 LOGOUT
               </a>
@@ -52,6 +55,9 @@ const TopNav = (props) => {
               <Link to="/about"> ABOUT</Link>
               <Link to="/faq"> FAQ</Link>
               <Link to="/reviews"> REVIEWS</Link>
+              <Link to="https://buy.stripe.com/test_7sI4io5qNdwK4OQ9AA">
+              BUYMECOFFEE
+              </Link>
             </>
           )}
         </div>
