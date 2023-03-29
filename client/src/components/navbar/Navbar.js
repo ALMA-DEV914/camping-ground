@@ -39,12 +39,12 @@ const TopNav = (props) => {
         >
           {Auth.loggedIn() ? (
             <>
-              <Link to="/about"> ABOUT</Link>
-              <Link to="/faq"> FAQ</Link>
-              <Link to="/reviews"> REVIEWS</Link>
-              <Link to="/profile">PROFILE</Link>
-              <Link to="https://buy.stripe.com/test_7sI4io5qNdwK4OQ9AA">
-                BUYMECOFFEE
+              <Link to="/about" className="link"> ABOUT</Link>
+              <Link to="/faq" className="link"> FAQ</Link>
+              <Link to="/reviews" className="link"> REVIEWS</Link>
+              <Link to="/profile" className="link">PROFILE</Link>
+              <Link to="https://buy.stripe.com/test_7sI4io5qNdwK4OQ9AA" id="donation" className="link">
+                BUY ME A COFFEE
               </Link>
               <a href="/" onClick={logout}>
                 LOGOUT
@@ -52,11 +52,11 @@ const TopNav = (props) => {
             </>
           ) : (
             <>
-              <Link to="/about"> ABOUT</Link>
-              <Link to="/faq"> FAQ</Link>
-              <Link to="/reviews"> REVIEWS</Link>
-              <Link to="https://buy.stripe.com/test_7sI4io5qNdwK4OQ9AA">
-              BUYMECOFFEE
+              <Link to="/about" className="link"> ABOUT</Link>
+              <Link to="/faq" className="link"> FAQ</Link>
+              <Link to="/reviews" className="link"> REVIEWS</Link>
+              <Link to="https://buy.stripe.com/test_7sI4io5qNdwK4OQ9AA" id="donation" className="link">
+              BUY ME A COFFEE
               </Link>
             </>
           )}

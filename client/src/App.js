@@ -17,7 +17,6 @@ import {
 import { setContext } from "@apollo/client/link/context";
 import Faq from "./pages/faq/Faq";
 
-
 const httpLink = createHttpLink({
   uri: "/graphql",
 });
@@ -51,8 +50,7 @@ function App() {
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/signup" element={<Signup />} />
             <Route exact path="/profile/:username?" element={<Profile />} />
-            <Route exact path="/thought/:id" element={<SingleThought/>} />
-            
+            <Route exact path="/thought/:id" element={<SingleThought />} />
           </Routes>
         </Router>
       </ApolloProvider>

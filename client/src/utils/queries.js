@@ -59,6 +59,25 @@ export const QUERY_PARK = gql`
   }
 `;
 
+export const QUERY_USERS = gql`
+  query users($username: String!) {
+    users(username: $username) {
+      _id
+      username
+      phone
+      email
+      parks{
+        _id
+        parkArea
+        createdAt
+        username
+        
+      }
+    }
+  }
+`;
+
+
 export const QUERY_USER = gql`
   query user($username: String!) {
     user(username: $username) {

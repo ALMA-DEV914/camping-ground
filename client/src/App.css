@@ -15,6 +15,11 @@
   font-weight: 800;
   font-size: 22px;
 }
+#donation{
+  background-color: rgb(24, 43, 33) !important;
+  padding: 8px;
+  border-radius: 8px;
+}
 h1 {
   margin: 2% auto;
   text-align: center;
@@ -471,6 +476,13 @@ select {
 }
 
 @media screen and (max-width: 575px) {
+  #navbarsExample09 .link{
+    display: block ;
+    width: 100%;
+    background-color: #7c3a08;
+    padding: 8px;
+    margin: 5px auto;
+  }
   .div-camps {
     display: block;
   }
@@ -547,6 +559,13 @@ select {
 }
 
 @media screen and (max-width: 414px) {
+  #navbarsExample09 .link{
+    display: block ;
+    width: 100%;
+    background-color: #7c3a08;
+    padding: 8px;
+    margin: 5px auto;
+  }
   .div-camps {
     display: block;
   }
@@ -619,6 +638,14 @@ select {
 }
 
 @media screen and (max-width: 390px) {
+  #navbarsExample09 .link{
+    display: block ;
+    width: 100%;
+    background-color: #7c3a08;
+    padding: 8px;
+    margin: 5px auto;
+  }
+  
   .div-camps {
     display: block;
   }
