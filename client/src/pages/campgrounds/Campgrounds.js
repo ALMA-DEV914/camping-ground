@@ -227,7 +227,7 @@ function Campgrounds() {
                 </li>
                 <li>
                   Total Campsites - <span>{item.campsites.totalSites}</span>
-                </li>
+                </li><br></br>
                 <li>
                   Fees -
                   {item.fees.map((fees) => (
@@ -239,6 +239,7 @@ function Campgrounds() {
                 </li>
               </div>
               <div className="card-image">
+                <h4>Some Photos from {item.name}</h4>
                 {item.images.map((images) => (
                   <img
                     src={`${images.url}`}

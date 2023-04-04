@@ -476,18 +476,20 @@ select {
 }
 
 .camp-photo{
-  width: 250px;
+  width: 280px;
   height: 250px;
   margin: 5px;
 }
 .search-wrapper{
   width: 100%;
-  background-color: #7c3a08;
+  background-color:aliceblue;
   margin: 5% auto;
+  overflow: auto;
+  height: 80vh;
 }
 .search-input{
   width: 100%;
-  padding: 28px;
+  padding: 20px;
   border-radius: 50px;
 }
 .card-grid{
@@ -498,8 +500,9 @@ select {
   margin-top: 5px;
   padding: 15px;
 }
+
 ol {
-  color: aliceblue;
+  color: rgb(16, 86, 147);
 }
 ol li{
   padding: 5px;
