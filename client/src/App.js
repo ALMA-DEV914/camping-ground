@@ -7,7 +7,7 @@ import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
 import Profile from "./pages/profile/Profile";
 import SingleThought from "./pages/singlethought/SingleThought";
-import Campgrounds from "./components/campgrounds/Campgrounds";
+import Campgrounds from "./pages/campgrounds/Campgrounds";
 
 import {
   ApolloClient,
