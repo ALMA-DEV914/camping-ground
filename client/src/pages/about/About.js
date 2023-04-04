@@ -169,7 +169,7 @@ export default function About() {
                 <div key={i}>
                   {data.campgrounds.map((campgrounds, i) => (
                     <li key={i} className="camp-btn">
-                      {campgrounds.campName}
+                     {campgrounds.campName}
                     </li>
                   ))}
                 </div>

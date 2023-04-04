@@ -475,6 +475,18 @@ select {
   width: 100%;
 }
 
+.camp-photo{
+  width: 250px;
+  margin: 5px;
+}
+.search-wrapper{
+  width: 100%;
+}
+.search-input{
+  width: 100%;
+  padding: 8px;
+}
+
 @media screen and (max-width: 575px) {
   #navbarsExample09 .link{
     display: block ;
