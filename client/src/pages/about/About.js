@@ -50,7 +50,9 @@ export default function About() {
               great campsite—free of all the hassle.
             </Typography>
           </div>
+
         </Container>
+       
         <br></br>
         <div className="about-more">
           <Container>
@@ -178,7 +180,7 @@ export default function About() {
           </CardContent>
         </Container>
       </div>
-
+      
       <Footer />
     </div>
   );

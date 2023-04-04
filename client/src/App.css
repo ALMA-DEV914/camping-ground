@@ -8,6 +8,8 @@
   background-color: rgb(5, 80, 92);
   padding: 15px;
 }
+
+
 .navbar-toggler {
   background-color: aliceblue;
 }
@@ -15,7 +17,7 @@
   font-weight: 800;
   font-size: 22px;
 }
-#donation{
+#donation {
   background-color: rgb(24, 43, 33) !important;
   padding: 8px;
   border-radius: 8px;
@@ -67,7 +69,7 @@ h6 {
   background-size: 100%;
   background-image: url("../src/images/snow.png");
 }
-.card-body{
+.card-body {
   padding: 15px;
 }
 
@@ -147,7 +149,7 @@ li {
 .booking-btn {
   padding: 8px 12px;
 }
-.arrow-right{
+.arrow-right {
   float: right;
   color: rgb(134, 66, 7);
 }
@@ -302,11 +304,12 @@ p a {
   width: 60%;
   margin: 5% auto;
 }
-.footer {
+.footer{
   background-color: black;
-  color: gray;
+  color: aliceblue;
   padding: 15px;
 }
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -314,23 +317,18 @@ p a {
 .container div {
   padding: 15px;
 }
-.subsData {
-  background-color: rgb(184, 89, 11);
-  padding: 15px;
-  align-items: center;
-  border-radius: 12px;
-}
-.subs-input {
-  background-color: aliceblue;
-}
+
 .subscribe-input {
-  width: 80%;
+  width: 70%;
+  background-color: transparent;
+  padding: 8px;
 }
-.subs-btn {
-  background-color: rgb(9, 139, 130) !important;
-  padding: 28px !important;
-  color: azure !important;
-  margin: 1.8% auto !important;
+
+form{
+  width: 100%;
+}
+button{
+  padding: 8px;
 }
 
 .col {
@@ -475,42 +473,67 @@ select {
   width: 100%;
 }
 
-.camp-photo{
+.camp-photo {
   width: 280px;
   height: 250px;
   margin: 5px;
 }
-.search-wrapper{
+.search-wrapper {
   width: 100%;
-  background-color:aliceblue;
-  margin: 5% auto;
+  background-color: aliceblue;
+  margin: 1% auto;
   overflow: auto;
   height: 80vh;
 }
-.search-input{
+.search-input {
   width: 100%;
   padding: 20px;
   border-radius: 50px;
 }
-.card-grid{
-  margin: 5% auto;
-  
+.card-grid {
+  margin: 1% auto;
+  width: 70%;
 }
-.card{
-  margin-top: 5px;
+.card {
+  margin-top: 8px;
   padding: 15px;
 }
+.card-image {
+  overflow: scroll;
+  width: 800px;
+  display: flex;
+  margin: 0 auto;
 
+  box-shadow: 4px 4px 4px 4px gray;
+}
 ol {
   color: rgb(16, 86, 147);
 }
-ol li{
+ol li {
   padding: 5px;
 }
+.camp-header {
+  margin: 3% auto;
+  font-style: oblique;
+}
+.box {
+  --size: 50px;
+  --p: 25px;
+  --R: 55.9px /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/;
+  
+  height: 200px;
+
+  -webkit-mask:
+    radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))),blue 99%,#0000 101%) calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
+    radial-gradient(var(--R) at 50% calc(100% + var(--p)),#0000 99%,red 101%) 50% calc(100% - var(--size))/calc(4*var(--size)) 100% repeat-x;
+  background:linear-gradient(90deg,rgb(150, 69, 10),rgb(17, 65, 54));  
+  border: none;
+}
+
 
 @media screen and (max-width: 575px) {
-  #navbarsExample09 .link{
-    display: block ;
+  #navbarsExample09 .link {
+    display: block;
     width: 100%;
     background-color: #7c3a08;
     padding: 8px;
@@ -530,12 +553,22 @@ ol li{
     width: 100%;
     margin: 0 5px;
   }
-  .camp-photo{
+  .card-grid {
+    margin: 1% auto;
+    width: 100%;
+  }
+  .camp-photo {
     width: 100%;
     height: 250px;
     margin: 5px;
   }
-
+  .card-image {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  
+    box-shadow: 4px 4px 4px 4px gray;
+  }
   .container {
     display: block !important;
     width: 100%;
@@ -597,8 +630,8 @@ ol li{
 }
 
 @media screen and (max-width: 414px) {
-  #navbarsExample09 .link{
-    display: block ;
+  #navbarsExample09 .link {
+    display: block;
     width: 100%;
     background-color: #7c3a08;
     padding: 8px;
@@ -610,14 +643,25 @@ ol li{
   .div-camps div {
     text-align: center;
   }
+  .card-grid {
+    margin: 1% auto;
+    width: 100%;
+  }
   .camp-image {
     width: 350px;
     height: 250px;
   }
-  .camp-photo{
+  .camp-photo {
     width: 100%;
     height: 250px;
     margin: 5px;
+  }
+  .card-image {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  
+    box-shadow: 4px 4px 4px 4px gray;
   }
   .div-pages {
     width: 100%;
@@ -681,14 +725,14 @@ ol li{
 }
 
 @media screen and (max-width: 390px) {
-  #navbarsExample09 .link{
-    display: block ;
+  #navbarsExample09 .link {
+    display: block;
     width: 100%;
     background-color: #7c3a08;
     padding: 8px;
     margin: 5px auto;
   }
-  
+
   .div-camps {
     display: block;
   }
@@ -699,7 +743,11 @@ ol li{
     width: 280px;
     height: 250px;
   }
-  .camp-photo{
+  .card-grid {
+    margin: 1% auto;
+    width: 100%;
+  }
+  .camp-photo {
     width: 100%;
     height: 250px;
     margin: 5px;
@@ -707,6 +755,13 @@ ol li{
   .div-pages {
     width: 100%;
     margin: 0 5px;
+  }
+  .card-image {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  
+    box-shadow: 4px 4px 4px 4px gray;
   }
   .container {
     display: block !important;

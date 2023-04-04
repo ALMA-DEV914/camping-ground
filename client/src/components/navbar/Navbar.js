@@ -15,7 +15,7 @@ const TopNav = (props) => {
   return (
     <header>
       <nav className=" navbar navbar-expand-lg justify-space-between ">
-        <div className="col-8">
+        <div className="col-7">
           <a className="subtitle-header " href="/">
             CAMPTRACK⛺️{" "}
           </a>
