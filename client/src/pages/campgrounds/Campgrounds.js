@@ -214,6 +214,28 @@ function Campgrounds() {
         <div className="card-grid">
           {search(items).map((item) => (
             <article className="card" key={item.id}>
+              <div className="card-content">
+                <h2 className="card-name">{item.name}</h2>
+                <li>
+                  <span>{item.description}</span>
+                </li>
+                <li>
+                  Number Of Sites Reservable -{" "}
+                  <span>{item.numberOfSitesReservable}</span>
+                </li>
+                <li>
+                  Total Campsites - <span>{item.campsites.totalSites}</span>
+                </li>
+                <li>
+                  Fees -
+                  {item.fees.map((fees) => (
+                    <span> {fees.cost}, </span>
+                  ))}{" "}
+                  {item.fees.map((fees) => (
+                    <span>{fees.description}</span>
+                  ))}{" "}
+                </li>
+              </div>
               <div className="card-image">
                 {item.images.map((images) => (
                   <img
@@ -222,21 +244,6 @@ function Campgrounds() {
                     className="camp-photo"
                   />
                 ))}
-              </div>
-              <div className="card-content">
-                <h2 className="card-name">{item.name}</h2>
-                <li>
-                  <span>{item.description}</span>
-                </li>
-                <li>
-                Number Of Sites Reservable - {" "}
-              <span>{item.numberOfSitesReservable}</span>
-                </li>
-                <li>
-                Total Campsites - {" "}
-              <span>{item.campsites.totalSites
-}</span>
-                </li>
               </div>
             </article>
           ))}
