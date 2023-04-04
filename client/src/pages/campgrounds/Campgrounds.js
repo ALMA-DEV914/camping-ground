@@ -7,6 +7,7 @@ function Campgrounds() {
 
   const [q, setQ] = useState("");
   const [searchParam] = useState(["parkCode", "name"]);
+  
 
   useEffect(() => {
     fetch(
@@ -56,6 +57,7 @@ function Campgrounds() {
             id="search-form"
             className="search-input"
             placeholder="Search for park or campground..."
+            
             value={q}
             onChange={(e) => setQ(e.target.value)}
           />
