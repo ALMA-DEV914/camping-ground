@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CompareArrowsIcon from '@mui/icons-material/CompareArrows';
+import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
 
 function Campgrounds() {
   const [error, setError] = useState(null);
@@ -50,236 +50,259 @@ function Campgrounds() {
   } else {
     return (
       <>
-      <div class="box"></div>
-        <div className="container camp-header">
-          <h4>
-            When we think about getting a place to stay on and managing various
-            problems or hassles in finding ideal places, one of the suggestions
-            that always pops up is book in advance and get ideal place. Planning
-            in advance is a very crucial part of how we saved time, manage our
-            vacation or camping trip, and make good experience. Camptrack was
-            created for your custom and generic search for a campsites that are
-            fully booked most of the time.{" "}
-          </h4>
-        </div>
-        <div className="container">
-          <div className="search-wrapper">
-            <input
-              type="search"
-              name="search-form"
-              id="search-form"
-              className="search-input"
-              placeholder="Search for park or campground..."
-              value={q}
-              onChange={(e) => setQ(e.target.value)}
-            />
-            <br></br>
-            <ol>
-              <li>ACAD is the abbreviation for Acadia National Park</li>
-
-              <li>ARCH is the abbreviation for Arches National Park </li>
-
-              <li>BADL is the abbreviation for Badlands National Park </li>
-
-              <li>BIBE is the abbreviation for Big Bend National Park </li>
-
-              <li>BISC is the abbreviation for Biscayne National Park </li>
-
-              <li>
-                BLCA is the abbreviation for Black Canyon of the Gunnison
-                National Park
-              </li>
-
-              <li>BRCA is the abbreviation for Bryce Canyon National Park </li>
-
-              <li>CANY is the abbreviation for Canyonlands National Park </li>
-
-              <li>CARE is the abbreviation for Capitol Reef National Park </li>
-
-              <li>
-                CAVE is the abbreviation for Carlsbad Caverns National Park{" "}
-              </li>
-
-              <li>
-                CHIS is the abbreviation for Channel Islands National Park{" "}
-              </li>
-
-              <li>CONG is the abbreviation for Congaree National Park </li>
-
-              <li>CRLA is the abbreviation for Crater Lake National Park </li>
-
-              <li>CUVA is the abbreviation for Cuyahoa Valley National Park</li>
-
-              <li>DENA is the abbreviation for Denali National Park</li>
-
-              <li>DEVA is the abbreviation for Death Valley National Park </li>
-
-              <li>DRTO is the abbreviation for Dry Tortugas National Park </li>
-
-              <li>EVER is the abbreviation for Everglades National Park </li>
-
-              <li>
-                GAAR is the abbreviation for Gates of the Arctic National Park
-              </li>
-
-              <li>GLAC is the abbreviation for Glacier National Park</li>
-
-              <li>GLBA is the abbreviation for Glacier Bay National Park </li>
-
-              <li>GRBA is the abbreviation for Great Basin National Park </li>
-
-              <li>GRCA is the abbreviation for Grand Canyon National Park </li>
-
-              <li>
-                GRSA is the abbreviation for Great Sand Dunes National Park{" "}
-              </li>
-
-              <li>
-                GRSM is the abbreviation for Great Smokey Mountains National
-                Park
-              </li>
-
-              <li>GRTE is the abbreviation for Grand Teton National Park </li>
-
-              <li>
-                GUMO is the abbreviation for Guadalupe Mountains National Park{" "}
-              </li>
-
-              <li>HALE is the abbreviation for Haleakala National Park</li>
-
-              <li>
-                HAVO is the abbreviation for Hawaii Valcanoes National Park{" "}
-              </li>
-
-              <li>HOSP is the abbreviation for Hot Springs National Park </li>
-
-              <li>INDU is the abbreviation for Indiana Dunes National Park </li>
-
-              <li>ISRO is the abbreviation for Isle Royale National Park </li>
-
-              <li>JEFF is the abbreviation for Gateway Arch National Park </li>
-
-              <li>JOTR is the abbreviation for Joshua Tree National Park </li>
-
-              <li>KATM is the abbreviation for Katmai National Park </li>
-
-              <li>KEFJ is the abbreviation for Kenai Fjords National Park</li>
-
-              <li>KOVA is the abbreviation for Kobuk Valley National Park </li>
-
-              <li>LACL is the abbreviation for Lake Clark National Park </li>
-
-              <li>
-                LAVO is the abbreviation for Lassen Volcanic National Park{" "}
-              </li>
-
-              <li>MACA is the abbreviation for Mammoth Cave National Park </li>
-
-              <li>MEVE is the abbreviation for Mesa Verde National Park </li>
-
-              <li>MORA is the abbreviation for Mount Rainier National Park </li>
-
-              <li>
-                NERI is the abbreviation for New River Gorge National Park{" "}
-              </li>
-
-              <li>
-                NOCA is the abbreviation for North Cascades National Park{" "}
-              </li>
-
-              <li>
-                NPSA is the abbreviation for the National Park of American Samoa
-              </li>
-
-              <li>OLYM is the abbreviation for Olympic National Park </li>
-
-              <li>
-                PEFO is the abbreviation for Petrified Forest National Park{" "}
-              </li>
-
-              <li>PINN is the abbreviation for Pinnacles National Park </li>
-
-              <li>REDW is the abbreviation for Redwood National Park </li>
-
-              <li>
-                ROMO is the abbreviation for Rocky Mountain National Park{" "}
-              </li>
-
-              <li>SAGU is the abbreviation for Saguaro National Park </li>
-
-              <li>
-                SEKI is the abbreviation for Sequoia and Kings Canyon National
-                Parks{" "}
-              </li>
-
-              <li>SHEN is the abbreviation for Shenandoah National Park </li>
-
-              <li>
-                THRO is the abbreviation for Theodore Roosevelt National Park{" "}
-              </li>
-
-              <li>
-                VIIS is the abbreviation for Virgin Islands National Park{" "}
-              </li>
-
-              <li>VOYA is the abbreviation for Voyageurs National Park </li>
-
-              <li>WHSA is the abbreviation for White Sands National Park</li>
-
-              <li>WICA is the abbreviation for Wind Cave National Park </li>
-
-              <li>
-                WRST is the abbreviation for Wrangell-ST. Elias National Park
-              </li>
-
-              <li>YELL is the abbreviation for Yellowstone National Park </li>
-
-              <li>YOSE is the abbreviation for Yosemite National Park </li>
-
-              <li>ZION is the abbreviation for Zion National Park </li>
-            </ol>
-           
+        <div class="box">
+          <div className="container camp-header">
+            <h4>
+              When we think about getting a place to stay on and managing
+              various problems or hassles in finding ideal places, one of the
+              suggestions that always pops up is book in advance and get ideal
+              place. Planning in advance is a very crucial part of how we saved
+              time, manage our vacation or camping trip, and make good
+              experience. Camptrack was created for your custom and generic
+              search for a campsites that are fully booked most of the time.{" "}
+            </h4>
           </div>
-          <div className="card-grid">
-            {search(items).map((item) => (
-              <article className="card" key={item.id}>
-                <div className="card-content">
-                  <h2 className="card-name">{item.name}</h2>
-                  <li>
-                    <span>{item.description}</span>
-                  </li>
-                  <li>
-                    Number Of Sites Reservable -{" "}
-                    <span>{item.numberOfSitesReservable}</span>
-                  </li>
-                  <li>
-                    Total Campsites - <span>{item.campsites.totalSites}</span>
-                  </li>
+          <div className="container">
+            <div className="card-grid">
+              {search(items).map((item) => (
+                <article className="card" key={item.id}>
+                  <div className="card-content">
+                    <h2 className="card-name">{item.name}</h2>
+                    <li>
+                      <span>{item.description}</span>
+                    </li>
+                    <li>
+                      Number Of Sites Reservable -{" "}
+                      <span>{item.numberOfSitesReservable}</span>
+                    </li>
+                    <li>
+                      Total Campsites - <span>{item.campsites.totalSites}</span>
+                    </li>
+                    <br></br>
+                    <li>
+                      Fees -
+                      {item.fees.map((fees) => (
+                        <span> {fees.cost}, </span>
+                      ))}{" "}
+                      {item.fees.map((fees) => (
+                        <span>{fees.description}</span>
+                      ))}{" "}
+                    </li>
+                  </div>
                   <br></br>
-                  <li>
-                    Fees -
-                    {item.fees.map((fees) => (
-                      <span> {fees.cost}, </span>
-                    ))}{" "}
-                    {item.fees.map((fees) => (
-                      <span>{fees.description}</span>
-                    ))}{" "}
-                  </li>
-                </div><br></br>
-                <h4>Some Photos from {item.name}</h4> <br></br>
-                <div className="card-image">
-                <CompareArrowsIcon/>
-                  {item.images.map((images) => (
-                    <img
-                      src={`${images.url}`}
-                      alt={item.name}
-                      className="camp-photo"
-                    />
-                  ))}
-                 
-                </div>
-              </article>
-            ))}
+                  <h4>Some Photos from {item.name}</h4> <br></br>
+                  <div className="card-image">
+                    <CompareArrowsIcon />
+                    {item.images.map((images) => (
+                      <img
+                        src={`${images.url}`}
+                        alt={item.name}
+                        className="camp-photo"
+                      />
+                    ))}
+                  </div>
+                </article>
+              ))}
+            </div>
+            <div className="search-wrapper">
+              <input
+                type="search"
+                name="search-form"
+                id="search-form"
+                className="search-input"
+                placeholder="Search for park or campground..."
+                value={q}
+                onChange={(e) => setQ(e.target.value)}
+              />
+              <br></br>
+              <ol>
+                <li>ACAD is the abbreviation for Acadia National Park</li>
+
+                <li>ARCH is the abbreviation for Arches National Park </li>
+
+                <li>BADL is the abbreviation for Badlands National Park </li>
+
+                <li>BIBE is the abbreviation for Big Bend National Park </li>
+
+                <li>BISC is the abbreviation for Biscayne National Park </li>
+
+                <li>
+                  BLCA is the abbreviation for Black Canyon of the Gunnison
+                  National Park
+                </li>
+
+                <li>
+                  BRCA is the abbreviation for Bryce Canyon National Park{" "}
+                </li>
+
+                <li>CANY is the abbreviation for Canyonlands National Park </li>
+
+                <li>
+                  CARE is the abbreviation for Capitol Reef National Park{" "}
+                </li>
+
+                <li>
+                  CAVE is the abbreviation for Carlsbad Caverns National Park{" "}
+                </li>
+
+                <li>
+                  CHIS is the abbreviation for Channel Islands National Park{" "}
+                </li>
+
+                <li>CONG is the abbreviation for Congaree National Park </li>
+
+                <li>CRLA is the abbreviation for Crater Lake National Park </li>
+
+                <li>
+                  CUVA is the abbreviation for Cuyahoa Valley National Park
+                </li>
+
+                <li>DENA is the abbreviation for Denali National Park</li>
+
+                <li>
+                  DEVA is the abbreviation for Death Valley National Park{" "}
+                </li>
+
+                <li>
+                  DRTO is the abbreviation for Dry Tortugas National Park{" "}
+                </li>
+
+                <li>EVER is the abbreviation for Everglades National Park </li>
+
+                <li>
+                  GAAR is the abbreviation for Gates of the Arctic National Park
+                </li>
+
+                <li>GLAC is the abbreviation for Glacier National Park</li>
+
+                <li>GLBA is the abbreviation for Glacier Bay National Park </li>
+
+                <li>GRBA is the abbreviation for Great Basin National Park </li>
+
+                <li>
+                  GRCA is the abbreviation for Grand Canyon National Park{" "}
+                </li>
+
+                <li>
+                  GRSA is the abbreviation for Great Sand Dunes National Park{" "}
+                </li>
+
+                <li>
+                  GRSM is the abbreviation for Great Smokey Mountains National
+                  Park
+                </li>
+
+                <li>GRTE is the abbreviation for Grand Teton National Park </li>
+
+                <li>
+                  GUMO is the abbreviation for Guadalupe Mountains National Park{" "}
+                </li>
+
+                <li>HALE is the abbreviation for Haleakala National Park</li>
+
+                <li>
+                  HAVO is the abbreviation for Hawaii Valcanoes National Park{" "}
+                </li>
+
+                <li>HOSP is the abbreviation for Hot Springs National Park </li>
+
+                <li>
+                  INDU is the abbreviation for Indiana Dunes National Park{" "}
+                </li>
+
+                <li>ISRO is the abbreviation for Isle Royale National Park </li>
+
+                <li>
+                  JEFF is the abbreviation for Gateway Arch National Park{" "}
+                </li>
+
+                <li>JOTR is the abbreviation for Joshua Tree National Park </li>
+
+                <li>KATM is the abbreviation for Katmai National Park </li>
+
+                <li>KEFJ is the abbreviation for Kenai Fjords National Park</li>
+
+                <li>
+                  KOVA is the abbreviation for Kobuk Valley National Park{" "}
+                </li>
+
+                <li>LACL is the abbreviation for Lake Clark National Park </li>
+
+                <li>
+                  LAVO is the abbreviation for Lassen Volcanic National Park{" "}
+                </li>
+
+                <li>
+                  MACA is the abbreviation for Mammoth Cave National Park{" "}
+                </li>
+
+                <li>MEVE is the abbreviation for Mesa Verde National Park </li>
+
+                <li>
+                  MORA is the abbreviation for Mount Rainier National Park{" "}
+                </li>
+
+                <li>
+                  NERI is the abbreviation for New River Gorge National Park{" "}
+                </li>
+
+                <li>
+                  NOCA is the abbreviation for North Cascades National Park{" "}
+                </li>
+
+                <li>
+                  NPSA is the abbreviation for the National Park of American
+                  Samoa
+                </li>
+
+                <li>OLYM is the abbreviation for Olympic National Park </li>
+
+                <li>
+                  PEFO is the abbreviation for Petrified Forest National Park{" "}
+                </li>
+
+                <li>PINN is the abbreviation for Pinnacles National Park </li>
+
+                <li>REDW is the abbreviation for Redwood National Park </li>
+
+                <li>
+                  ROMO is the abbreviation for Rocky Mountain National Park{" "}
+                </li>
+
+                <li>SAGU is the abbreviation for Saguaro National Park </li>
+
+                <li>
+                  SEKI is the abbreviation for Sequoia and Kings Canyon National
+                  Parks{" "}
+                </li>
+
+                <li>SHEN is the abbreviation for Shenandoah National Park </li>
+
+                <li>
+                  THRO is the abbreviation for Theodore Roosevelt National Park{" "}
+                </li>
+
+                <li>
+                  VIIS is the abbreviation for Virgin Islands National Park{" "}
+                </li>
+
+                <li>VOYA is the abbreviation for Voyageurs National Park </li>
+
+                <li>WHSA is the abbreviation for White Sands National Park</li>
+
+                <li>WICA is the abbreviation for Wind Cave National Park </li>
+
+                <li>
+                  WRST is the abbreviation for Wrangell-ST. Elias National Park
+                </li>
+
+                <li>YELL is the abbreviation for Yellowstone National Park </li>
+
+                <li>YOSE is the abbreviation for Yosemite National Park </li>
+
+                <li>ZION is the abbreviation for Zion National Park </li>
+              </ol>
+            </div>
           </div>
         </div>
       </>

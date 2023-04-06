@@ -516,20 +516,6 @@ ol li {
   margin: 3% auto;
   font-style: oblique;
 }
-.box {
-  --size: 50px;
-  --p: 25px;
-  --R: 55.9px /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/;
-  
-  height: 200px;
-
-  -webkit-mask:
-    radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))),blue 99%,#0000 101%) calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
-    radial-gradient(var(--R) at 50% calc(100% + var(--p)),#0000 99%,red 101%) 50% calc(100% - var(--size))/calc(4*var(--size)) 100% repeat-x;
-  background:linear-gradient(90deg,rgb(150, 69, 10),rgb(17, 65, 54));  
-  border: none;
-}
-
 
 @media screen and (max-width: 575px) {
   #navbarsExample09 .link {
