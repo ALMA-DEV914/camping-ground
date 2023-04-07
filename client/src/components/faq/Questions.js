@@ -193,7 +193,7 @@ export default function Questions() {
                 availabilities. So, if no one cancels a spot that meets your
                 criteria, you won’t receive an alert.
               </p>
-              <br></br>
+             
               <p>
                 For this reason, we recommend putting the odds in your favor.
                 Scan more than one park and try for multiple campgrounds within
@@ -242,7 +242,7 @@ export default function Questions() {
                 Some free products switch to a paid model. Others fill their
                 pages with ads. Yet others sell access to your personal data.
               </p>
-              <br></br>
+            
               <p>
                 We want to be around for the long run to help people like you
                 get out camping more. When you pay for CAMPTRACK, you sponsor the
@@ -273,7 +273,7 @@ export default function Questions() {
                 memberships offer a lot of added benefits to more regular
                 outdoors-people
               </p>
-              <br></br>
+            
               <p>
                 <b>Most notably, memberships allow you to:</b>
                 <br></br>
@@ -298,7 +298,7 @@ export default function Questions() {
                 $20, depending on how frequently you want us to check
                 availability for you.
               </p>
-              <br></br>
+             
               <p>
                 The second are memberships. These typically run monthly and are
                 tailored to those who camp more frequently or are looking to
@@ -332,7 +332,7 @@ export default function Questions() {
                 supply of campsites and can’t force someone to cancel. As such,
                 we can’t say whether you’ll get any alerts.
               </p>
-              <br></br>
+             
               <p>
                 Plus, you set the parameters of your scan. The way you do this
                 plays a huge part in what results you’ll see. The more
@@ -359,7 +359,7 @@ export default function Questions() {
                 special—and how these benefits makes a difference for campers
                 like you.Camptrack allows you to scan a lot of different parks
               </p>
-              <br></br>
+            
               <p>
                 There are many campgrounds out there, and we can scan for
                 availabilities at many of them (currently 3,200 parks, 7,000
@@ -377,7 +377,7 @@ export default function Questions() {
                 exactly which campsites you want to stay at. (Obviously, this
                 reduces the number of alerts you can expect to receive.)
               </p>
-              <br></br>
+             
               <p>
                 Site-specific scanning is available to all CAMPTRACK members on a
                 plan. To set one up, create a scan from our homepage as you
@@ -410,7 +410,7 @@ export default function Questions() {
                 booking. We’ll also send a heads-up message 30 minutes before
                 the site is set to be unlocked.
               </p>
-              <br></br>
+          
               <p>
                 These notifications won’t give you an advantage over other
                 campers. You’ll still need to compete for these campsites.
