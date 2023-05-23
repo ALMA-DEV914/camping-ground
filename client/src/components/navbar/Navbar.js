@@ -44,6 +44,7 @@ const TopNav = (props) => {
               <Link to="/faq" className="link"> FAQ</Link>
               <Link to="/reviews" className="link"> REVIEWS</Link>
               <Link to="/profile" className="link">PROFILE</Link>
+              <Link to="/users" className="link"> ADMIN</Link>
               <Link to="https://buy.stripe.com/test_7sI4io5qNdwK4OQ9AA" id="donation" className="link">
                 BUY ME A COFFEE
               </Link>
@@ -57,6 +58,7 @@ const TopNav = (props) => {
               <Link to="/campground" className="link"> CAMPGROUNDS</Link>
               <Link to="/faq" className="link"> FAQ</Link>
               <Link to="/reviews" className="link"> REVIEWS</Link>
+              <Link to="/users" className="link"> ADMIN</Link>
               <Link to="https://buy.stripe.com/test_7sI4io5qNdwK4OQ9AA" id="donation" className="link">
               BUY ME A COFFEE
               </Link>

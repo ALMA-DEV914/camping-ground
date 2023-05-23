@@ -9,6 +9,7 @@ import Profile from "./pages/profile/Profile";
 import SingleThought from "./pages/singlethought/SingleThought";
 import Campgrounds from "./pages/campgrounds/Campgrounds";
 
+
 import {
   ApolloClient,
   InMemoryCache,
