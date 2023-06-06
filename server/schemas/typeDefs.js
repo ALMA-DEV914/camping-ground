@@ -16,7 +16,14 @@ type Park {
   createdAt: String
   username: String
 }
-  type User {
+type Booking {
+  _id: ID
+  park: Park
+  user: User
+  createdAt: String
+  
+}
+type User {
     _id: ID
     username: String
     phone: String
